@@ -1,4 +1,4 @@
-.row{
+.top-row{
     height: 100vh;
 }
 
@@ -10,6 +10,9 @@
     .righty{
         margin-left: auto;
     }
+    .lefty{
+        margin-right: auto;
+    }
 }
 .aboutme{
     width: 60%;
@@ -18,11 +21,11 @@
 }
 
 .righty{
-    width: 75%;
+  
     max-width: 800px;
 }
 .lefty{
-    width: 75%;
+
     max-width: 800px;
 }
 
