@@ -1,0 +1,28 @@
+.row{
+    height: 100vh;
+}
+
+
+@media (min-width: 786px){
+    .jumbotron{
+        align-self: center;
+    }
+    .righty{
+        margin-left: auto;
+    }
+}
+.aboutme{
+    width: 60%;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.righty{
+    width: 75%;
+    max-width: 800px;
+}
+.lefty{
+    width: 75%;
+    max-width: 800px;
+}
+
