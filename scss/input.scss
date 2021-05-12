@@ -13,6 +13,14 @@
     background-color: var(--main-dark);
     color: var(--main-light);
 }
+.section{
+    padding: 2rem 2rem;
+}
+.abouthr{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
 // Nav Bar 
 
  .nav-link{
@@ -29,6 +37,9 @@
      color: var(--main-light)!important;
  }
 // Landing
+h1{
+    margin-bottom: 3rem;
+}
 .top-row{
     height: 100vh;
 }
