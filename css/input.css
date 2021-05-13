@@ -208,6 +208,8 @@ h1 {
   border: solid 1px var(--main-red);
   text-decoration: none;
   text-transform: uppercase;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 @media (min-width: 786px) {
