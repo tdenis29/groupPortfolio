@@ -201,6 +201,15 @@ h1 {
   border: solid 4px var(--main-red);
 }
 
+.project-link {
+  background-color: var(--main-dark);
+  color: var(--main-red);
+  padding: 1em 1.5em;
+  border: solid 1px var(--main-red);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 @media (min-width: 786px) {
   .jumbotron {
     align-self: center;
