@@ -135,23 +135,26 @@ h1 {
 .aboutme {
   width: 60%;
   margin: 0 auto;
-  height: 75vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.decon-card-box {
-  width: 50%;
+  position: relative;
 }
 
 .decon-image {
   border-radius: 50%;
 }
 
+.aboutmep {
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
 .decon-card-text {
   width: 100%;
+  max-height: 300px;
 }
 
 .righty {
@@ -188,11 +191,16 @@ h1 {
   }
 
   .aboutme {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .decon-card-text {
-    width: 50%;
+    width: 75%;
+  }
+}
+@media (min-width: 1068px) {
+  .aboutme {
+    flex-direction: row;
   }
 }
 
