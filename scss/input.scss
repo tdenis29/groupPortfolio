@@ -16,6 +16,7 @@
 .section{
     padding: 2rem 2rem;
 }
+
 .abouthr{
     width: 75%;
     display: block;
@@ -91,18 +92,21 @@ h1{
     height: 9.75rem;
     border: 2px solid var(--main-red);
     position: absolute;
-    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
     font-size: 2rem;
   }
   .front {
     transform: translateZ(78px);
+    height: 100%;
+    
+
   }
+
   .back {
     transform: translateZ(-78px) rotateY(180deg);
+
   }
   .left {
     transform: translateX(-78px) rotateY(-90deg);
@@ -123,7 +127,7 @@ h1{
 .aboutme{
     width: 60%;
     margin: 0 auto;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,9 +135,28 @@ h1{
     position: relative;
 }
 
+.crossout{
+    text-decoration: line-through;
+}
+.decon-image-box{
+    height: 310px;
+    width: 357px;
+    position: relative;
+    z-index: 1; 
+    border: solid 4px var(--main-red);  
+    
+}
 
 .decon-image{
-    border-radius: 50%;
+    width: calc(inherit + 1rem);
+    display: block;
+    height: inherit;
+    margin-top: -1.435em;
+    background-color: #fff;
+    background-size: cover;
+    background-position-x: center;
+    margin-left: -1.5em;
+    background-image: url(../images/headshotcrop.jpg);
     
 }
 
@@ -149,6 +172,15 @@ h1{
 
 
 // Projects
+.card-img-top{
+    height: auto;
+    width: 100%;
+    
+}
+.projecticons{
+    height: 2.5rem;
+    width: 2.5rem;
+}
 .righty{
     max-width: 800px;
 }
@@ -158,6 +190,9 @@ h1{
 }
 .card{
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    border: solid 4px var(--main-red);
 }
 
 
@@ -183,6 +218,9 @@ h1{
     }
     .decon-card-text{
         width: 75%;
+    }
+    .card{
+        flex-direction: row;
     }
 }
 @media (min-width: 1068px){
