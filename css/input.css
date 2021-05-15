@@ -190,19 +190,12 @@ h1 {
   width: 1.5rem;
 }
 
-.righty {
-  max-width: 800px;
-}
-
-.lefty {
-  max-width: 800px;
-}
-
 .card {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
   border: solid 4px var(--main-red);
+  max-width: 600px;
 }
 
 .card-title {
@@ -225,14 +218,6 @@ h1 {
     align-self: center;
   }
 
-  .righty {
-    margin-left: auto;
-  }
-
-  .lefty {
-    margin-right: auto;
-  }
-
   .top-intro {
     height: 50%;
   }
@@ -247,10 +232,6 @@ h1 {
 
   .decon-card-text {
     width: 75%;
-  }
-
-  .card {
-    flex-direction: row;
   }
 }
 @media (min-width: 1068px) {
