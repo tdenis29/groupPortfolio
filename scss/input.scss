@@ -12,7 +12,9 @@
     list-style-type: none;
     background-color: var(--main-dark);
     color: var(--main-light);
+    
 }
+
 .section{
     padding: 2rem 2rem;
 }
@@ -205,6 +207,7 @@ h1{
     display: inline-block;
     margin: 0 auto;
 }
+
 
 // Med qu
 @media (min-width: 786px){
