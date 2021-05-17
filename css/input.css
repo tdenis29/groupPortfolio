@@ -213,6 +213,15 @@ h1 {
   margin: 0 auto;
 }
 
+.project-link:hover {
+  background-color: var(--main-red);
+  color: var(--main-light);
+}
+
+.project-link:active {
+  transition: transform;
+}
+
 @media (min-width: 786px) {
   .jumbotron {
     align-self: center;
