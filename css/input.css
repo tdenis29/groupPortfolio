@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Philospher", sans-serif;
+  src: url("../font/Philosopher/Philosopher-Regular.ttf");
+}
 :root {
   --main-dark: #011627;
   --main-light: #FDFFFC;
@@ -12,6 +16,19 @@
   list-style-type: none;
   background-color: var(--main-dark);
   color: var(--main-light);
+}
+
+.body {
+  font-family: "Philosopher", sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 .section {
@@ -96,7 +113,6 @@ h1 {
   width: 9.75rem;
   height: 9.75rem;
   transform-style: preserve-3d;
-  transform: rotate3d(1, 1, 0, 45deg);
 }
 
 .face {
@@ -133,6 +149,22 @@ h1 {
 
 .bottom {
   transform: translateY(78px) rotateX(-90deg);
+}
+
+@keyframes turn {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+.cube {
+  position: relative;
+  width: 9.75rem;
+  height: 9.75rem;
+  transform-style: preserve-3d;
+  animation: turn 5s linear infinite;
 }
 
 #loader-wrapper .loader-section {
@@ -216,6 +248,10 @@ h1 {
   max-height: 300px;
 }
 
+.card-section {
+  background-color: #1C1F33 !important;
+}
+
 .card-img-top {
   height: auto;
   width: 100%;
@@ -241,11 +277,12 @@ h1 {
 .project-link {
   background-color: var(--main-dark);
   color: var(--main-red);
-  padding: 1em 1.5em;
+  padding: 1rem;
   border: solid 1px var(--main-red);
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
+  display: block;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -265,6 +302,26 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.form-control {
+  border-radius: 1rem;
+}
+
+.form-control:focus {
+  border: solid 4px var(--main-red);
+}
+
+#send {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #D81E5B;
+  border: none;
+  border-radius: 1rem;
+}
+
+#send:hover {
+  background-color: var(--main-blue);
 }
 
 @media (min-width: 786px) {
