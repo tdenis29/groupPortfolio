@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Philospher", sans-serif;
-  src: url("../font/Philosopher/Philosopher-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 :root {
   --main-dark: #011627;
   --main-light: #FDFFFC;
@@ -16,10 +13,7 @@
   list-style-type: none;
   background-color: var(--main-dark);
   color: var(--main-light);
-}
-
-.body {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Philospher", sans-serif;
 }
 
 .fade-in {
