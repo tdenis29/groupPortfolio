@@ -8,6 +8,12 @@
 
 //     $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 // });
+const body = document.getElementById('body');
+document.addEventListener('DOMContentLoaded', e => {
+  setTimeout(function(){ 
+    body.classList.toggle('loaded'); 
+}, 3000);
+})
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
@@ -31,8 +37,5 @@ entries.forEach(entry => {
 faders.forEach(fader => {
   appear.observe(fader);
 });
-let str = "hello";
-function strReverse(string){
-  console.log(string.split("").reverse().join(""));
-}
-strReverse(str);
+
+
