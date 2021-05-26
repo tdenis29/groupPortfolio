@@ -31,3 +31,8 @@ entries.forEach(entry => {
 faders.forEach(fader => {
   appear.observe(fader);
 });
+let str = "hello";
+function strReverse(string){
+  console.log(string.split("").reverse().join(""));
+}
+strReverse(str);

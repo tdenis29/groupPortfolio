@@ -13,6 +13,7 @@
   list-style-type: none;
   background-color: var(--main-dark);
   color: var(--main-light);
+  line-height: 24px;
 }
 
 body {
@@ -115,7 +116,7 @@ h1 {
 
 .cta:hover {
   background-color: var(--main-red);
-  border: 10px solid var(--main-red);
+  border: 4px solid var(--main-red);
 }
 
 .container-cube {
