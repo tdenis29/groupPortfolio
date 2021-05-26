@@ -23,6 +23,7 @@ body {
 
 h3 {
   font-size: 1.9rem;
+  color: var(--main-red);
 }
 
 .fade-in {
@@ -94,6 +95,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
+  margin-top: 1rem;
   background-color: transparent;
 }
 
@@ -257,6 +259,7 @@ h1 {
 .aboutmep {
   padding: 1rem 1rem;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .decon-card-text {
@@ -274,17 +277,20 @@ h1 {
 }
 
 img {
-  width: 100%;
   height: auto;
+  width: 100%;
+}
+
+.card-img-top {
   position: relative;
 }
 
-.img-gradient::after {
+.card-img-top::after {
   content: "";
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background-image: linear-gradient(120deg, #eaee44, #33d0ff);
   background-repeat: no-repeat;
