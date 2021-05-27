@@ -286,6 +286,9 @@ h1 {
   align-items: center;
   position: relative;
 }
+.aboutme h4 {
+  margin: 1rem 0;
+}
 
 .crossout {
   text-decoration: line-through;
@@ -407,13 +410,19 @@ img {
   transition: transform;
 }
 
+.aboutme {
+  height: 18.75rem;
+  margin: 10rem auto;
+  width: 90%;
+}
+
 .contact {
-  max-width: 50%;
+  max-width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
 .form-control {
@@ -483,6 +492,10 @@ img {
 
   .hello {
     margin-left: 6.9rem;
+  }
+
+  .aboutme {
+    width: 50%;
   }
 
   .foot-component {

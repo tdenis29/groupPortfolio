@@ -270,7 +270,9 @@ h1{
     justify-content: center;
     align-items: center;
     position: relative;
-}
+h4{
+    margin: 1rem 0;
+}}
 .crossout{
     text-decoration: line-through;
 }
@@ -381,15 +383,21 @@ img{
 }
 .project-link:active{
     transition: transform}
+    //about 
+    .aboutme{
+        height: 18.75rem;
+        margin: 10rem auto;
+        width: 90%;
+    }
+    
     //CONTACT 
-
 .contact{
-    max-width: 50%;
+    max-width: 75%;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 .form-control{
     border-radius: 1rem;
@@ -407,7 +415,7 @@ img{
 #send:hover{
     background-color:var(--main-blue);
 }
-
+// footer
 .social-icon{
     height: 2rem;
     width: 2rem;
@@ -430,7 +438,6 @@ img{
         height: 50%;
     }
     .aboutme{
-      
         flex-direction: column;
     }
     .about-section{
@@ -450,7 +457,9 @@ img{
         .hello{
             margin-left: 6.9rem;
         }
-  
+        .aboutme{
+            width: 50%;
+        }
         .foot-component{
         width: 33%;
          }
