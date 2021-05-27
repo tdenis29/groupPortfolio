@@ -194,6 +194,7 @@ h1 {
   width: 9.75rem;
   height: 9.75rem;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   animation: turn 5s linear infinite;
   -webkit-animation: turn 5s infinite;
 }
@@ -220,6 +221,7 @@ h1 {
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
+  -webkit-animation: spin linear infinite;
   border-top: 16px solid var(--main-blue);
   border-right: 16px solid var(--main-other);
   border-bottom: 16px solid var(--main-red);
@@ -235,9 +237,11 @@ h1 {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 #loader-wrapper .loader-section.section-left {
@@ -267,6 +271,10 @@ h1 {
   transform: translateX(-100%);
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+
+.about-section {
+  margin: 4rem auto;
 }
 
 .aboutme {
@@ -316,6 +324,7 @@ h1 {
 
 .testimonial {
   height: 27.5rem;
+  margin: 4rem 0;
 }
 
 .testi-row {
@@ -427,6 +436,17 @@ img {
   background-color: var(--main-blue);
 }
 
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #f2f5ea;
+  margin: 1rem;
+}
+
+.foot-component {
+  margin: 2rem 0;
+}
+
 @media (min-width: 786px) {
   .jumbotron {
     align-self: center;
@@ -444,6 +464,10 @@ img {
     flex-direction: column;
   }
 
+  .about-section {
+    margin: 4rem auto;
+  }
+
   .decon-card-text {
     width: 75%;
   }
@@ -459,6 +483,18 @@ img {
 
   .hello {
     margin-left: 6.9rem;
+  }
+
+  .foot-component {
+    width: 33%;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap !important;
+    align-items: center;
   }
 }
 @media (min-width: 1068px) {
