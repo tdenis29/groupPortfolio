@@ -177,6 +177,16 @@ h1{
         -webkit-transform: rotate3d(1, 1, 0, 360deg);
     }
   }
+  @-webkit-keyframes turn{
+    0% { 
+        transform: rotate3d(0, 0, 0, 0);
+        -webkit-transform: rotate3d(0, 0, 0, 0);
+     }
+    100% { 
+        transform: rotate3d(1, 1, 0, 360deg);
+        -webkit-transform: rotate3d(1, 1, 0, 360deg);
+    }
+  }
   .cube {
     position: relative;
     width: 9.75rem;
@@ -186,7 +196,6 @@ h1{
     animation: turn 5s linear infinite;
     -webkit-animation: turn 5s linear infinite;
   }
- 
 //loader
 .no-js #loader-wrapper {
     display: none;
@@ -194,7 +203,8 @@ h1{
 #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
-    width: 51%;
+    left: 0;
+    width: 100%;
     height: 100%;
     background: #222222;
     z-index: 1000;
@@ -230,32 +240,31 @@ h1{
         -webkit-transform: rotate(360deg);
     }
   }
-//   loader overlays
-#loader-wrapper .loader-section.section-left {
-    left: 0;
+@-webkit-keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+        -webkit-transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg); 
+        -webkit-transform: rotate(360deg);
+    }
 }
-#loader-wrapper .loader-section.section-right{
-    right: 0;
-}
-/* Loaded */
-.loaded #loader-wrapper .loader-section.section-left {
-    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(-100%);  /* IE 9 */
-    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
-}
- 
-.loaded #loader-wrapper .loader-section.section-right {
-    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(100%);  /* IE 9 */
-    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
-}
+//slide
 //fade out loader spinny 
 .loaded #loader {
     opacity: 0;
     -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out; 
 }
+.loaded #loader-wrapper {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
 
+    -webkit-transition: translateY 0.9s;
+            transition: translateY 0.9s;
+}
 // about
 .about-section{
     margin: 4rem auto;

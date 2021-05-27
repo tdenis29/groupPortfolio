@@ -8,15 +8,11 @@
 
 //     $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 // });
-const wrapper = document.getElementById('loader-wrapper')
-const right = document.getElementById('loader-right')
-const left = document.getElementById('loader-left');
-const loader = document.getElementById('loader');
+
 const body = document.getElementById('body');
 document.addEventListener('DOMContentLoaded', e => {
   setTimeout(function(){ 
     body.classList.add('loaded');
-   
 }, 3000);
 })
 const faders = document.querySelectorAll('.fade-in');
