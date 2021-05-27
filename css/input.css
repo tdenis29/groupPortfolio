@@ -40,12 +40,6 @@ h3 {
   margin: 0 3rem 0 3rem;
 }
 
-.abouthr {
-  width: 75%;
-  display: block;
-  margin: 0 auto;
-}
-
 h4 {
   padding-bottom: 0.5rem;
 }
@@ -345,10 +339,6 @@ h1 {
 .avatar {
   margin-left: -1.5rem;
   margin-top: -1.25rem;
-}
-
-.card-section {
-  background-color: #1C1F33 !important;
 }
 
 .projecticons {
