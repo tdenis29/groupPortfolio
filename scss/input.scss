@@ -14,9 +14,11 @@
     padding: 0;
     list-style-type: none;
     color: var(--main-light); 
-    line-height: 24px;
-    
+    line-height: 24px;   
 }
+html {
+    scroll-behavior: smooth;
+  }
   
 body{
     font-family: 'Fira Sans', sans-serif;
@@ -394,7 +396,11 @@ img{
         
         width: 90%;
     }
-    
+  .spacer-div{
+      height: 7rem;
+      width: 100%;
+      background: transparent;
+  }
     //CONTACT 
 .contact{
     max-width: 75%;
