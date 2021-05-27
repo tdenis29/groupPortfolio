@@ -1,7 +1,7 @@
 :root {
   --main-dark: #011627;
   --main-light: #FDFFFC;
-  --main-red: #D81E5B;
+  --main-red: #e7185d;
   --main-blue: #6E44FF;
   --main-other: #44ff7c;
 }
@@ -59,8 +59,8 @@ h4 {
 
 .nav-link {
   padding-left: 1rem;
-  color: var(--main-red) !important;
-  text-decoration: underline;
+  color: var(--main-light) !important;
+  text-shadow: 2px 2px var(--main-red);
 }
 
 .nav-link:active {
@@ -115,7 +115,7 @@ h1 {
 .cta {
   background-color: var(--main-dark);
   border: 1px solid var(--main-red);
-  color: var(--main-red);
+  color: var(--main-light);
 }
 
 .cta:hover {
@@ -338,6 +338,28 @@ h1 {
 .testimonial {
   height: 27.5rem;
   margin: 4rem 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  color: var(--main-red);
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: var(--main-red);
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: var(--main-red);
 }
 
 .testi-row {
