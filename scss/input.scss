@@ -125,7 +125,7 @@ h1{
     width: 9.75rem;
     height: 9.75rem;
     perspective: 43rem;
-    -webkit-perspective: 43rem;
+    -webkit-perspective: 43rem!important;
     margin: 100px;
     z-index: 10;
   }
@@ -134,7 +134,7 @@ h1{
     width: 9.75rem;
     height: 9.75rem;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;  
+    -webkit-transform-style: preserve-3d!important;  
   }
   .face {
     width: 9.75rem;
@@ -183,7 +183,7 @@ h1{
         -webkit-transform: rotate3d(1, 1, 0, 360deg);
     }
   }
-  @-webkit-keyframes turn{
+  @-webkit-keyframes turn {
     0% { 
         transform: rotate3d(0, 0, 0,0deg);
         -webkit-transform: rotate3d(0, 0, 0,0deg);
@@ -199,8 +199,9 @@ h1{
     height: 9.75rem;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    animation: turn 5s linear infinite;
-    -webkit-animation: turn 5s linear infinite;
+    animation: turn 5s 3.3s linear infinite;
+    -webkit-animation: turn 5s 3.3s linear infinite;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;;
   }
 //loader
 .no-js #loader-wrapper {
@@ -228,11 +229,11 @@ h1{
     border-right: 16px solid var(--main-other);
     border-bottom: 16px solid var(--main-red);
     border-left: 16px solid var(--main-light);
-    z-index: 1001;
+    z-index: 1005;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
 }
 //LOADER SPINNY

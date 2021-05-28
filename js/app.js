@@ -13,7 +13,7 @@ const body = document.getElementById('body');
 document.addEventListener('DOMContentLoaded', e => {
   setTimeout(function(){ 
     body.classList.add('loaded');
-}, 0000);
+}, 3000);
 })
 const faders = document.querySelectorAll('.fade-in');
 
