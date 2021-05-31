@@ -223,9 +223,14 @@ h1{
     height: 9.75rem;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    animation: turn 5s 3.3s linear infinite;
-    -webkit-animation: turn 5s 3.3s linear infinite;
-    -moz-animation: turn 5s 3.3s linear infinite;
+    animation: turn 5s 3.3s 0.01s linear infinite;
+    -webkit-animation-name: turn;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: 3.3s;
+    -webkit-animation-delay: .01s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: turn 5s 3.3s 0.01s linear infinite;
     // animation: name duration timing-function delay iteration-count direction fill-mode;;
   }
 //loader
@@ -282,7 +287,7 @@ h1{
         -webkit-transform: rotate(360deg);
     }
 }
-//slide
+
 //fade out loader spinny 
 .loaded #loader {
     opacity: 0;
