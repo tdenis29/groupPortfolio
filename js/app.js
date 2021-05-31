@@ -9,6 +9,7 @@
 //     $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 // });
 
+
 const body = document.getElementById('body');
 document.addEventListener('DOMContentLoaded', e => {
   setTimeout(function(){ 
@@ -22,8 +23,7 @@ const appearOptions = {
   rootMargin: "0px 0px -150px 0px" 
 };
 
-const appear = new IntersectionObserver
-(function(entries, appear) {
+const appear = new IntersectionObserver(function(entries, appear) {
 entries.forEach(entry => {
     if(!entry.isIntersecting){
       return
