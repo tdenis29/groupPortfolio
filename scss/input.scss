@@ -152,11 +152,17 @@ h1{
     -webkit-transform-style: preserve-3d!important;
     animation: turn 5s 3.3s 0.01s linear infinite;
     -webkit-animation-name: turn;
+    animation-name: turn;
     -webkit-animation-duration: 5s;
-    -webkit-animation-timing-function: 3.3s;
+    animation-duration: 5s;
+    -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-timing-function:cubic-bezier(1, 0, 0, 1);
     -webkit-animation-delay: .01s;
+    animation-delay: .01s;
     -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     -moz-animation: turn 5s 3s 0.01s linear infinite;
     // animation: name duration timing-function delay iteration-count direction fill-mode;;
   }
