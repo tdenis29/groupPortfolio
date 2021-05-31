@@ -118,7 +118,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
 }
 
@@ -140,13 +139,10 @@ h1 {
   height: 9.75rem;
   perspective: 43rem;
   -webkit-perspective: 43rem !important;
-  z-index: 10;
   overflow: visible !important;
-  position: relative;
 }
 
 .cube {
-  position: relative;
   width: 9.75rem;
   height: 9.75rem;
   transform-style: preserve-3d;
@@ -172,9 +168,6 @@ h1 {
   height: 9.75rem;
   border: 2px solid var(--main-red);
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2rem;
   background-color: var(--main-dark);
   overflow: hidden;
@@ -222,6 +215,11 @@ h1 {
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
     -moz-transform: rotate3d(0, 0, 0, 0deg);
   }
+  50% {
+    transform: rotate3d(0.5, 0.5, 0, 0deg);
+    -webkit-transform: rotate3d(0.5, 0.5, 0, 180deg);
+    -moz-transform: rotate3d(0.5, 0.5, 0, 180deg);
+  }
   100% {
     transform: rotate3d(1, 1, 0, 360deg);
     -webkit-transform: rotate3d(1, 1, 0, 360deg);
@@ -230,6 +228,11 @@ h1 {
 }
 @-webkit-keyframes turn {
   0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
     transform: rotate3d(0, 0, 0, 0deg);
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
     -moz-transform: rotate3d(0, 0, 0, 0deg);
