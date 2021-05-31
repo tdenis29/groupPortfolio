@@ -88,8 +88,7 @@ h1 {
 }
 
 .hello {
-  text-align: left;
-  margin-left: 4.5rem;
+  text-align: center;
   font-size: 1.3rem;
   background-color: transparent;
 }
@@ -116,6 +115,7 @@ h1 {
   background-color: var(--main-dark);
   border: 1px solid var(--main-red);
   color: var(--main-light);
+  margin: 2rem 0;
 }
 
 .cta:hover {
@@ -533,6 +533,7 @@ img {
 
   .hello {
     margin-left: 6.9rem;
+    text-align: left;
   }
 
   .aboutme {
