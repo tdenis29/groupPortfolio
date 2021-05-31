@@ -140,8 +140,9 @@ h1 {
   height: 9.75rem;
   perspective: 43rem;
   -webkit-perspective: 43rem !important;
-  margin: 100px;
   z-index: 10;
+  overflow: visible !important;
+  position: relative;
 }
 
 .cube {
@@ -150,6 +151,14 @@ h1 {
   height: 9.75rem;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d !important;
+  animation: turn 5s 3.3s 0.01s linear infinite;
+  -webkit-animation-name: turn;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: 3.3s;
+  -webkit-animation-delay: 0.01s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: turn 5s 3s 0.01s linear infinite;
 }
 
 .face {
@@ -162,6 +171,7 @@ h1 {
   justify-content: center;
   font-size: 2rem;
   background-color: var(--main-dark);
+  overflow: hidden;
 }
 
 .front {
@@ -224,22 +234,6 @@ h1 {
     -moz-transform: rotate3d(1, 1, 0, 360deg);
   }
 }
-.cube {
-  position: relative;
-  width: 9.75rem;
-  height: 9.75rem;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  animation: turn 5s 3.3s 0.01s linear infinite;
-  -webkit-animation-name: turn;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-timing-function: 3.3s;
-  -webkit-animation-delay: 0.01s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation: turn 5s 3.3s 0.01s linear infinite;
-}
-
 .no-js #loader-wrapper {
   display: none;
 }

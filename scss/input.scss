@@ -139,16 +139,26 @@ h1{
     height: 9.75rem;
     perspective: 43rem;
     -webkit-perspective: 43rem!important;
-    margin: 100px;
     z-index: 10;
+    overflow: visible !important;
+    position: relative;
+   
   }
   .cube {
     position: relative;
     width: 9.75rem;
     height: 9.75rem;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d!important; 
-   
+    -webkit-transform-style: preserve-3d!important;
+    animation: turn 5s 3.3s 0.01s linear infinite;
+    -webkit-animation-name: turn;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: 3.3s;
+    -webkit-animation-delay: .01s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: turn 5s 3s 0.01s linear infinite;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;;
   }
   .face {
     width: 9.75rem;
@@ -160,6 +170,7 @@ h1{
     justify-content: center;
     font-size: 2rem;
     background-color: var(--main-dark);
+    overflow: hidden;
   }
   .front {
     transform: translateZ(78px);
@@ -217,22 +228,7 @@ h1{
         -moz-transform: rotate3d(1, 1, 0, 360deg);
     }
   }
-  .cube {
-    position: relative;
-    width: 9.75rem;
-    height: 9.75rem;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    animation: turn 5s 3.3s 0.01s linear infinite;
-    -webkit-animation-name: turn;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-timing-function: 3.3s;
-    -webkit-animation-delay: .01s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation: turn 5s 3.3s 0.01s linear infinite;
-    // animation: name duration timing-function delay iteration-count direction fill-mode;;
-  }
+
 //loader
 .no-js #loader-wrapper {
     display: none;
