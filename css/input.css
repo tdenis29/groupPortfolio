@@ -142,8 +142,6 @@ h1 {
   height: 9.75rem;
   perspective: 43rem;
   -webkit-perspective: 43rem !important;
-  -webkit-perspective-origin: 21.5rem 21.5rem;
-  perspective-origin: 21.5rem 21.5rem;
   position: relative;
 }
 

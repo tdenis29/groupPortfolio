@@ -138,15 +138,10 @@ h1{
 }
 // CUBER 
 .container-cube {
-    //maybe these conatiners need to be bigger on safari? nope didnt work just moves the cube around.
     width: 9.75rem;
     height: 9.75rem;
     perspective: 43rem;
-    //this should work in safari
     -webkit-perspective: 43rem!important;
-    //this skews in safari and distorts the lines on chrome, but only wasy to see 3d in safari without it looks straight on
-    -webkit-perspective-origin: 21.5rem 21.5rem;
-    perspective-origin: 21.5rem 21.5rem;
     position: relative;
   }
   .cube {
@@ -178,8 +173,6 @@ h1{
     position: absolute;
     font-size: 2rem;
     background-color: var(--main-dark);
-    
-    
   }
   .front {
     transform: translateZ(78px);
@@ -213,7 +206,7 @@ h1{
     -moz-transform: translateY(78px) rotateX(-90deg);
   }
 // rotate cube
-  //full animation 0-100%(Stackoverflow) @webkit transforms
+  //full animation 0-100%(Stackoverflow) @webkit transforms -webkitKeyrames MUST come before keyframes in the cascade for Safari
 @-webkit-keyframes turn {
     0% { 
         transform: rotate3d(0, 0, 0,0deg);
@@ -248,9 +241,6 @@ h1{
         -moz-transform: rotate3d(1, 1, 0, 360deg) ;
     }
   }
-
-
-
 //loader
 .no-js #loader-wrapper {
     display: none;
