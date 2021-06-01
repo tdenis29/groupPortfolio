@@ -33,10 +33,7 @@ body{
     -webkit-background-size: 1000px 1000px!important;
     background-size: 1000px 1000px;
     }
-    object{
-        height: 100%;
-        width: 100%;
-    }
+  
 h3{
     font-size: 1.9rem;
     color: var(--main-red);
@@ -145,7 +142,10 @@ h1{
     height: 9.75rem;
     perspective: 43rem;
     -webkit-perspective: 43rem!important;
+    -webkit-perspective-origin: 21.5rem 21.5rem;
     overflow: visible !important;
+   
+
     // position: relative;
    
   }
@@ -178,7 +178,7 @@ h1{
     position: absolute;
     font-size: 2rem;
     background-color: var(--main-dark);
-    overflow: hidden;
+    
   }
   .front {
     transform: translateZ(78px);
