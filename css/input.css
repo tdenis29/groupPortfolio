@@ -143,28 +143,28 @@ h1 {
   perspective: 43rem;
   -webkit-perspective: 43rem !important;
   -webkit-perspective-origin: 21.5rem 21.5rem;
-  overflow: visible !important;
+  perspective-origin: 21.5rem 21.5rem;
+  position: relative;
 }
 
 .cube {
-  width: 9.75rem;
-  height: 9.75rem;
-  transform-style: preserve-3d;
+  position: relative;
+  width: 9.75rem !important;
+  height: 9.75rem !important;
+  transform-style: preserve-3d !important;
   -webkit-transform-style: preserve-3d !important;
-  animation: turn 5s 3.3s 0.01s linear infinite;
   -webkit-animation-name: turn;
   animation-name: turn;
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  -webkit-animation-delay: 0.01s;
-  animation-delay: 0.01s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -moz-animation: turn 5s 3s 0.01s linear infinite;
 }
 
 .face {
