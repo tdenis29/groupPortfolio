@@ -9,7 +9,7 @@
 }
 //Base 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box!important;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -138,12 +138,13 @@ h1{
 }
 // CUBER 
 .container-cube {
+    //maybe these conatiners need to be bigger on safari? nope didnt work just moves the cube around.
     width: 9.75rem;
     height: 9.75rem;
     perspective: 43rem;
     //this should work in safari
     -webkit-perspective: 43rem!important;
-    //this skews in safari and distorts the lines on chrome but only wasy to see 3d in safari
+    //this skews in safari and distorts the lines on chrome, but only wasy to see 3d in safari without it looks straight on
     -webkit-perspective-origin: 21.5rem 21.5rem;
     perspective-origin: 21.5rem 21.5rem;
     position: relative;
@@ -152,7 +153,6 @@ h1{
     position: relative;
     width: 9.75rem!important;
     height: 9.75rem!important;
-  
     transform-style: preserve-3d!important;
     -webkit-transform-style: preserve-3d!important;
     -webkit-animation-name: turn;
@@ -161,13 +161,14 @@ h1{
     animation-duration: 5s;
     -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
     animation-timing-function:cubic-bezier(1, 0, 0, 1);
+    //maybe if theres a short delay the content can get painted to the dom before starting animation? didnt work.
     -webkit-animation-delay: .1s;
     animation-delay: .1s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-   
+   // to get the animation order right 
     // animation: name duration timing-function delay iteration-count direction fill-mode;;
   }
   .face {
@@ -177,6 +178,7 @@ h1{
     position: absolute;
     font-size: 2rem;
     background-color: var(--main-dark);
+    
     
   }
   .front {
@@ -210,7 +212,25 @@ h1{
     -webkit-transform: translateY(78px) rotateX(-90deg);
     -moz-transform: translateY(78px) rotateX(-90deg);
   }
-// rotate 
+// rotate cube
+  //full animation 0-100%(Stackoverflow) @webkit transforms
+@-webkit-keyframes turn {
+    0% { 
+        transform: rotate3d(0, 0, 0,0deg);
+        -webkit-transform: rotate3d(0, 0, 0,0deg);
+        -moz-transform: rotate3d(0, 0, 0,0deg) ;
+     }
+     50%{
+        transform: rotate3d(0, 0, 0, 0deg);
+        -webkit-transform: rotate3d(0, 0, 0, 0deg);
+        -moz-transform: rotate3d(0, 0, 0, 0deg);
+     }
+    100% { 
+        transform: rotate3d(1, 1, 0, 360deg);
+        -webkit-transform: rotate3d(1, 1, 0, 360deg);
+        -moz-transform: rotate3d(1, 1, 0, 360deg);
+    }
+  }
 @keyframes turn {
     0% { 
         transform: rotate3d(0, 0, 0, 0deg);
@@ -228,23 +248,8 @@ h1{
         -moz-transform: rotate3d(1, 1, 0, 360deg) ;
     }
   }
-  @-webkit-keyframes turn {
-    0% { 
-        transform: rotate3d(0, 0, 0,0deg);
-        -webkit-transform: rotate3d(0, 0, 0,0deg);
-        -moz-transform: rotate3d(0, 0, 0,0deg) ;
-     }
-     50%{
-        transform: rotate3d(0, 0, 0, 0deg);
-        -webkit-transform: rotate3d(0, 0, 0, 0deg);
-        -moz-transform: rotate3d(0, 0, 0, 0deg);
-     }
-    100% { 
-        transform: rotate3d(1, 1, 0, 360deg);
-        -webkit-transform: rotate3d(1, 1, 0, 360deg);
-        -moz-transform: rotate3d(1, 1, 0, 360deg);
-    }
-  }
+
+
 
 //loader
 .no-js #loader-wrapper {
