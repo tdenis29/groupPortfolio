@@ -24,10 +24,18 @@ body {
   margin: 0 auto;
   background-color: var(--main-dark);
   fill: var(--main-blue);
-  background-size: 1000px 1000px;
-  background-repeat: repeat;
+  background-image: url(../images/bubbles.svg) !important;
   background-position: center;
-  background-image: url("/Users/wddep-user/Desktop/Code/groupPortfolio/images/bubbles.svg");
+  background-repeat: repeat;
+  -o-background-size: 1000px 1000px;
+  -moz-background-size: 1000px 1000px;
+  -webkit-background-size: 1000px 1000px !important;
+  background-size: 1000px 1000px;
+}
+
+object {
+  height: 100%;
+  width: 100%;
 }
 
 h3 {

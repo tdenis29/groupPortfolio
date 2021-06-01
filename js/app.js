@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', e => {
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
+  root: document.querySelector('#viewport'),
   threshold: 0,
   rootMargin: "0px 0px -150px 0px" 
 };
