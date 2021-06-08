@@ -82,7 +82,7 @@ h4{
 //title
 h1{
     margin: 3rem 0 3rem 0;
-    text-shadow: 4px 4px var(--main-red);
+    
     font-Family: 'Cinzel', Cursive;
     font-Size: 44px;
 }
@@ -101,6 +101,7 @@ h1{
     font-Family: 'Fauna One', Serif;
     font-size: 1.3rem;
     background-color: transparent;
+    text-shadow: 2px 2px var(--main-red);
 }
 //bigger intro
 .bottom-intro{
@@ -404,6 +405,7 @@ h4{
 .projecticons{
     height: 1.5rem;
     width: 1.5rem;
+    margin-bottom: .5rem;
 }
 img{
     height: auto;
