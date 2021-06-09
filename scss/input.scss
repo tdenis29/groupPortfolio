@@ -123,14 +123,20 @@ h1{
 .lead{
     font-Family: 'Fauna One', Serif;
 }
+.section-margin{
+    margin: 0 2rem 0 2rem;
+}
 // project pages Landing
 div.pp-con{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparentize($color: #011627, $amount: .5);
+   
 }
 .relative-con{
     position: relative;
+    
 }
 .pic-con,
 .gif-con{
@@ -138,10 +144,12 @@ div.pp-con{
     height: 215px!important;
     width: 480px!important;
     background-color: transparent;
+   
 }
 .pic-con{
     height: 215px;
     width: auto;
+ 
 }
 // play/pause button
 summary {

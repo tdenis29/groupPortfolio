@@ -124,10 +124,15 @@ h1 {
   font-Family: "Fauna One", Serif;
 }
 
+.section-margin {
+  margin: 0 2rem 0 2rem;
+}
+
 div.pp-con {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(1, 22, 39, 0.5);
 }
 
 .relative-con {
