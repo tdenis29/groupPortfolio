@@ -541,13 +541,12 @@ ol li {
   margin-bottom: 0.5rem;
 }
 
-img {
-  height: auto;
-  width: 100%;
-}
-
 .card-img-top {
   position: relative;
+}
+.card-img-top img {
+  height: auto;
+  width: 100%;
 }
 
 .card-img-top::after {

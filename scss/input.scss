@@ -527,13 +527,13 @@ h4{
     width: 1.5rem;
     margin-bottom: .5rem;
 }
-img{
-    height: auto;
-    width: 100%;
-}
+
 .card-img-top{
     position: relative;
-}
+    img{
+        height: auto;
+        width: 100%;
+    }}
 .card-img-top::after{
     content: ""; 
     position: absolute;
