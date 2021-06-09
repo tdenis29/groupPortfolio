@@ -224,6 +224,15 @@ summary:focus {
   margin-bottom: 2rem;
 }
 
+ol {
+  width: 50%;
+  padding: 2.5rem;
+}
+ol li {
+  margin-bottom: 1rem;
+  margin-left: 6.2rem;
+}
+
 .right-col {
   display: flex;
   justify-content: center;
