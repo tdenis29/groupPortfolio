@@ -231,13 +231,16 @@ summary:focus {
   margin-bottom: 2rem;
 }
 
+.case-study-learn-list {
+  width: 100%;
+}
+
 ol {
-  width: 50%;
+  width: 100%;
   padding: 2.5rem;
 }
 ol li {
   margin-bottom: 1rem;
-  margin-left: 6.2rem;
 }
 
 .right-col {
@@ -810,13 +813,15 @@ ol li {
   }
 
   ol {
-    width: 50%;
+    width: 100%;
     padding: 2.5rem;
+    display: flex;
   }
 
   ol li {
     margin-bottom: 1rem;
     margin-left: 6.2rem;
+    width: 100%;
   }
 }
 @media only screen and (max-device-width: 1068px) {
