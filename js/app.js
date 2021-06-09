@@ -10,12 +10,12 @@
 // });
 
 
-const body = document.getElementById('body');
-document.addEventListener('DOMContentLoaded', e => {
-  setTimeout(function(){ 
-    body.classList.add('loaded');
-}, 3000);
-})
+// const body = document.getElementById('body');
+// document.addEventListener('DOMContentLoaded', e => {
+//   setTimeout(function(){ 
+//     body.classList.add('loaded');
+// }, 3000);
+// })
 
 //messager
 const user = document.getElementById("Input1");
