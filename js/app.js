@@ -16,29 +16,6 @@ document.addEventListener('DOMContentLoaded', e => {
     body.classList.add('loaded');
 }, 3000);
 })
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOptions = {
-  root: document.querySelector('#viewport'),
-  threshold: 0,
-  rootMargin: "0px 0px -150px 0px" 
-};
-
-const appear = new IntersectionObserver(function(entries, appear) {
-entries.forEach(entry => {
-    if(!entry.isIntersecting){
-      return
-    } else{
-      entry.target.classList.add('appear');
-      appear.unobserve(entry.target)
-    }
-  });
-}, appearOptions);
-
-
-faders.forEach(fader => {
-  appear.observe(fader);
-});
 
 //messager
 const user = document.getElementById("Input1");
@@ -60,3 +37,4 @@ send.addEventListener('click', () => {
   alert(`Hello ${user.value}, Thank you for your email!`);
   };
   });
+  // gif control
