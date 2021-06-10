@@ -38,7 +38,7 @@ h3{
     font-size: 1.9rem;
     color: var(--main-red);
     font-Family: 'Cinzel', Cursive;
-    font-Size: 44px;
+  
    
 }
 //fader
@@ -207,11 +207,20 @@ summary {
   .gif-con img {
     display: inline-block;
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0px;
     left: 0px;
     bottom: 0px;
+    width: 30rem;
+    height: 13.43rem;
+  }
+  .pic-con img{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 30rem;
+    height: 13.43rem;
   }
 
 // case study
@@ -224,7 +233,7 @@ summary {
     margin: 0 auto;
 }
 .case-study-top-text{
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -497,14 +506,14 @@ h4{
   background-image: none;
 }
 
-.carousel-control-next-icon:after
+.carousel-control-next-icon::after
 {
   content: '>';
   font-size: 55px;
   color: var(--main-red);
 }
 
-.carousel-control-prev-icon:after {
+.carousel-control-prev-icon::after {
   content: '<';
   font-size: 55px;
   color: var(--main-red);
@@ -693,13 +702,13 @@ h4{
         .pic-con,
         .gif-con{
             display: inline-block;
-            height: 215px!important;
-            width: 480px!important;
+            height: 13.43rem!important;
+            width: 30rem!important;
             background-color: transparent;
         }
 
         .pic-con{
-            height: 215px;
+            height: 13.43rem;
             width: auto;
         }
 
@@ -758,13 +767,21 @@ h4{
         .gif-con img {
             display: inline-block;
             position: absolute;
-            width: 100%;
-            height: 100%;
             top: 0px;
             left: 0px;
             bottom: 0px;
+            width: 30rem;
+            height: 13.43rem;
         }
-
+        .pic-con img{
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            width: 30rem;
+            height: 13.43rem;
+        }
         // case study
         .casestudy-top{
             display: flex!important;

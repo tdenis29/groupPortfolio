@@ -36,7 +36,6 @@ h3 {
   font-size: 1.9rem;
   color: var(--main-red);
   font-Family: "Cinzel", Cursive;
-  font-Size: 44px;
 }
 
 .fade-in {
@@ -209,11 +208,21 @@ summary:focus {
 .gif-con img {
   display: inline-block;
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0px;
   left: 0px;
   bottom: 0px;
+  width: 30rem;
+  height: 13.43rem;
+}
+
+.pic-con img {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 30rem;
+  height: 13.43rem;
 }
 
 .casestudy-top {
@@ -226,7 +235,7 @@ summary:focus {
 }
 
 .case-study-top-text {
-  width: 50%;
+  width: 100%;
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -509,13 +518,13 @@ ol li {
   background-image: none;
 }
 
-.carousel-control-next-icon:after {
+.carousel-control-next-icon::after {
   content: ">";
   font-size: 55px;
   color: var(--main-red);
 }
 
-.carousel-control-prev-icon:after {
+.carousel-control-prev-icon::after {
   content: "<";
   font-size: 55px;
   color: var(--main-red);
@@ -724,13 +733,13 @@ ol li {
   .pic-con,
 .gif-con {
     display: inline-block;
-    height: 215px !important;
-    width: 480px !important;
+    height: 13.43rem !important;
+    width: 30rem !important;
     background-color: transparent;
   }
 
   .pic-con {
-    height: 215px;
+    height: 13.43rem;
     width: auto;
   }
 
@@ -790,11 +799,21 @@ ol li {
   .gif-con img {
     display: inline-block;
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0px;
     left: 0px;
     bottom: 0px;
+    width: 30rem;
+    height: 13.43rem;
+  }
+
+  .pic-con img {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 30rem;
+    height: 13.43rem;
   }
 
   .casestudy-top {
