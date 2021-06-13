@@ -10,7 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalizecss.css">
         <link rel="stylesheet" href="css/input.css"/>
-        <title>Tyson Denis's Group Portfolio Project 7 Page</title>
+        <title>Tyson Denis's Group Portfolio Project 6 Page</title>
     </head>
     <body class="rellax" data-rellax-speed="-1" id="body">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -73,28 +73,28 @@
     <!-- PP Landing  -->
   <section class="section-margin"> 
     <div class="casestudy-top">
-      <h1>Treehouse Project 7 Case Study</h1>
+      <h1>Treehouse Project 6 Case Study</h1>
         <div class="casestudy-links">
-          <a class="btn btn-primary btn-lg cta" href="#projects" role="button">Live Demo</a>
-          <a href="https://github.com/tdenis29" target="_blank">       
+          <a class="btn btn-primary btn-lg cta" href="https://tdenis29.github.io/techdegree6" role="button">Live Demo</a>
+          <a href="https://github.com/tdenis29/techdegree6" target="_blank">       
             <svg class="social-icon" role="link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
           </a>
         </div>
     </div>
         <div class="pp-con rellax">
               <div class="case-study-top-text">
-                <h2>The Summary?</h2>
-                  <p>The seventh project of the Tech-Degree was a challenging project. Treehouse often provides some basic html and css to get started on the later projects but this one was from scratch with a mock-up. Learning from previous challenges, I was wary that Treehouse would introduce concepts that they hadn't covered yet. Sure enough they did. I learned alot in this project:
+                <h2>The Project's Goals</h2>
+                  <p>The goal for this project was to use basic Javascript to create a Hangman-style game in which the players guesses the letters of a randomly chosen phrase. If the user chooses the wrong letter, one "life" of five is taken. At the end the button should reset the game with a message based on if the player has won or lost and reset the game with a new phrase.
                   </p>
                 </div>
             <div class="relative-con">
             <div class="pic-con">
-                <img src="images/pp7placeholderr.png" class="img-fluid" alt="Static: Screenshot of porject landing" loading="lazy">
+                <img src="images/pp7crop.png" class="img-fluid" alt="Static: Screenshot of porject landing" loading="lazy">
                 <details open>
                   <!-- added role=button to summary to resolve iOS funkiness -->
                   <summary role="button" aria-label="static image"></summary>
                   <div class="gif-con">
-                    <img src="gif/thispp6.gif" alt="Animated: Demonstration of Tysons Project 7" class="img-fluid" loading="lazy">
+                    <img src="gif/pp7.gif" alt="Animated: Demonstration of Tysons Project 7" class="img-fluid" loading="lazy">
                   </div>
                 </details>
               </div>
@@ -104,14 +104,86 @@
     <!-- pp content -->
    
       <div class="case-study-learn-list">
-        <h3 class="text-center">Notes</h3>
-        <ol type="I">
-          <li>They showed us how to instantiate the first graph in the portfolio files, and to get an "Exceeds" score we had to dynamically instantiate each graph object based on the button that was clicked (eg. "Daily", "Weekly"). Which was actualy simpler than I thought and I totally lucked out reading the charts.js docs and googling new Object from the class and using and if else statement.</li>
-          <li>The autocomplete list was easy enough to implement but I really just mutated the one from W3 tutorials and made the variables match and fixed the styling to match the rest of the page. It did not have proper keyboard navigation potentially causing problems for accessiblity and much of the code was deprecated and had to be updated.</li>
-          <li>I found the most challenging was using local storage to save the setting for timzone and the checkbox values.I had the concepts correct but took a couple tries to get the value to be saved to local storage on re-load.</li>
-          <li>Don't forget the veiwport meta tag.</li>
-        </ol>
+        <h3 class="text-center">The Process</h3>
+
+        <div class="project-content-block">
+          <p>The application begins on the click of the start button which then will grab a random phrase from an array using a variable as index. That function then uses the spread "operator" to spread the phrase into and array of letters and spaces which is then returned.</p>
+        </div>
+        <div>
+          <code>const getRandomPhraseArray = phraseArr => { <br>
+            let randomKey = Math.floor(Math.random() * 5); <br>
+            let randomPhrase = phraseArr[randomKey];  <br>
+            letters = [...randomPhrase]          <br>               
+        };
+      </code>
+    </div>
+
+    <div class="project-content-block">
+      <p>The next step was passing in letters to the next function which loops over the spread phrase and appends the only the letters to the DOM. This got me a little trouble with a local variable. I had no clue wht closures were (still don't) and had my first expreience with scope so to solve I used a global variable.</p>
+    </div>
+    <div>
+      <code>function addPhraseToDisplay(letters) {      <br>               
+        for (let i = 0; i < letters.length; i++) {   <br>
+           let ul = document.getElementById("letterboxes") <br>              
+           let letterBox = document.createElement('li'); <br>
+           let letterBoxText = document.createTextNode(letters[i]);<br>
+           letterBox.appendChild(letterBoxText);<br>
+           ul.appendChild(letterBox);<br>
+            if (letters[i] === " ") {<br>
+              letterBox.className = "space"<br>
+            } else {<br>
+                letterBox.className = "letter"<br>
+            }
+        }
+    }
+  </code>
+</div>
+      
+      <div class="project-content-block">
+        <p>The game progresses using an event listener on the parent element that holds the letters. After preventDefault() to stop bubbling, We had to toggle a "chosen" class for styling the chosen buttons and then disabling them so they could not be chosen again. If the letter was in the phrase, chosen would trigger a transition and if it wasn't we had to remove a "heart" or try from the user.</p>
       </div>
+      <div>
+        <span>The Event Listener</span> <br>
+        <code>keyBoard.addEventListener('click', (button) => { <br>
+        button.stopPropagation(); <br>
+        if (button.target.nodeName === "BUTTON"){ <br>
+        button.target.className = "chosen"; <br>
+        button.target.disabled = true;<br>
+        </code>
+      </div>
+
+    <div class="project-content-block">
+      <p>The win conditions were the hard part. I first tried appending new buttons to the overlay with no success. Then, I decided instead to change the button we already got (start button) and simply changed the text content and made a if statement to handle win or lose conditions.
+        The logic for the win condition is as follows; If the amount of letters with the class ".show" was equal to the amount in the phrase then the user has won.
+      </p>
+    </div>
+    <div>
+ 
+      <code>const checkWin = () => { <br>
+        const letterList = document.querySelectorAll('.letter'); <br>
+        let showList = document.querySelectorAll('.show');<br>
+        if (showList.length === letterList.length) {  <br>
+         overlay.classList.remove('start'); <br>
+         overlay.classList.add("win"); <br>
+         header.textContent = "YOU WON"; <br>
+         startButton.textContent = "Success" <br>
+        }  else if ( score > 4) { <br>
+            overlay.classList.remove('start');    <br>
+            overlay.classList.add("lose"); <br>
+            header.textContent = "YOU LOSE HAHA" <br>
+            startButton.textContent = "Failure" <br>
+        }};
+    </code>
+  </div>
+  </div>
+  <!--  -->
+   <div>
+     <h4>The Summary</h4>
+     <p>This was my favourite Javascript project from Treehouse. The most important thing in this project was flow control. Watching the program get the phrase, then append the empty letter-boxes to the screen, was a huge confidence booster. Once I saw how the pieces were connected it was easy to understand(ish).
+        Some things I could have done better were modulating some code into helper functions and using less global variables with closures.
+     </p>
+
+   </div>
     </section>
   <div class="spacer-div">
 
