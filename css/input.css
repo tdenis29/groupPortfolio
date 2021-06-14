@@ -654,6 +654,10 @@ summary:focus {
     width: 50%;
   }
 
+  #about {
+    margin-bottom: 1.5rem;
+  }
+
   .foot-component {
     width: 33%;
   }
