@@ -107,40 +107,48 @@
         <h3 class="text-center">The Notes</h3>
         <div class="project-content-block">
           <p>Treehouse gave an example for the first chart, and to get an "Exceeds" score we had to dynamically instantiate each graph object based on the button that was clicked (eg. "Daily", "Weekly"). Which was actualy simpler than I thought and after some reading I found the charts were created through instantiating a new chart object.</p>
-          <code>const getRandomPhraseArray = phraseArr => { <br>
-            let randomKey = Math.floor(Math.random() * 5); <br>
-            let randomPhrase = phraseArr[randomKey];  <br>
-            letters = [...randomPhrase]          <br>               
-        };
+          <code>button.target.classList.add('active'); <br>
+            if (button.target.textContent === "Daily") { <br>
+                  let trafficChart = new Chart(trafficCanvas, { <br>
+                       type: 'line', <strong>Change This line for different data</strong> <br>
+                       data: dailyTrafficData, <br>
+                       options: trafficOptions <br>
+                       });
       </code>
     </div>
 
     <div class="project-content-block">
       <p>The autocomplete list was mutated from W3 and made the variables match and fixed the styling to match the rest of the page. It did not have proper keyboard navigation potentially causing problems for accessiblity and some of the code was deprecated and had to be updated.</p>
-       <code>function addPhraseToDisplay(letters) {      <br>               
-        for (let i = 0; i < letters.length; i++) {   <br>
-           let ul = document.getElementById("letterboxes") <br>              
-           let letterBox = document.createElement('li'); <br>
-           let letterBoxText = document.createTextNode(letters[i]);<br>
-           letterBox.appendChild(letterBoxText);<br>
-           ul.appendChild(letterBox);<br>
-            if (letters[i] === " ") {<br>
-              letterBox.className = "space"<br>
-            } else {<br>
-                letterBox.className = "letter"<br>
-            }
-        }
-    }
+       <code>inp.addEventListener("input", function(e){ <br>
+        var a, b, i, val = this.value; <br>
+        closeAllLists();  <br>
+        if(!val) {  <br>
+          return false; } <br>
+        currentFocus = -1; <br>
+        a = document.createElement("DIV"); <br>
+        a.setAttribute("id", this.id + "autocomplete-list"); <br>
+        a.setAttribute("class", "autocomplete-items"); <br>
+        this.parentNode.appendChild(a); <br>
+        for (i = 0; i < arr.length; i++){ <br>
+          if (arr[i].substr(0, val.length).toUpperCase()== val.toUpperCase()) <br>
   </code>
 </div>
       
       <div class="project-content-block">
         <p>I found the most challenging was using local storage to save the setting for timzone and the checkbox values.I had the concepts correct but took a couple tries to get the proper syntax in place. 4. SVG images were used for icons and links and this project had us use them both inline and as an image.</p>
-        <code>keyBoard.addEventListener('click', (button) => { <br>
-        button.stopPropagation(); <br>
-        if (button.target.nodeName === "BUTTON"){ <br>
-        button.target.className = "chosen"; <br>
-        button.target.disabled = true;<br>
+        <code>save.addEventListener('click', () => { <br>
+          if(checkbox1.checked) { <br>
+            localStorage.setItem('checkbox1', "true"); <br>
+          } else {  <br>
+            localStorage.setItem('checkbox1', 'false'); <br>
+          }
+          if( checkbox2.checked) {  <br>
+            localStorage.setItem('checkbox2', "true"); <br>
+          }  else { <br>
+            localStorage.setItem('checkbox2', 'false'); <br>
+          }
+        localStorage.setItem('localization', currentArea.value); <br>
+        });
         </code>
       </div>
   </div>
