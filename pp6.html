@@ -71,7 +71,7 @@
      
      <main>
     <!-- PP Landing  -->
-  <section class="section-margin"> 
+  <section> 
     <div class="casestudy-top">
       <h1>Treehouse Project 6 Case Study</h1>
         <div class="casestudy-links">
@@ -83,7 +83,7 @@
     </div>
         <div class="pp-con rellax">
               <div class="case-study-top-text">
-                <h2>The Project's Goals</h2>
+                <h2>The Project</h2>
                   <p>The goal for this project was to use basic Javascript to create a Hangman-style game in which the players guesses the letters of a randomly chosen phrase. If the user chooses the wrong letter, one "life" of five is taken. At the end the button should reset the game with a message based on if the player has won or lost and reset the game with a new phrase.
                   </p>
                 </div>
@@ -100,16 +100,14 @@
               </div>
         </div>
         </div>
+  </section>
     <!-- /pp landing -->
     <!-- pp content -->
-   
+  <section class="content-section">
       <div class="case-study-learn-list">
         <h3 class="text-center">The Process</h3>
-
         <div class="project-content-block">
           <p>The application begins on the click of the start button which then will grab a random phrase from an array using a variable as index. That function then uses the spread "operator" to spread the phrase into and array of letters and spaces which is then returned.</p>
-        </div>
-        <div>
           <code>const getRandomPhraseArray = phraseArr => { <br>
             let randomKey = Math.floor(Math.random() * 5); <br>
             let randomPhrase = phraseArr[randomKey];  <br>
@@ -120,9 +118,7 @@
 
     <div class="project-content-block">
       <p>The next step was passing in letters to the next function which loops over the spread phrase and appends the only the letters to the DOM. This got me a little trouble with a local variable. I had no clue wht closures were (still don't) and had my first expreience with scope so to solve I used a global variable.</p>
-    </div>
-    <div>
-      <code>function addPhraseToDisplay(letters) {      <br>               
+       <code>function addPhraseToDisplay(letters) {      <br>               
         for (let i = 0; i < letters.length; i++) {   <br>
            let ul = document.getElementById("letterboxes") <br>              
            let letterBox = document.createElement('li'); <br>
@@ -141,9 +137,6 @@
       
       <div class="project-content-block">
         <p>The game progresses using an event listener on the parent element that holds the letters. After preventDefault() to stop bubbling, We had to toggle a "chosen" class for styling the chosen buttons and then disabling them so they could not be chosen again. If the letter was in the phrase, chosen would trigger a transition and if it wasn't we had to remove a "heart" or try from the user.</p>
-      </div>
-      <div>
-        <span>The Event Listener</span> <br>
         <code>keyBoard.addEventListener('click', (button) => { <br>
         button.stopPropagation(); <br>
         if (button.target.nodeName === "BUTTON"){ <br>
@@ -156,9 +149,7 @@
       <p>The win conditions were the hard part. I first tried appending new buttons to the overlay with no success. Then, I decided instead to change the button we already got (start button) and simply changed the text content and made a if statement to handle win or lose conditions.
         The logic for the win condition is as follows; If the amount of letters with the class ".show" was equal to the amount in the phrase then the user has won.
       </p>
-    </div>
-    <div>
- 
+
       <code>const checkWin = () => { <br>
         const letterList = document.querySelectorAll('.letter'); <br>
         let showList = document.querySelectorAll('.show');<br>
@@ -174,11 +165,12 @@
             startButton.textContent = "Failure" <br>
         }};
     </code>
+ 
   </div>
   </div>
   <!--  -->
-   <div>
-     <h4>The Summary</h4>
+   <div class="pp-sum">
+     <h4 class="text-center">The Summary</h4>
      <p>This was my favourite Javascript project from Treehouse. The most important thing in this project was flow control. Watching the program get the phrase, then append the empty letter-boxes to the screen, was a huge confidence booster. Once I saw how the pieces were connected it was easy to understand(ish).
         Some things I could have done better were modulating some code into helper functions and using less global variables with closures.
      </p>
