@@ -142,13 +142,13 @@ div.pp-con{
 .pic-con,
 .gif-con{
     display: inline-block;
-    height: 13.43rem!important;
+    height: 18.75rem!important;
     width: 30rem!important;
     background-color: transparent;
    
 }
 .pic-con{
-    height: 13.43rem;;
+    height: 18.75rem;;
     width: 30rem;
  
 }
@@ -210,8 +210,8 @@ summary {
     top: 0px;
     left: 0px;
     bottom: 0px;
-    width: 30rem;
-    height: 13.43rem;
+    width: 100%;
+    height: auto;
   }
   .pic-con img{
     display: inline-block;
@@ -219,8 +219,8 @@ summary {
     top: 0px;
     left: 0px;
     bottom: 0px;
-    width: 30rem;
-    height: 13.43rem;
+    width: 100%;
+    height: auto;
   }
 
 // case study PROJECT PAGES
