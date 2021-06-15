@@ -20,16 +20,13 @@ html {
 }
 
 body {
-  position: fixed;
   max-width: 1400px;
   margin: 0 auto;
-  z-index: -1;
   -webkit-background-size: 1000px 1000pxz !important;
   -o-background-size: 1000px 1000px;
   -moz-background-size: 1000px 1000px;
   background-size: 1000px 1000px;
   -webkit-background-composite: initial;
-  background-attachment: scroll;
   background-repeat: repeat;
   background-image: url(../images/bubbles.svg) !important;
   fill: var(--main-blue);
