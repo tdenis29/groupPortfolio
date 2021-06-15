@@ -405,7 +405,7 @@ summary:focus {
   width: 60%;
   margin: 3rem auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
   position: relative;
