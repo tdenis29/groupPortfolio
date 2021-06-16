@@ -672,7 +672,9 @@ h4{
     color: var(--main-red)
    }
 // PROJECT PAGES
-
+code{
+    color: var(--main-other);
+}
 
 
 // Med qu
@@ -855,6 +857,7 @@ h4{
             display: block!important;
             margin: 0 auto;
         }
+
        .pp-sum{
            width: 50%;
            margin: 1rem auto;

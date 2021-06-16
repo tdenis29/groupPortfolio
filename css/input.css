@@ -635,6 +635,10 @@ summary:focus {
   color: var(--main-red);
 }
 
+code {
+  color: var(--main-other);
+}
+
 @media only screen and (min-width: 786px) {
   .jumbotron {
     align-self: center;
