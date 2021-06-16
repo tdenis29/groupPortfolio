@@ -70,8 +70,7 @@ h4{
 
  .nav-link{
      padding-left: 1rem;
-     color: var(--main-light)!important; 
-     text-shadow: 2px 2px var(--main-red);
+     color: var(--main-red)!important; 
      font-Family: 'Fauna One', Serif;
      background-color: transparent;
 }
@@ -90,7 +89,7 @@ h4{
 //title
 h1{
     margin: 3rem 0 3rem 0;
-    
+
     font-Family: 'Cinzel', Cursive;
     font-Size: 44px;
 }
@@ -109,7 +108,7 @@ h1{
     font-Family: 'Fauna One', Serif;
     font-size: 1.3rem;
     background-color: transparent;
-    text-shadow: 2px 2px var(--main-red);
+   
 }
 //bigger intro
 .bottom-intro{
