@@ -108,11 +108,13 @@ h1{
 //top row with bubbles
 .top-row{
     height: 100vh;
+    margin: 1rem 0;
     }
     //title container
 .top-intro{
-    height: 50%;;
+    height: 50%;
     background-color:transparent;
+    margin: 1rem 0;
 }
 //little intro
 .hello{
@@ -120,7 +122,6 @@ h1{
     font-Family: 'Fauna One', Serif;
     font-size: 1.3rem;
     background-color: transparent;
-   
 }
 //bigger intro
 .bottom-intro{
@@ -129,7 +130,7 @@ h1{
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     background-color: transparent;
     font-Family: 'Fauna One', Serif;
 }
@@ -150,89 +151,7 @@ div.pp-con{
 video{
     width: 18.75rem;
 }
-// .pic-con,
-// .gif-con{
-//     display: inline-block;
-//     height: 18.75rem!important;
-//     width: 28rem!important;
-//     background-color: transparent; 
-// }
-// .pic-con{
-//     height: 18.75rem!important;
-//     width: 28rem!important;
-//     background-color: transparent;
- 
-// }
-// play/pause button
-// summary {
-//     color: #fff;
-//     background: #000;
-//     width: 2rem;
-//     height: 2rem;
-//     position: absolute;
-//     top: 0.5rem;
-//     right: 0.5rem;
-//     z-index: 2;
-//     border-radius: 50%;
-//     background-image: url("https://assets.codepen.io/128034/play_circle_filled-24px.svg");
-//     background-size: 90% auto;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-color: white;
-//   }
 
-//   [open] summary {
-//     background-image: url("https://assets.codepen.io/128034/pause_circle_filled-24px.svg");
-//     box-shadow: 0 0 0 2px #fff;
-//     background-color: white;
-//   }
-//   details summary::-webkit-details-marker {
-//     display: none;
-//   }
-//   /* for firefox */
-//   details > summary:first-of-type {
-//     list-style: none;
-//   }
-  
-//   summary + *{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     padding: 1rem;
-//     padding-top: 3rem;
-//     background: #000;
-//     color: #fff;
-  
-//   }
-  
-//   summary + * a {
-//     color: #fff;
-//   }
-//   summary:focus {
-//     box-shadow: 0 0 0 0.25rem #aade87;
-//     outline: transparent;
-//   }
-  
-//   .gif-con img {
-//     display: inline-block;
-//     position: absolute;
-//     top: 0px;
-//     left: 0px;
-//     bottom: 0px;
-//     width: 100%;
-//     height: auto;
-//   }
-//   .pic-con img{
-//     display: inline-block;
-//     position: absolute;
-//     top: 0px;
-//     left: 0px;
-//     bottom: 0px;
-//     width: 100%;
-//     height: auto;
-//   }
 
 // case study PROJECT PAGES
 .casestudy-top{
@@ -361,109 +280,41 @@ h2{
   }
 // rotate cube
   //full animation 0-100%(Stackoverflow) @webkit transforms -webkitKeyrames MUST come before keyframes in the cascade for Safari
-@-webkit-keyframes turn {
-    0% { 
-        transform: rotate3d(0, 0, 0,0deg);
-        -webkit-transform: rotate3d(0, 0, 0,0deg);
-        -moz-transform: rotate3d(0, 0, 0,0deg) ;
-     }
-     50%{
-        transform: rotate3d(0, 0, 0, 0deg);
-        -webkit-transform: rotate3d(0, 0, 0, 0deg);
-        -moz-transform: rotate3d(0, 0, 0, 0deg);
-     }
-    100% { 
-        transform: rotate3d(1, 1, 0, 360deg);
-        -webkit-transform: rotate3d(1, 1, 0, 360deg);
-        -moz-transform: rotate3d(1, 1, 0, 360deg);
-    }
-  }
-@keyframes turn {
-    0% { 
-        transform: rotate3d(0, 0, 0, 0deg);
-        -webkit-transform: rotate3d(0, 0, 0, 0deg);
-        -moz-transform: rotate3d(0, 0, 0, 0deg);
-     }
-     50%{
-        transform: rotate3d(.5, .5, 0, 0deg);
-        -webkit-transform: rotate3d(.5, .5, 0, 180deg);
-        -moz-transform: rotate3d(.5, .5, 0, 180deg);
-     }
-    100% { 
-        transform: rotate3d(1, 1, 0, 360deg);
-        -webkit-transform: rotate3d(1, 1, 0, 360deg);
-        -moz-transform: rotate3d(1, 1, 0, 360deg) ;
-    }
-  }
-//loader
-// .no-js #loader-wrapper {
-//     display: none;
-// }
-// #loader-wrapper .loader-section {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: #222222;
-//     z-index: 1000;
-// }
-//SPINNY
-// #loader {
-//     border: 16px solid #f3f3f3; /* Light grey */
-//     border-top: 16px solid #3498db; /* Blue */
-//     border-radius: 50%;
-//     width: 120px;
-//     height: 120px;
-//     animation: spin 3s linear infinite;
-//     -webkit-animation: spin 3s linear infinite;
-//     border-top: 16px solid var(--main-blue);
-//     border-right: 16px solid var(--main-other);
-//     border-bottom: 16px solid var(--main-red);
-//     border-left: 16px solid var(--main-light);
-//     z-index: 1005;
-//     margin: 0;
-//     padding: 0;
-//     position: absolute;
-//     top: 10%;
-//     left: 50%;
-// }
-// //LOADER SPINNY
-//   @keyframes spin {
+// @-webkit-keyframes turn {
 //     0% { 
-//         transform: rotate(0deg); 
-//         -webkit-transform: rotate(0deg);
-//     }
+//         transform: rotate3d(0, 0, 0,0deg);
+//         -webkit-transform: rotate3d(0, 0, 0,0deg);
+//         -moz-transform: rotate3d(0, 0, 0,0deg) ;
+//      }
+//      50%{
+//         transform: rotate3d(0, 0, 0, 0deg);
+//         -webkit-transform: rotate3d(0, 0, 0, 0deg);
+//         -moz-transform: rotate3d(0, 0, 0, 0deg);
+//      }
 //     100% { 
-//         transform: rotate(360deg); 
-//         -webkit-transform: rotate(360deg);
+//         transform: rotate3d(1, 1, 0, 360deg);
+//         -webkit-transform: rotate3d(1, 1, 0, 360deg);
+//         -moz-transform: rotate3d(1, 1, 0, 360deg);
 //     }
 //   }
-// @-webkit-keyframes spin {
+// @keyframes turn {
 //     0% { 
-//         transform: rotate(0deg); 
-//         -webkit-transform: rotate(0deg);
-//     }
+//         transform: rotate3d(0, 0, 0, 0deg);
+//         -webkit-transform: rotate3d(0, 0, 0, 0deg);
+//         -moz-transform: rotate3d(0, 0, 0, 0deg);
+//      }
+//      50%{
+//         transform: rotate3d(.5, .5, 0, 0deg);
+//         -webkit-transform: rotate3d(.5, .5, 0, 180deg);
+//         -moz-transform: rotate3d(.5, .5, 0, 180deg);
+//      }
 //     100% { 
-//         transform: rotate(360deg); 
-//         -webkit-transform: rotate(360deg);
+//         transform: rotate3d(1, 1, 0, 360deg);
+//         -webkit-transform: rotate3d(1, 1, 0, 360deg);
+//         -moz-transform: rotate3d(1, 1, 0, 360deg) ;
 //     }
-// }
+//   }
 
-// //fade out loader spinny 
-// .loaded #loader {
-//     opacity: 0;
-//     -webkit-transition: all 0.3s ease-out;
-//             transition: all 0.3s ease-out; 
-// }
-// .loaded #loader-wrapper {
-//     -webkit-transform: translateY(-100%);
-//         -ms-transform: translateY(-100%);
-//             transform: translateY(-100%);
-
-//     -webkit-transition: translateY 0.9s;
-//             transition: translateY 0.9s;
-// }
 // about
 .about-section{
     margin: 4rem auto;
@@ -605,6 +456,7 @@ h4{
     width: 50%;
     margin: 0 auto;
     font-Family: 'Fauna One', Serif;
+    border-radius: .3rem;
 }
 .project-link:hover{
     background-color: var(--main-red);
@@ -761,7 +613,7 @@ code{
         }
         .project-content-block > p{
             width: 50%;
-            margin: 1rem auto;
+            margin: 0 auto;
 
         }
         .project-content-block > code{

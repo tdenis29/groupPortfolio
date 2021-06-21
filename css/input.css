@@ -107,11 +107,13 @@ h1 {
 
 .top-row {
   height: 100vh;
+  margin: 1rem 0;
 }
 
 .top-intro {
   height: 50%;
   background-color: transparent;
+  margin: 1rem 0;
 }
 
 .hello {
@@ -127,7 +129,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
   background-color: transparent;
   font-Family: "Fauna One", Serif;
 }
@@ -289,40 +291,6 @@ video {
   -moz-transform: translateY(78px) rotateX(-90deg);
 }
 
-@-webkit-keyframes turn {
-  0% {
-    transform: rotate3d(0, 0, 0, 0deg);
-    -webkit-transform: rotate3d(0, 0, 0, 0deg);
-    -moz-transform: rotate3d(0, 0, 0, 0deg);
-  }
-  50% {
-    transform: rotate3d(0, 0, 0, 0deg);
-    -webkit-transform: rotate3d(0, 0, 0, 0deg);
-    -moz-transform: rotate3d(0, 0, 0, 0deg);
-  }
-  100% {
-    transform: rotate3d(1, 1, 0, 360deg);
-    -webkit-transform: rotate3d(1, 1, 0, 360deg);
-    -moz-transform: rotate3d(1, 1, 0, 360deg);
-  }
-}
-@keyframes turn {
-  0% {
-    transform: rotate3d(0, 0, 0, 0deg);
-    -webkit-transform: rotate3d(0, 0, 0, 0deg);
-    -moz-transform: rotate3d(0, 0, 0, 0deg);
-  }
-  50% {
-    transform: rotate3d(0.5, 0.5, 0, 0deg);
-    -webkit-transform: rotate3d(0.5, 0.5, 0, 180deg);
-    -moz-transform: rotate3d(0.5, 0.5, 0, 180deg);
-  }
-  100% {
-    transform: rotate3d(1, 1, 0, 360deg);
-    -webkit-transform: rotate3d(1, 1, 0, 360deg);
-    -moz-transform: rotate3d(1, 1, 0, 360deg);
-  }
-}
 .about-section {
   margin: 4rem auto;
 }
@@ -474,6 +442,7 @@ video {
   width: 50%;
   margin: 0 auto;
   font-Family: "Fauna One", Serif;
+  border-radius: 0.3rem;
 }
 
 .project-link:hover {
@@ -647,7 +616,7 @@ code {
 
   .project-content-block > p {
     width: 50%;
-    margin: 1rem auto;
+    margin: 0 auto;
   }
 
   .project-content-block > code {
