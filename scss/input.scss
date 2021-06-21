@@ -146,11 +146,9 @@ div.pp-con{
     justify-content: center;
     align-items: center;
     background-color: transparentize($color: #011627, $amount: .5);
-   
 }
 .relative-con{
-    position: relative;
-    
+    position: relative;  
 }
 .pic-con,
 .gif-con{
@@ -160,8 +158,9 @@ div.pp-con{
     background-color: transparent; 
 }
 .pic-con{
-    height: 18.75rem;;
+    height: 18.75rem!important;
     width: 28rem!important;
+    background-color: transparent;
  
 }
 // play/pause button
@@ -739,14 +738,14 @@ code{
         .pic-con,
         .gif-con{
             display: inline-block;
-            height: 13.43rem!important;
+            height: auto!important;
             width: 30rem!important;
             background-color: transparent;
         }
 
         .pic-con{
-            height: 13.43rem;
-            width: auto;
+            height: auto;
+            width: 30rem;
         }
 
         // play/pause button
@@ -808,7 +807,7 @@ code{
             left: 0px;
             bottom: 0px;
             width: 30rem;
-            height: 13.43rem;
+            height: auto;
         }
         .pic-con img{
             display: inline-block;
@@ -817,7 +816,7 @@ code{
             left: 0px;
             bottom: 0px;
             width: 30rem;
-            height: 13.43rem;
+            height: 13.43rem!important;
         }
         // case study
         .casestudy-top{
