@@ -345,8 +345,6 @@ video {
 }
 
 .decon-image-box {
-  height: 310px;
-  width: 100%;
   position: relative;
   z-index: 1;
   border: solid 2px var(--main-red);
@@ -361,7 +359,6 @@ video {
   background-size: cover;
   background-position-x: center;
   margin-left: -0.5rem;
-  background-image: url(../images/headshotcrop.jpg);
 }
 
 .aboutmep {

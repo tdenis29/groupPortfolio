@@ -483,8 +483,6 @@ h4{
     text-decoration: line-through;
 }
 .decon-image-box{
-    height: 310px;
-    width: 100%;
     position: relative;
     z-index: 1; 
     border: solid 2px var(--main-red);     
@@ -499,7 +497,7 @@ h4{
     background-size: cover;
     background-position-x: center;
     margin-left: -.5rem;
-    background-image: url(../images/headshotcrop.jpg);
+ 
 }
 .aboutmep{
     padding: 1rem 1rem;
