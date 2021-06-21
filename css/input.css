@@ -162,7 +162,7 @@ div.pp-con {
 
 .pic-con {
   height: 18.75rem;
-  width: 30rem;
+  width: 28rem !important;
 }
 
 summary {
