@@ -502,14 +502,18 @@ h4{
     text-transform: uppercase;
     display: block;
     width: 50%;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     font-Family: 'Fauna One', Serif;
     border-radius: .3rem;
+
    }
     .email-me:hover{
     background-color: var(--main-red);
     color: var(--main-light);
 }
+    .email-me:visited{
+        background-color: var(--main-blue);
+    }
 
 // PROJECT PAGES
 code{
