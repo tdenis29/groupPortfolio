@@ -1,21 +1,35 @@
-$(window).on('mousemove', function(event) {
-    var width = $(window).width();
-    var mouseX = event.pageX - (width * 1);
-    var height = $(window).height();
-    var mouseY = event.pageY - (height * 1);
-    var xAngle = (mouseY / height) * 180;
-    var yAngle = (mouseX / width) * 180;
+// var isClicked = false;
 
-    $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
-});
+// $('div').on('click', function() {
+//     isClicked = true;
+// });
 
-$(window).on('touchmove', function(event) {
-  var width = $(window).width();
-  var mouseX = event.pageX - (width * 1);
-  var height = $(window).height();
-  var mouseY = event.pageY - (height * 1);
-  var xAngle = (mouseY / height) * 180;
-  var yAngle = (mouseX / width) * 180;
+// $('p').on('click', function() {
+//     if (isClicked) // do stuff
+// });
 
-  $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
-});
+///touchscreen
+if(window.matchMedia("(any-pointer: coarse)").matches) {
+    $(window).on('touchmove', function(event) {
+        var width = $(window).width();
+        var mouseX = event.pageX - (width * 1);
+        var height = $(window).height();
+        var mouseY = event.pageY - (height * 1);
+        var xAngle = (mouseY / height) * 180;
+        var yAngle = (mouseX / width) * 180;
+      
+        $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+      });
+      //esle is mouse
+} else {
+    $(window).on('mousemove', function(event) {
+        var width = $(window).width();
+        var mouseX = event.pageX - (width * 1);
+        var height = $(window).height();
+        var mouseY = event.pageY - (height * 1);
+        var xAngle = (mouseY / height) * 180;
+        var yAngle = (mouseX / width) * 180;
+        $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+    });
+}
+
