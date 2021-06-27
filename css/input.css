@@ -34,7 +34,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   background-color: var(--main-dark);
-  -webkit-background-size: 1000px 1000pxz !important;
+  -webkit-background-size: 1000px 1000px !important;
   -o-background-size: 1000px 1000px;
   -moz-background-size: 1000px 1000px;
   background-size: 1000px 1000px;
@@ -232,18 +232,6 @@ video {
   height: 9.75rem !important;
   transform-style: preserve-3d !important;
   -webkit-transform-style: preserve-3d !important;
-  -webkit-animation-name: turn;
-  animation-name: turn;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
 }
 
 .face {
@@ -291,6 +279,40 @@ video {
   -moz-transform: translateY(78px) rotateX(-90deg);
 }
 
+@-webkit-keyframes turn {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 0, 0deg);
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+    -webkit-transform: rotate3d(1, 1, 0, 360deg);
+    -moz-transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0.5, 0.5, 0, 0deg);
+    -webkit-transform: rotate3d(0.5, 0.5, 0, 180deg);
+    -moz-transform: rotate3d(0.5, 0.5, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+    -webkit-transform: rotate3d(1, 1, 0, 360deg);
+    -moz-transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
 .about-section {
   margin: 4rem auto;
 }

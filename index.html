@@ -17,7 +17,6 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container nav-con">
                 <a class="navbar-brand" href="index.html">
-                  <?xml version="1.0" standalone="no"?>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="40pt" height="24.000000pt" viewBox="0 0 190.000000 130.000000"
                     preserveAspectRatio="xMidYMid meet" class="logo">
@@ -48,13 +47,13 @@
                     </g>
                     </svg>
                 </a>
-                <button role="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse container" id="navbarToggleExternalContent">
                     <ul class="navbar-nav bg-light text-center ms-auto">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="Tyson Denis Porfolio Homepage" href="#home">Home</a>
+                          <a class="nav-link active" aria-current="true" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#about">About </a>
@@ -90,6 +89,24 @@
       <div class="right-col col-md-6" id="right">
         <div class="container-cube">
           <div class="cube" id="cube">
+            <noscript>
+              <style type="text/css">
+                  .cube {
+                      -webkit-animation-name: turn;
+                      animation-name: turn;
+                      -webkit-animation-duration: 5s;
+                      animation-duration: 5s;
+                      -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
+                      animation-timing-function:cubic-bezier(1, 0, 0, 1);
+                      -webkit-animation-delay: .1s;
+                      animation-delay: .1s;
+                      -webkit-animation-timing-function: linear;
+                      animation-timing-function: linear;
+                      -webkit-animation-iteration-count: infinite;
+                      animation-iteration-count: infinite;
+                  }
+              </style>
+          </noscript>
             <div class="face top"></div>
             <div class="face bottom">
               <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/>
@@ -295,7 +312,7 @@
                 </span>
                 <h5 class="card-title">Tech-Degree Project 5</h5>
                 <p class="card-text">This project involved using CSS Grid to set up a small image gallery, and introduced JavaScript asking us implement BaguetteBox and a Search Filter to filter images by data-caption</p>
-                <a class="project-link text-center"aria-describedby="project-page-5-description" href="pp5.html">Go To Project 5</a>
+                <a class="project-link text-center" aria-describedby="project-page-5-description" href="pp5.html">Go To Project 5</a>
                 <p class="sr-only" id="project-page-5-description">Goes to Project 5 Case Study(opens in a new tab)</p>
               </div>
         </div>
@@ -328,7 +345,7 @@
             <h6 class="text-center my-4 wash2" id="about">About Me</h6>
            <div class="decon-image-box">
                 <!-- <span class="decon-image pr-3"></span> -->
-                <img class="decon-image" src="images/headshotcrop.jpg">
+                <img alt="silhouette photo of site author Tyson Denis" class="decon-image" src="images/headshotcrop.jpg">
               </div>
               <div class="decon-card-text text-center">
                   <p class="aboutmep">This is my Web Design Portfolio! I just recently finished the front-end Web Develeper program at Treehouse! I am a former Chef from Western Canada looking to bring the same quiet professionalism and attention to detail that I learned in the kitchen to the Web!</p>

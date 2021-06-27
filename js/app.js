@@ -1,12 +1,3 @@
-// var isClicked = false;
-
-// $('div').on('click', function() {
-//     isClicked = true;
-// });
-
-// $('p').on('click', function() {
-//     if (isClicked) // do stuff
-// });
 
 ///touchscreen
 if(window.matchMedia("(any-pointer: coarse)").matches) {
