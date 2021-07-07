@@ -1,3 +1,11 @@
+:root {
+  --main-dark: #011627;
+  --main-light: #FDFFFC;
+  --main-red: #EA3471;
+  --main-blue: #6E44FF;
+  --main-other: #44ff7c;
+}
+
 .sr-only {
   clip: rect(1px 1px 1px 1px);
   /* IE 6/7 */
