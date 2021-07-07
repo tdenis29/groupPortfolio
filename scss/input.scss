@@ -32,14 +32,15 @@ html {
 body{
     max-width: 1400px;
     margin: 0 auto;
+    padding: 2rem;
     background-color:var(--main-dark);
-    -webkit-background-size: 1000px 1000px!important;
-    -o-background-size: 1000px 1000px; 
-    -moz-background-size: 1000px 1000px; 
-    background-size: 1000px 1000px;
-    -webkit-background-composite: initial;
-    background-repeat:repeat;
-    background-image:url(../images/bubbles.svg)!important; 
+    // -webkit-background-size: 1000px 1000px!important;
+    // -o-background-size: 1000px 1000px; 
+    // -moz-background-size: 1000px 1000px; 
+    // background-size: 1000px 1000px;
+    // -webkit-background-composite: initial;
+    // background-repeat:repeat;
+    // background-image:url(../images/bubbles.svg)!important; 
     fill: var(--main-blue);
     }
 
@@ -84,6 +85,7 @@ h4{
      text-decoration: underline;
      text-decoration-color: var(--main-red);
 }
+
  .nav-link:active{
      background-color: var(--main-red);
      border-radius: 25%;
@@ -187,6 +189,8 @@ h2{
 .pp-sum{
     font-Family: 'Fauna One', Serif;
 }
+//side thingys
+
 //cubes box
 .right-col{
     display: flex;
@@ -388,19 +392,41 @@ h4{
     margin-left: -1.5rem;
     margin-top: - 1.25rem;
 }
+.testi-card{
+    max-width: 600px;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    border: solid 4px var(--main-red);
+    background-color: var(--main-dark);
+}
+.testi-card-title{
+    font-size: 2rem;
+    font-Family: "Cinzel", Cursive;
+    
+}
+.testi-card-text{
+    font-Family: "Fauna One", Serif;
+}
 // Projects
 
+.col{
+    width: 100%;
+}
 .projecticons{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin-bottom: .5rem;
 }
 
 .card-img-top{
     position: relative;
+    max-width:  544.93px;
     img{
         height: auto;
         width: 100%;
+        max-width: 544.93px;
+        max-height: 430px;
     }}
 .card-img-top::after{
     content: ""; 
@@ -412,6 +438,7 @@ h4{
     background-image: linear-gradient(120deg, #eaee44, #33d0ff);
     background-repeat: no-repeat;
     opacity: .7;
+    max-width: 544.93px;
     }
 
 .card{
@@ -419,9 +446,8 @@ h4{
     display: flex;
     flex-direction: column;
     border: solid 4px var(--main-red);
-    max-width: 600px;
     background-color: var(--main-dark);
-  
+    width: 100%;
 }
 .card-title{
     font-size: 2rem;
@@ -543,6 +569,10 @@ code{
        #about{
            margin-bottom: 1.5rem;
        }
+    
+       .card{
+           flex-direction: row;
+       }
         .foot-component{
         width: 33%;
          }
@@ -621,11 +651,39 @@ code{
         color: var(--main-red)
        }
     }
-@media only screen and (max-device-width: 1068px){
+@media only screen and (min-width: 1068px){
     .aboutme{
         flex-direction: row;
     }
-  
+    .card-title{
+        font-size: 2.5rem;
+        color: var(--main-red);
+    }
+    .card-body{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1rem;
+      border-left:#EA3471 solid 4px;
+    p{
+        width: 50%;
+        margin: 2rem 0;
+    }}
+    .project-link{
+        width: 35%;
+    }
+    .project-icon-con{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    .projecticons{
+        display:block
+    }}
+   
 }
 // Project pages 
 
