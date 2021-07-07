@@ -457,19 +457,12 @@ h4{
 .card-body{
     font-Family: 'Fauna One', Serif;
 }
-.project-link{
-    background-color: var(--main-dark);
-    border: 1px solid var(--main-red);
-    color: var(--main-light);
-    margin: 2rem 0;
-    font-Family: 'Fauna One', Serif;
+.projectbtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.project-link:hover{
-    background-color: var(--main-red);
-    color: var(--main-light);
-}
-.project-link:active{
-    transition: transform}
     //about 
     .aboutme{
         height: 18.75rem;

@@ -203,7 +203,7 @@ video {
   background-color: var(--main-dark);
   border: 1px solid var(--main-red);
   color: var(--main-light);
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-Family: "Fauna One", Serif;
 }
 
@@ -473,21 +473,11 @@ video {
   font-Family: "Fauna One", Serif;
 }
 
-.project-link {
-  background-color: var(--main-dark);
-  border: 1px solid var(--main-red);
-  color: var(--main-light);
-  margin: 2rem 0;
-  font-Family: "Fauna One", Serif;
-}
-
-.project-link:hover {
-  background-color: var(--main-red);
-  color: var(--main-light);
-}
-
-.project-link:active {
-  transition: transform;
+.projectbtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutme {
