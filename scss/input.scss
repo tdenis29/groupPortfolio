@@ -1,12 +1,12 @@
 // Base Styles and Typo\
 
-:root{
-    --main-dark: #011627;
-    --main-light: #FDFFFC;
-    --main-red: #EA3471;
-    --main-blue: #6E44FF;
-    --main-other: #44ff7c;
-}
+// :root{
+//     --main-dark: #011627;
+//     --main-light: #FDFFFC;
+//     --main-red: #EA3471;
+//     --main-blue: #6E44FF;
+//     --main-other: #44ff7c;
+// }
 //Base 
 .sr-only{
 clip: rect(1px 1px 1px 1px); /* IE 6/7 */
@@ -414,8 +414,8 @@ h4{
     width: 100%;
 }
 .projecticons{
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin-bottom: .5rem;
 }
 
@@ -666,7 +666,7 @@ code{
       align-items: center;
       justify-content: center;
       padding: 0 1rem;
-      border-left:#EA3471 solid 4px;
+
     p{
         width: 50%;
         margin: 2rem 0;
