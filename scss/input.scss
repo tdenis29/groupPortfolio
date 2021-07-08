@@ -204,7 +204,7 @@ h2{
     background-color: var(--main-dark);
     border: 1px solid var(--main-red);
     color: var(--main-light);
-    margin: 2rem 0;
+    margin: 1rem 0;
     font-Family: 'Fauna One', Serif;
 }
 .cta:hover{
@@ -448,6 +448,7 @@ h4{
     border: solid 4px var(--main-red);
     background-color: var(--main-dark);
     width: 100%;
+    max-width: 640px;
 }
 .card-title{
     font-size: 2rem;
@@ -521,7 +522,7 @@ code{
 
 
 // Med qu
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
 
     .jumbotron{
         align-self: center;
@@ -559,6 +560,28 @@ code{
     
        .card{
            flex-direction: row;
+           width: 100%;
+           max-width: none;
+           
+       }
+       .card-title{
+        font-size: 2rem;
+        font-Family: 'Cinzel', Cursive;
+        font-size: x-large;
+    }
+       .card-img-top{
+           width: 45%;
+       }
+       .card-body{
+           width: 45%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+       .project-icon-con{
+           width: 5%;
+           flex-direction: column;
        }
         .foot-component{
         width: 33%;
@@ -647,12 +670,12 @@ code{
         color: var(--main-red);
     }
     .card-body{
-      width: 80%;
+      width: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 0 1rem;
+   
 
     p{
         width: 50%;
