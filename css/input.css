@@ -432,12 +432,12 @@ video {
 
 .card-img-top {
   position: relative;
-  max-width: 544.93px;
+  max-width: 640px;
 }
 .card-img-top img {
   height: auto;
   width: 100%;
-  max-width: 544.93px;
+  max-width: 640px;
   max-height: 430px;
 }
 
@@ -451,7 +451,7 @@ video {
   background-image: linear-gradient(120deg, #eaee44, #33d0ff);
   background-repeat: no-repeat;
   opacity: 0.7;
-  max-width: 544.93px;
+  max-width: 640px;
 }
 
 .card {
@@ -594,7 +594,7 @@ code {
   }
 
   .card-img-top {
-    width: 45%;
+    width: 55%;
   }
 
   .card-body {
