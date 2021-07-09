@@ -454,7 +454,7 @@ h4{
     max-width: 640px;
 }
 .card-title{
-    font-size: 2.5rem;
+
     font-Family: 'Cinzel', Cursive;
     border-bottom: solid white 1px;
 }
@@ -554,7 +554,14 @@ h4{
 code{
     color: var(--main-other);
 }
+    .video-con{
+        width: 98%;
+    }
 
+    video{
+        width: 100%;
+        height: auto;
+    }
 
 // Med qu
 @media only screen and (min-width: 768px) {
@@ -635,9 +642,11 @@ code{
             align-items: center;
             background-color: transparentize($color: #011627, $amount: .5);
         }
-
+        .video-con{
+            width: 50%;
+        }
         video{
-            width: auto;
+            width: 100%;
         }
         // case study
         .casestudy-top{

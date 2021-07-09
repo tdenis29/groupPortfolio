@@ -468,7 +468,6 @@ video {
 }
 
 .card-title {
-  font-size: 2.5rem;
   font-Family: "Cinzel", Cursive;
   border-bottom: solid white 1px;
 }
@@ -578,6 +577,15 @@ code {
   color: var(--main-other);
 }
 
+.video-con {
+  width: 98%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .jumbotron {
     align-self: center;
@@ -669,8 +677,12 @@ code {
     background-color: rgba(1, 22, 39, 0.5);
   }
 
+  .video-con {
+    width: 50%;
+  }
+
   video {
-    width: auto;
+    width: 100%;
   }
 
   .casestudy-top {
