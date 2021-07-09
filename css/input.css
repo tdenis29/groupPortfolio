@@ -486,7 +486,7 @@ video {
 
 .aboutme {
   height: 18.75rem;
-  width: 90%;
+  width: 100%;
 }
 
 .spacer-div {
@@ -513,6 +513,34 @@ video {
   font-weight: bolder;
   font-family: "Cinzel", Cursive;
   color: var(--main-red);
+}
+
+.contact-icons-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon-con {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+}
+
+.contact-p {
+  padding: 1rem 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-Family: "Fauna One", Serif;
+  text-align: center;
+}
+
+.contact-icons {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .email-me {
@@ -689,11 +717,19 @@ code {
     font-size: 1.2rem;
   }
 
+  .contact-icons-con {
+    flex-direction: row;
+  }
+
   .wash2 {
     font-size: 2rem;
     font-weight: bolder;
     font-family: "Cinzel", Cursive;
     color: var(--main-red);
+  }
+
+  .email-me {
+    width: 25%;
   }
 }
 @media only screen and (min-width: 1068px) {
