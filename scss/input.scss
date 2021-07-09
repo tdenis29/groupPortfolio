@@ -523,6 +523,9 @@ h4{
     width: 2.5rem;
     margin-bottom: 0.5rem;
    }
+   .contact-icon-text{
+    font-Family: "Fauna One", Serif;
+   }
    .email-me{
     background-color:var(--main-dark);
     color: var(--main-light);
@@ -544,7 +547,9 @@ h4{
     .email-me:visited{
         background-color: var(--main-blue);
     }
-
+    address{
+        font-Family: 'Fauna One', Serif;
+    }
 // PROJECT PAGES
 code{
     color: var(--main-other);
