@@ -204,7 +204,7 @@ h2{
     background-color: var(--main-dark);
     border: 1px solid var(--main-red);
     color: var(--main-light);
-    margin: 1rem 0;
+    margin: .5rem 0;
     font-Family: 'Fauna One', Serif;
 }
 .cta:hover{
@@ -399,9 +399,10 @@ h4{
     flex-direction: column;
     border: solid 4px var(--main-red);
     background-color: var(--main-dark);
+    padding: 1rem;
 }
 .testi-card-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-Family: "Cinzel", Cursive;
     
 }
@@ -421,7 +422,9 @@ h4{
 
 .card-img-top{
     position: relative;
+    height: auto;
     max-width:  640px;
+    max-height: 430px;
     img{
         height: auto;
         width: 100%;
@@ -451,9 +454,9 @@ h4{
     max-width: 640px;
 }
 .card-title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-Family: 'Cinzel', Cursive;
-    font-size: x-large;
+    border-bottom: solid white 1px;
 }
 .card-body{
     font-Family: 'Fauna One', Serif;
@@ -665,21 +668,20 @@ code{
     .aboutme{
         flex-direction: row;
     }
-    .card-title{
-        font-size: 2.5rem;
-        color: var(--main-red);
+    .card{
+        max-height: 450px;
     }
     .card-body{
       width: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
    
 
     p{
-        width: 50%;
-        margin: 2rem 0;
+        width: 75%;
+        margin: .5rem 0;
     }}
     .project-link{
         width: 35%;
@@ -706,7 +708,7 @@ code{
        order:2;
    }
     div.card-body > div > a{
-        margin: 0 1rem;
+        margin: 0 .5rem;
  
     }
 }
