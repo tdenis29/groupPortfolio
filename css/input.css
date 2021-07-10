@@ -593,6 +593,10 @@ video {
   height: auto;
 }
 
+#wave1 {
+  margin-top: -0.25rem;
+}
+
 @media only screen and (min-width: 768px) {
   .jumbotron {
     align-self: center;
