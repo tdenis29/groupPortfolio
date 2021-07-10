@@ -472,8 +472,8 @@ video {
 }
 
 .card-title {
+  color: var(--main-blue);
   font-Family: "Cinzel", Cursive;
-  border-bottom: solid white 1px;
 }
 
 .card-body {
