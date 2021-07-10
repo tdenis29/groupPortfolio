@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -42,6 +43,10 @@ h3 {
   font-size: 1.9rem;
   color: var(--main-red);
   font-Family: "Cinzel", Cursive;
+}
+
+main {
+  height: 100%;
 }
 
 .fade-in {
@@ -312,10 +317,10 @@ video {
 }
 
 .aboutme {
-  width: 60%;
-  margin: 3rem auto;
+  width: 100%;
+  margin: 1rem auto;
   display: flex;
-  flex-direction: column !important;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -353,8 +358,7 @@ video {
 }
 
 .decon-card-text {
-  width: 100%;
-  max-height: 300px;
+  width: 75%;
   font-Family: "Fauna One", Serif;
 }
 
@@ -484,12 +488,11 @@ video {
 }
 
 .aboutme {
-  height: 18.75rem;
   width: 100%;
 }
 
 .spacer-div {
-  height: 10rem;
+  height: 2rem;
   width: 100%;
   background: transparent;
 }
@@ -601,10 +604,11 @@ video {
 
   .aboutme {
     flex-direction: column;
+    width: 75%;
   }
 
-  .about-section {
-    margin: 4rem auto;
+  .about-me-title {
+    margin-bottom: 1.5rem;
   }
 
   .decon-card-text {
@@ -618,14 +622,6 @@ video {
   .hello {
     margin-left: 3.5rem;
     text-align: left;
-  }
-
-  .aboutme {
-    width: 50%;
-  }
-
-  #about {
-    margin-bottom: 1.5rem;
   }
 
   .card {
@@ -753,10 +749,6 @@ video {
   }
 }
 @media only screen and (min-width: 1068px) {
-  .aboutme {
-    flex-direction: row;
-  }
-
   .card {
     max-height: 450px;
   }
