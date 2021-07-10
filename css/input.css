@@ -1,8 +1,9 @@
 :root {
-  --main-dark: #011627;
-  --main-light: #FDFFFC;
-  --main-red: #EA3471;
-  --main-blue: #6E44FF;
+  --main-dark: #0E0B16;
+  --secondary-blue: #090C9B;
+  --main-light: #F4FAFF;
+  --main-red: #FF01FB;
+  --main-blue: #34d6ff;
   --main-other: #44ff7c;
 }
 
@@ -34,14 +35,12 @@ html {
 body {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
   background-color: var(--main-dark);
-  fill: var(--main-blue);
 }
 
 h3 {
   font-size: 1.9rem;
-  color: var(--main-red);
+  color: var(--main-blue);
   font-Family: "Cinzel", Cursive;
 }
 
@@ -80,7 +79,7 @@ h4 {
   font-Family: "Fauna One", Serif;
   background-color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--main-red);
+  text-decoration-color: var(--main-blue);
 }
 
 .nav-link:active {
@@ -99,7 +98,7 @@ h4 {
 
 h1 {
   margin: 3rem 0 3rem 0;
-  color: var(--main-red);
+  color: var(--main-blue);
   font-Family: "Cinzel", Cursive;
   font-Size: 44px;
 }
@@ -214,7 +213,6 @@ video {
 
 .cta:hover {
   background-color: var(--main-red);
-  border: 4px solid var(--main-red);
 }
 
 .container-cube {
@@ -312,18 +310,15 @@ video {
     -moz-transform: rotate3d(1, 1, 0, 360deg);
   }
 }
-.about-section {
-  margin: 4rem auto;
-}
-
 .aboutme {
   width: 100%;
-  margin: 1rem auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: var(--secondary-blue);
 }
 .aboutme h4 {
   margin: 1rem 0;
@@ -364,7 +359,8 @@ video {
 
 .testimonial {
   height: 27.5rem;
-  margin: 4rem 0;
+  margin: 0 auto;
+  background-color: var(--secondary-blue);
 }
 
 .carousel-control-prev-icon,
@@ -455,7 +451,7 @@ video {
   top: 0;
   left: 0;
   height: 100%;
-  background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  background-image: linear-gradient(120deg, #A239CA, #33d0ff);
   background-repeat: no-repeat;
   opacity: 0.7;
   max-width: 640px;
@@ -489,6 +485,7 @@ video {
 
 .aboutme {
   width: 100%;
+  background-color: var(--secondary-blue);
 }
 
 .spacer-div {
@@ -543,6 +540,7 @@ video {
   height: 2.5rem;
   width: 2.5rem;
   margin-bottom: 0.5rem;
+  fill: var(--main-blue);
 }
 
 .contact-icon-text {
@@ -604,7 +602,12 @@ video {
 
   .aboutme {
     flex-direction: column;
-    width: 75%;
+    width: 100%;
+  }
+
+  .aboutmep {
+    width: 65%;
+    margin: 0 auto;
   }
 
   .about-me-title {
