@@ -40,7 +40,7 @@ body {
 
 h3 {
   font-size: 1.9rem;
-  color: var(--main-blue);
+  color: var(--main-red);
   font-Family: "Cinzel", Cursive;
 }
 
@@ -75,11 +75,11 @@ h4 {
 
 .nav-link {
   padding-left: 1rem;
-  color: var(--main-red) !important;
+  color: var(--main-blue) !important;
   font-Family: "Fauna One", Serif;
   background-color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--main-blue);
+  text-decoration-color: var(--main-red);
 }
 
 .nav-link:active {
@@ -166,7 +166,7 @@ video {
 }
 
 .casestudy-top > h1 {
-  color: var(--main-red);
+  color: var(--main-blue);
 }
 
 .case-study-top-text {
@@ -238,7 +238,7 @@ video {
 .face {
   width: 9.75rem;
   height: 9.75rem;
-  border: 2px solid var(--main-red);
+  border: 2px solid var(--main-blue);
   position: absolute;
   font-size: 2rem;
   background-color: var(--main-dark);
@@ -335,7 +335,7 @@ video {
 .decon-image-box {
   position: relative;
   z-index: 1;
-  border: solid 2px var(--main-red);
+  border: solid 2px var(--main-blue);
 }
 
 .decon-image {
@@ -350,7 +350,7 @@ video {
 }
 
 .aboutmep {
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   font-size: 1.2rem;
   font-Family: "Fauna One", Serif;
@@ -430,8 +430,8 @@ video {
 }
 
 .projecticons {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -465,15 +465,16 @@ video {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  border: solid 4px var(--main-red);
+  border: solid 4px var(--main-blue);
   background-color: var(--main-dark);
   width: 100%;
   max-width: 640px;
 }
 
 .card-title {
-  color: var(--main-blue);
+  color: var(--main-red);
   font-Family: "Cinzel", Cursive;
+  font-size: x-large;
 }
 
 .card-body {
@@ -516,6 +517,7 @@ video {
   font-weight: bolder;
   font-family: "Cinzel", Cursive;
   color: var(--main-red);
+  margin-bottom: revert;
 }
 
 .contact-icons-con {
@@ -640,7 +642,6 @@ video {
   .card-title {
     font-size: 2rem;
     font-Family: "Cinzel", Cursive;
-    font-size: x-large;
   }
 
   .card-img-top {
@@ -748,7 +749,7 @@ video {
     font-size: 2rem;
     font-weight: bolder;
     font-family: "Cinzel", Cursive;
-    color: var(--main-red);
+    color: var(--main-blue);
   }
 
   .email-me {
@@ -780,7 +781,6 @@ video {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    align-items: center;
     justify-content: center;
   }
   .project-icon-con .projecticons {
@@ -800,6 +800,7 @@ video {
 
   .card.card-right .project-icon-con {
     order: 2;
+    align-items: flex-end;
   }
 
   div.card-body > div > a {
