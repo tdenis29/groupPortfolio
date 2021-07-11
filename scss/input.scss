@@ -330,9 +330,9 @@ h4{
     text-decoration: line-through;
 }
 .decon-image-box{
-    position: relative;
-    z-index: 1; 
-    border: solid 2px var(--main-blue);     
+  
+    border: solid 2px var(--main-blue);  
+       
 }
 
 .decon-image{
@@ -395,7 +395,7 @@ h4{
     margin-top: 1.5rem;
 }
 .avatar{
-    margin-left: -1.5rem;
+    margin-left: 1.75rem;
     margin-top: - 1.25rem;
 }
 .testi-card{
@@ -575,6 +575,9 @@ code{
     }
     #wave3{
         display: block;
+    }
+    #wave0{
+        margin-bottom: -.25rem;
     }
 // Med qu
 @media only screen and (min-width: 768px) {

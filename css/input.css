@@ -333,8 +333,6 @@ video {
 }
 
 .decon-image-box {
-  position: relative;
-  z-index: 1;
   border: solid 2px var(--main-blue);
 }
 
@@ -401,7 +399,7 @@ video {
 }
 
 .avatar {
-  margin-left: -1.5rem;
+  margin-left: 1.75rem;
   margin-top: -1.25rem;
 }
 
@@ -598,6 +596,10 @@ video {
 
 #wave3 {
   display: block;
+}
+
+#wave0 {
+  margin-bottom: -0.25rem;
 }
 
 @media only screen and (min-width: 768px) {
