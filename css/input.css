@@ -58,7 +58,7 @@ main {
 }
 
 .section {
-  margin: 0 3rem 0 3rem;
+  margin: 2rem 3rem 0 3rem;
 }
 
 h4 {
@@ -362,7 +362,6 @@ video {
 }
 
 .testimonial {
-  height: 27.5rem;
   margin: 0 auto;
   background-color: var(--secondary-blue);
 }
@@ -595,6 +594,10 @@ video {
 
 #wave1 {
   margin-top: -0.25rem;
+}
+
+#wave3 {
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {
