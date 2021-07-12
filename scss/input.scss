@@ -3,6 +3,8 @@
 :root{
     --main-dark: #0E0B16;
     --secondary-blue: #090C9B;
+    --secondary-dark: #043053f3;
+    --tertiary-dark: #251552;
     --main-light: #F4FAFF;
     --main-red: #FF01FB;
     --main-blue: #34d6ff;
@@ -154,7 +156,7 @@ div.pp-con{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: transparentize($color: #011627, $amount: .5);
+
 }
 video{
     width: 18.75rem;
@@ -559,6 +561,7 @@ h4{
         font-Family: 'Fauna One', Serif;
     }
 // PROJECT PAGES
+
 code{
     color: var(--main-other);
 }
@@ -657,7 +660,7 @@ code{
             flex-direction: row!important;
             justify-content: center;
             align-items: center;
-            background-color: transparentize($color: #011627, $amount: .5);
+      
         }
         .video-con{
             width: 50%;

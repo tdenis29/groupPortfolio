@@ -1,6 +1,8 @@
 :root {
   --main-dark: #0E0B16;
   --secondary-blue: #090C9B;
+  --secondary-dark: #043053f3;
+  --tertiary-dark: #251552;
   --main-light: #F4FAFF;
   --main-red: #FF01FB;
   --main-blue: #34d6ff;
@@ -149,7 +151,6 @@ div.pp-con {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(1, 22, 39, 0.5);
 }
 
 video {
@@ -687,7 +688,6 @@ video {
     flex-direction: row !important;
     justify-content: center;
     align-items: center;
-    background-color: rgba(1, 22, 39, 0.5);
   }
 
   .video-con {
