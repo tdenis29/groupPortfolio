@@ -804,7 +804,7 @@ code{
 //     --main-red: #E668A7;
 *{
     color: 
-    #044E54
+    #243d55;
 }
 body {
     background-color: #F4FAFF;
@@ -871,6 +871,18 @@ h1{
 .aboutmep{
     color: #54D1DB;
 }
-.contact-icons, .social-icon{
+.contact-icons{ 
     fill: #14919B;
+}
+.social-icon{
+    color: #54D1DB!important;
+}
+footer{
+    background-color: #243d55;
+} 
+.foot-component address{
+    color:#54D1DB!important;
+}
+.footer-former-h5{
+    color: #54D1DB;
 }

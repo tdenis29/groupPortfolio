@@ -818,7 +818,7 @@ video {
   }
 }
 * {
-  color: #044E54;
+  color: #243d55;
 }
 
 body {
@@ -903,8 +903,24 @@ h1 {
   color: #54D1DB;
 }
 
-.contact-icons, .social-icon {
+.contact-icons {
   fill: #14919B;
+}
+
+.social-icon {
+  color: #54D1DB !important;
+}
+
+footer {
+  background-color: #243d55;
+}
+
+.foot-component address {
+  color: #54D1DB !important;
+}
+
+.footer-former-h5 {
+  color: #54D1DB;
 }
 
 /*# sourceMappingURL=input.css.map */
