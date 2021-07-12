@@ -1,14 +1,3 @@
-:root {
-  --main-dark: #0E0B16;
-  --secondary-blue: #090C9B;
-  --secondary-dark: #043053f3;
-  --tertiary-dark: #251552;
-  --main-light: #F4FAFF;
-  --main-red: #FF01FB;
-  --main-blue: #34d6ff;
-  --main-other: #44ff7c;
-}
-
 .sr-only {
   clip: rect(1px 1px 1px 1px);
   /* IE 6/7 */
@@ -111,7 +100,7 @@ h1 {
 
 .top-row {
   height: 100vh;
-  margin: 1rem 0;
+  margin: 0 auto;
 }
 
 .top-intro {
@@ -603,6 +592,14 @@ video {
   margin-bottom: -0.25rem;
 }
 
+#wave5 {
+  margin-top: -0.25rem;
+}
+
+#wave0 path, #wave1 path, #wave2 path, #wave3 path, #wave5 path {
+  background-color: #090C9B;
+}
+
 @media only screen and (min-width: 768px) {
   .jumbotron {
     align-self: center;
@@ -819,6 +816,95 @@ video {
   div.card-body > div > a {
     margin: 0 0.5rem;
   }
+}
+* {
+  color: #044E54;
+}
+
+body {
+  background-color: #F4FAFF;
+}
+
+.navbar, .navbar-nav {
+  background-color: #243d55;
+}
+
+.nav-link {
+  color: #54D1DB !important;
+}
+
+.nav-link:hover {
+  color: #DA4A91 !important;
+}
+
+h1 {
+  color: #243d55;
+}
+
+.cta, .email-me {
+  background-color: #F4FAFF;
+  color: #243d55;
+  border: #DA4A91 solid 1px;
+}
+
+.cta:hover, .email-me:hover {
+  background-color: #DA4A91;
+  color: #F4FAFF;
+}
+
+.face {
+  border: solid 1px #DA4A91;
+  background-color: rgba(44, 177, 188, 0.5);
+}
+
+#wave0 path, #wave1 path, #wave2 path, #wave3 path {
+  fill: #243d55;
+}
+
+.testimonial {
+  background-color: #243d55;
+}
+
+.testi-card {
+  background-color: #F4FAFF;
+  border: solid 4px #54D1DB;
+}
+
+.testi-card-title {
+  color: #243d55;
+}
+
+.avatar-box {
+  border: solid 1px #1C7C82;
+}
+
+.wash2 {
+  color: #243d55 !important;
+}
+
+.card {
+  border: solid 4px #1C7C82;
+}
+
+.card-title {
+  color: #243d55 !important;
+}
+
+.aboutme {
+  background-color: #243d55;
+  color: #F4FAFF;
+}
+
+.about-me-title {
+  color: #54D1DB;
+}
+
+.aboutmep {
+  color: #54D1DB;
+}
+
+.contact-icons, .social-icon {
+  fill: #14919B;
 }
 
 /*# sourceMappingURL=input.css.map */
