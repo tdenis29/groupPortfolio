@@ -516,7 +516,7 @@ h4{
    .contact-icon-con{
        display: flex;
        flex-direction: column;
-       width: 33%;
+       width: 50%;
        align-items: center;
    }
    
@@ -718,7 +718,10 @@ code{
        }}}
        .contact-icons-con{
            flex-direction: row;
-       
+        
+       }
+       .contact-icon-con{
+           width: 33%;
        }
     //    fix heading not in order projects
        .wash2{

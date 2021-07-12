@@ -528,7 +528,7 @@ video {
 .contact-icon-con {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 50%;
   align-items: center;
 }
 
@@ -752,6 +752,10 @@ video {
 
   .contact-icons-con {
     flex-direction: row;
+  }
+
+  .contact-icon-con {
+    width: 33%;
   }
 
   .wash2 {
