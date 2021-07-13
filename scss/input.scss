@@ -66,9 +66,7 @@ main{
     opacity: 1;
   }
  //push off side
-.section{
-    
-}
+
 
 h4{
     padding-bottom: .5rem;
@@ -113,15 +111,12 @@ h1{
 }
 
 .top-row{
-
     margin: 0 0 5rem 0;
-    
     }
-
-
-    //title container
+.right-col{
+    margin-top: 3rem;
+}
 .top-intro{
-   
     background-color:transparent;
     margin: 1rem 0;
 }
@@ -132,17 +127,7 @@ h1{
     font-size: 1.3rem;
     background-color: transparent;
 }
-//bigger intro
-// .bottom-intro{
-//     height: 25%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding-top: 1rem;
-//     margin: 1rem 0;
-//     background-color: transparent;
-//     font-Family: 'Fauna One', Serif;
-// }
+
 .lead{
     font-Family: 'Fauna One', Serif;
 }
@@ -595,7 +580,9 @@ code{
     .jumbotron{
         align-self: center;
     }
-    
+    .right-col{
+        margin-top: 0;
+    }
     .top-intro{
         height: 50%;
     }

@@ -99,6 +99,10 @@ h1 {
   margin: 0 0 5rem 0;
 }
 
+.right-col {
+  margin-top: 3rem;
+}
+
 .top-intro {
   background-color: transparent;
   margin: 1rem 0;
@@ -588,6 +592,10 @@ video {
 @media only screen and (min-width: 768px) {
   .jumbotron {
     align-self: center;
+  }
+
+  .right-col {
+    margin-top: 0;
   }
 
   .top-intro {
