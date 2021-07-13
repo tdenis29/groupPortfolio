@@ -48,10 +48,6 @@ main {
   opacity: 1;
 }
 
-.section {
-  margin: 2rem 3rem 0 3rem;
-}
-
 h4 {
   padding-bottom: 0.5rem;
 }
@@ -111,17 +107,6 @@ h1 {
   font-Family: "Fauna One", Serif;
   font-size: 1.3rem;
   background-color: transparent;
-}
-
-.bottom-intro {
-  height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-  margin: 1rem 0;
-  background-color: transparent;
-  font-Family: "Fauna One", Serif;
 }
 
 .lead {
@@ -220,7 +205,6 @@ video {
   height: 9.75rem !important;
   transform-style: preserve-3d !important;
   -webkit-transform-style: preserve-3d !important;
-  margin: 2.5rem 0;
 }
 
 .face {
@@ -600,10 +584,6 @@ video {
 }
 
 @media only screen and (min-width: 768px) {
-  h1 {
-    margin: 3rem 0 3rem 0;
-  }
-
   .jumbotron {
     align-self: center;
   }
@@ -871,6 +851,7 @@ h1 {
 
 .testi-card-title {
   color: #243d55;
+  border-bottom: solid 2px #243d55;
 }
 
 .avatar-box {
@@ -888,6 +869,7 @@ h1 {
 
 .card-title {
   color: #243d55 !important;
+  border-bottom: solid 2px #243d55;
 }
 
 .aboutme {
@@ -907,8 +889,8 @@ h1 {
   fill: #14919B;
 }
 
-.social-icon {
-  color: #54D1DB !important;
+.social-icon path {
+  fill: #54D1DB !important;
 }
 
 footer {
