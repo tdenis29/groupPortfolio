@@ -92,7 +92,6 @@ h4 {
 }
 
 h1 {
-  margin: 3rem 0 3rem 0;
   color: var(--main-blue);
   font-Family: "Cinzel", Cursive;
   font-Size: 44px;
@@ -600,6 +599,10 @@ video {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    margin: 3rem 0 3rem 0;
+  }
+
   .jumbotron {
     align-self: center;
   }
