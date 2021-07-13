@@ -21,9 +21,11 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  width: 100%;
 }
 
 body {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   background-color: var(--main-dark);
