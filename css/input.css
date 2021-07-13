@@ -99,7 +99,7 @@ h1 {
 }
 
 .top-row {
-  margin: 0 auto;
+  margin: 0 0 5rem 0;
 }
 
 .top-intro {
@@ -579,20 +579,20 @@ video {
 }
 
 #wave1 {
-  margin-top: -0.25rem;
+  margin-top: -0.5rem;
 }
 
 #wave3 {
   display: block;
-  margin-top: -0.25rem;
+  margin-top: -0.5rem;
 }
 
 #wave0 {
-  margin-bottom: -0.25rem;
+  margin-bottom: -0.5rem;
 }
 
 #wave5 {
-  margin-top: -0.25rem;
+  margin-top: -0.5rem;
 }
 
 #wave0 path, #wave1 path, #wave2 path, #wave3 path, #wave5 path {
@@ -862,7 +862,7 @@ h1 {
 
 .testi-card {
   background-color: #F4FAFF;
-  border: solid 4px #DA4A91;
+  border: solid 4px #14919B;
 }
 
 .testi-card-title {
@@ -879,6 +879,7 @@ h1 {
 
 .card {
   border: solid 4px #1C7C82;
+  box-shadow: 5px 10px #243d55;
 }
 
 .card-title {
@@ -891,7 +892,7 @@ h1 {
 }
 
 .about-me-title {
-  color: #54D1DB;
+  color: #54D1DB !important;
 }
 
 .aboutmep {
