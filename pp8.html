@@ -11,6 +11,7 @@
       
         <link rel="stylesheet" href="css/input.css"/>
         <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/video-matrix.css"/>
         <title>Tyson Denis's Group Portfolio Project 8 Page</title>
     </head>
     <body class="rellax" data-rellax-speed="-1" id="body">
@@ -93,10 +94,8 @@
                   
                   <video 
                   id="my-video"
-                  class="video-js vjs-fluid"
-                  controls
-                  preload="auto"
-                  data-setup="{}">
+                  class="vjs-matrix video-js vjs-fluid"
+                  data-setup='{"controls": true, "autoplay": false, "preload": "auto"}'>
                     <source src="mp4/pp8good.webm"
                             type="video/webm">
                     <source src="mp4/pp8goodcompress.mp4"

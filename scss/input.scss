@@ -10,12 +10,6 @@
 //     --main-blue: #34d6ff;
 //     --main-other: #44ff7c;
 // }
-// :root{
-//     --main-dark: #F4FAFF; //light
-//     --main-light: #007694; //dark
-//     --main-blue: ;
-//     --main-red: #0A558C;
-// }
 
 .sr-only{
 clip: rect(1px 1px 1px 1px); /* IE 6/7 */
@@ -574,6 +568,13 @@ code{
     #wave0 path,#wave1 path,#wave2 path,#wave3 path, #wave5 path{
         background-color: #090C9B;
     }
+    .project-content-block{
+
+    }
+    .case-study-links{
+        margin-bottom: 3rem;
+    }
+
 // Med qu
 @media only screen and (min-width: 768px) {
     
@@ -608,9 +609,6 @@ code{
             margin-left: 3.5rem;
             text-align: left;;
         }
-       
-     
-    
        .card{
            flex-direction: row;
            width: 100%;
@@ -774,10 +772,10 @@ code{
     }
 }
 // Light Mode at bottom to over-ride
-//     --main-dark: #F4FAFF; //light
-//     --main-light: #0A558C; //dark
-//     --main-blue: ;
-//     --main-red: #E668A7;
+    // --main-dark: #F4FAFF; //light
+    // --main-light: #0A558C; //dark
+    // --main-blue: ;
+    // --main-red: #E668A7;
 *{
     color: 
     #243d55;
@@ -868,4 +866,7 @@ footer{
 #wave0 path,#wave1 path,#wave2 path,#wave3 path, #wave5 path{
     background-color:#243d55!important;
     
+}
+.casestudy-top h1{
+    margin: 3rem 0 3rem 0;
 }

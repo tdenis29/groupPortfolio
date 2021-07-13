@@ -589,6 +589,10 @@ video {
   background-color: #090C9B;
 }
 
+.case-study-links {
+  margin-bottom: 3rem;
+}
+
 @media only screen and (min-width: 768px) {
   .jumbotron {
     align-self: center;
@@ -917,6 +921,10 @@ footer {
 
 #wave0 path, #wave1 path, #wave2 path, #wave3 path, #wave5 path {
   background-color: #243d55 !important;
+}
+
+.casestudy-top h1 {
+  margin: 3rem 0 3rem 0;
 }
 
 /*# sourceMappingURL=input.css.map */
