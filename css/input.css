@@ -99,12 +99,10 @@ h1 {
 }
 
 .top-row {
-  height: 100vh;
   margin: 0 auto;
 }
 
 .top-intro {
-  height: 50%;
   background-color: transparent;
   margin: 1rem 0;
 }
@@ -586,6 +584,7 @@ video {
 
 #wave3 {
   display: block;
+  margin-top: -0.25rem;
 }
 
 #wave0 {
@@ -629,10 +628,6 @@ video {
 
   .decon-card-text {
     width: 75%;
-  }
-
-  .top-row {
-    height: 100vh;
   }
 
   .hello {
@@ -838,13 +833,13 @@ body {
 }
 
 h1 {
-  color: #243d55;
+  color: #14919B;
 }
 
 .cta, .email-me {
-  background-color: #F4FAFF;
-  color: #243d55;
-  border: #DA4A91 solid 1px;
+  background-color: #4C63B6;
+  color: #F4FAFF;
+  border: #14919B solid 1px;
 }
 
 .cta:hover, .email-me:hover {
@@ -867,7 +862,7 @@ h1 {
 
 .testi-card {
   background-color: #F4FAFF;
-  border: solid 4px #54D1DB;
+  border: solid 4px #DA4A91;
 }
 
 .testi-card-title {

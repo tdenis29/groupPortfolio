@@ -42,17 +42,7 @@ html {
 body{
     max-width: 1400px;
     margin: 0 auto;
-    // padding: 2rem;
     background-color:var(--main-dark);
-   
-    // -webkit-background-size: 1000px 1000px!important;
-    // -o-background-size: 1000px 1000px; 
-    // -moz-background-size: 1000px 1000px; 
-    // background-size: 1000px 1000px;
-    // -webkit-background-composite: initial;
-    // background-repeat:repeat;
-    // background-image:url(../images/bubbles.svg)!important; 
-    
     }
 
   
@@ -123,7 +113,7 @@ h1{
 }
 //top row with bubbles
 .top-row{
-    height: 100vh;
+
     margin: 0 auto;
     
     }
@@ -131,7 +121,7 @@ h1{
 
     //title container
 .top-intro{
-    height: 50%;
+   
     background-color:transparent;
     margin: 1rem 0;
 }
@@ -587,6 +577,7 @@ code{
     }
     #wave3{
         display: block;
+        margin-top: -.25rem;
     }
     #wave0{
         margin-bottom: -.25rem;
@@ -624,10 +615,7 @@ code{
     .decon-card-text{
         width: 75%;
     }
-    .top-row{
-        height: 100vh;
-    
-        }
+  
         .hello{
             margin-left: 3.5rem;
             text-align: left;;
@@ -820,12 +808,12 @@ body {
 }
 
 h1{
-    color: #243d55;
+    color: #14919B;
 }
 .cta,.email-me{
-    background-color: #F4FAFF;
-    color:#243d55;
-    border: #DA4A91 solid 1px ;
+    background-color: #4C63B6;
+    color:#F4FAFF;
+    border:#14919B solid 1px ;
 }
 .cta:hover, .email-me:hover{
     background-color: #DA4A91;
@@ -843,7 +831,7 @@ h1{
 }
 .testi-card{
     background-color: #F4FAFF;
-    border: solid 4px #54D1DB;
+    border: solid 4px #DA4A91;
 }
 .testi-card-title{
     color: #243d55;
