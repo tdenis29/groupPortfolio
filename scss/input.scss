@@ -234,6 +234,7 @@ h2{
     height: 9.75rem!important;
     transform-style: preserve-3d!important;
     -webkit-transform-style: preserve-3d!important;
+    margin: 2.5rem 0;
 
    // to get the animation order right 
     // animation: name duration timing-function delay iteration-count direction fill-mode;;
@@ -876,4 +877,8 @@ footer{
 }
 .footer-former-h5{
     color: #54D1DB;
+}
+#wave0 path,#wave1 path,#wave2 path,#wave3 path, #wave5 path{
+    background-color:#243d55!important;
+    
 }
