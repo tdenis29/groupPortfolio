@@ -25,4 +25,28 @@
     });
 }
 
-
+const lm = document.getElementById('lightMode');
+ lm.addEventListener('click', function lightMode(){
+     let lmArray = [];
+     const body = document.querySelector('body');
+     lmArray.push(body)
+     const navbar = document.querySelector('.navbar');
+     lmArray.push(navbar)
+     const navbarNav = document.querySelector('.navbar-nav');
+     lmArray.push(navbarNav)
+     const navLink = document.querySelector('.nav-link');
+     lmArray.push(navLink);
+     const h1 = document.querySelector('h1');
+     lmArray.push(h1);
+     const cta = document.querySelector('.cta');
+     lmArray.push(cta)
+     const emailMe = document.querySelector('.email-me')
+     lmArray.push(emailMe)
+     const cube = document.querySelectorAll('.face')
+     lmArray.push(cube)
+     , '#wave0 path', '#wave1 path', '#wave2 path', '#wave3 path', '.testimonial', 
+     '.tesit-card', '.testi-card-title', '.avatar-box', '.wash2', '.testi-title', '.card', '.card-title', '.aboutme', '.about-me-title',
+     '.aboutmep', '.contact-icons', '.social-icon path', 'footer', '.foot-component address', '.footer-former-h5', '#wave5')
+     
+     
+ })
