@@ -106,11 +106,45 @@ h1{
     font-Family: 'Cinzel', Cursive;
     font-Size: 44px;
 }
+@keyframes dash {
+    0% {
+      stroke-dashoffset: 500;
+      
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+.jumbotron{
+    display: flex;
+    position: relative;
 
+}
 .top-row{
     height: 85vh;
     margin: 0 0 5rem 0;
-    }
+    position: relative;
+
+ }
+.path{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    -webkit-animation: dash 5s infinite forwards;
+    animation: dash 5s infinite forwards;
+   
+}   
+.background-div{
+    height: 85vh;
+    width: 100%;
+    position: absolute;
+    top: 20;
+    right: 0;
+    z-index: -1;
+svg{
+    height: inherit;
+    width: inherit;
+}}
+
 .right-col{
     margin-top: 3rem;
 }
