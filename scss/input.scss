@@ -65,7 +65,10 @@ main{
 h4{
     padding-bottom: .5rem;
 }
-// Nav Bar 
+// Nav Bar
+.brand{
+    stroke-dasharray: 20;
+} 
 .navbar{
     background-color: transparent;
 }
@@ -142,41 +145,7 @@ video{
 
 
 // case study PROJECT PAGES
-.casestudy-top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-}
-.casestudy-top > h1 {
-    color: var(--main-blue);
-}
-.case-study-top-text{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-h2{
-    color: var(--main-red);
-    font-Family: 'Cinzel', Cursive;
-}}
-.case-study-top-text > p {
-    font-Family: 'Fauna One', Serif;
-}
-.content-section{
-    margin: 2rem;
-}
-.case-study-learn-list{
-    width: 100%;
-}
-.project-content-block > p {
-    margin: 1rem 0 1rem 0;
-    font-Family: 'Fauna One', Serif;
-}
-.pp-sum{
-    font-Family: 'Fauna One', Serif;
-}
+
 //side thingys
 
 //cubes box
@@ -342,6 +311,9 @@ h4{
  
     margin: 0 auto;
     background-color: var(--secondary-blue);
+}
+.testi-title{
+    padding-top: 1.5rem;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -540,9 +512,49 @@ h4{
         font-Family: 'Fauna One', Serif;
     }
 // PROJECT PAGES
+.casestudy-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.casestudy-top > h1 {
+    color: var(--main-blue);
+}
+.case-study-top-text{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+h2{
+    color: var(--main-red);
+    font-Family: 'Cinzel', Cursive;
+}}
+.case-study-top-text > p {
+    font-Family: 'Fauna One', Serif;
+    
+}
+.content-section{
+    margin: 2rem 0;
+    width: 100%;
+}
+.case-study-learn-list{
+    width: 100%;
+}
+.project-content-block{
+    margin: 0 auto;
+    font-Family: 'Fauna One', Serif;
+    width: 80%;
+}
+.pp-sum{
+    font-Family: 'Fauna One', Serif;
+    padding: 1rem;
+}
 
 code{
     color: var(--main-other);
+  
 }
     .video-con{
         width: 98%;
@@ -568,12 +580,13 @@ code{
     #wave0 path,#wave1 path,#wave2 path,#wave3 path, #wave5 path{
         background-color: #090C9B;
     }
-    .project-content-block{
-
-    }
     .case-study-links{
         margin-bottom: 3rem;
     }
+    .footer-pp{
+        width: 100%;
+    }
+
 
 // Med qu
 @media only screen and (min-width: 768px) {
@@ -676,23 +689,24 @@ code{
         .case-study-top-text{
             width: 50%;
             padding: 1rem;
-            margin-bottom: 2rem;
+           
         }
         .project-content-block{
             width: 75%;
             justify-self: center;
             margin: 0 auto;
-            background-color: transparentize($color: #011627, $amount: .5);
+        
         }
         .project-content-block > p{
             width: 50%;
-            margin: 1rem auto;
+            padding: 1rem 0;
+      
 
         }
         .project-content-block > code{
             width: 50%;
             display: block!important;
-            margin: 1rem auto;
+            margin: 0 auto;
         }
 
        .pp-sum{
@@ -772,10 +786,10 @@ code{
     }
 }
 // Light Mode at bottom to over-ride
-    // --main-dark: #F4FAFF; //light
-    // --main-light: #0A558C; //dark
-    // --main-blue: ;
-    // --main-red: #E668A7;
+//     --main-dark: #F4FAFF; //light
+//     --main-light: #0A558C; //dark
+//     --main-blue: ;
+//     --main-red: #E668A7;
 *{
     color: 
     #243d55;
@@ -870,3 +884,56 @@ footer{
 .casestudy-top h1{
     margin: 3rem 0 3rem 0;
 }
+.case-study-learn-list{
+    background-color: #243d55;
+}
+.project-content-block{
+    background-color: #243d55;
+    color: #54D1DB;
+}
+.project-content-block > p {
+    margin: 0 auto;
+    font-Family: 'Fauna One', Serif;
+    color: #54D1DB;
+    padding: 1rem;
+}
+.project-content-block > code{
+    padding: 1rem;
+    display: block!important;
+    margin: 0 auto;
+    color: #DA4A91;
+}
+#wave6{
+    margin-bottom: -5.5rem;
+}
+.case-study-title{
+    color: #54D1DB!important;
+    position: relative;
+    z-index: 2;
+}
+/* Change all text and icon colors in the player. */
+.vjs-matrix.video-js {
+    color: #54D1DB;
+  }
+  
+  /* Change the border of the big play button. */
+  .vjs-matrix .vjs-big-play-button {
+    border-color: #54D1DB;
+  }
+  
+  /* Change the color of various "bars". */
+  .vjs-matrix .vjs-volume-level,
+  .vjs-matrix .vjs-play-progress,
+  .vjs-matrix .vjs-slider-bar {
+    background: #54D1DB;
+  }
+  .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+    color:#54D1DB;
+  }
+  .video-js .vjs-volume-level{
+    background-color: #54D1DB;
+  }
+  .video-js .vjs-control-bar{
+    background-color: #54D1DB;
+    opacity: .7;
+  }
