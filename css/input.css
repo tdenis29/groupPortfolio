@@ -379,16 +379,9 @@ video {
   align-items: center;
 }
 
-.avatar-box {
-  width: 144px;
-  height: 144px;
-  border: solid 2px var(--main-blue);
-  margin-top: 1.5rem;
-}
-
 .avatar {
-  margin-left: 1.75rem;
-  margin-top: -1.25rem;
+  height: 9.75rem;
+  width: 9.75rem;
 }
 
 .testi-card {
@@ -822,6 +815,10 @@ video {
   }
 }
 @media only screen and (min-width: 1068px) {
+  .testi-card {
+    flex-direction: column !important;
+  }
+
   .card {
     max-height: 450px;
   }
