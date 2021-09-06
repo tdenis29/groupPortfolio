@@ -86,7 +86,7 @@
         <div class="pp-con rellax">
               <div class="case-study-top-text">
                 <h2>The Project</h2>
-                  <p>This project is the last project in the Odin Projects Foundations curriculum. The goal was to make a basic calculator. It had to include rounded decimal places, the ability to do math with floating point numbers, add a backspace and allow the user to string together operands and operators. For example 12 + 7 - 5 * 3 = 42. We were told specifically NOT to use eval(). My first attempt anded up making an expression string like a graphing calculator which caused a huge increase in difficulty. And an introduction the famous Shunting Yard Algorithm when I tried to make my own eval() function.
+                  <p>This project is the last project in the Odin Projects Foundations curriculum. The goal was to make a basic calculator. It had to include rounded decimal places, have the ability to do math with floating point numbers, add a backspace and allow the user to string together operands and operators. For example, 12 + 7 - 5 * 3 = 42. We were told specifically NOT to use eval(). My first attempt ended up making an expression string like a graphing calculator, which caused a huge increase in difficulty. I also got an introduction to the "famous" Shunting Yard Algorithm when I tried to make my own eval() function.
                   </p>
                 </div>
                
@@ -119,7 +119,7 @@
     </div>
 
     <div class="project-content-block">
-      <p>Getting the numbers to show up was pretty simple using text-content. The difficult part was going through the logic and deciding when to set variables. Basically I ended up counting clicks. For example we can assume the first click on a calculator is a number and will be the first operand in an expression. After an operator(eg. +, *) is clicked we can ssume the user had the first term they want evaluate so we can set that to a varablie for use later </p>
+      <p>Getting the numbers to show up was pretty simple using text-content. The difficult part was going through the logic and deciding when to set variables. Basically, I ended up counting clicks. For example, we can assume the first click on a calculator is a number and will be the first operand in an expression. After an operator (e.g., +, *) is clicked, we can assume the user has the first term they want to evaluate so we can set that to a variable for use later.</p>
        <code> // first click <br>
         if(key.classList.contains('number') && operand1 === null){ <br>
           handleNumber(keyContent) <br>
@@ -130,7 +130,7 @@
 </div>
       
       <div class="project-content-block">
-        <p>The Above code passes the keyContent(textContent) of the clicked number key to handleNumber() function which controls what gets wrtitten to the screen by setting displayValue with (keyContent)</p>
+        <p>The above code passes the keyContent(textContent) of the clicked number key to handleNumber() function, which controls what gets written to the screen by setting displayValue with (keyContent).</p>
         <code>
             function handleNumber(keyContent){ <br>
                 if (display.textContent === "0") { <br>
@@ -160,7 +160,7 @@
     </code>
   </div>
   <div class="project-content-block">
-    <p>I had trouble with chaining operators and evaluating an expression with more than two terms. My first attempt had me making an expression string and then going to implement my own Shunting Yard Algorithm. Which is pretty difficult. After re-reading the intstructions, I realized when another operator is clicked, for exampe(2 + 2 +) we can evaluate what is on the screen and use the result as the 1st operand in the next expression. So (2 + 2 +) interperted as (4 + ) </p>
+    <p>I had trouble with chaining operators and evaluating an expression with more than two terms. My first attempt had me making an expression string and then going to implement my own Shunting Yard Algorithm, which is pretty difficult. After re-reading the intstructions, I realized that when another operator is clicked (for example, (2 + 2 +)) we can evaluate what is on the screen and use the result as the 1st operand in the next expression. So (2 + 2 +) interpreted as (4 + ).</p>
     <code> 
         if(operand1 !== null && operand2 !== null && result === null && key.classList.contains('operator')){ <br>
             result = operate(operand1,operand2,operator); <br>
@@ -176,7 +176,7 @@
 </div>
     <p>   <div class="pp-sum">
       <h4 class="text-center">The Summary</h4>
-      <p>This was a challenge. As I mentioned above I went down the eval() rabbit-hole. I learned about how CPU's do math, reverse Polish notation and most importantly rely on functional programming techniques rather than synchronous. My first version didn't outsource updating the display which led a alot of problems the longer the expression got and ended up with a really long and ugly Event Listener.
+      <p>This was a challenge. As I mentioned above, I went down the eval() rabbit-hole. I learned a little about how CPUs do math, reverse Polish notation, and most importantly rely on functional programming techniques rather than iterative. My first version didn't outsource updating the display which led to a lot of problems as the expression got longer, and ended up with a really long and ugly Event Listener.
       </p>
     </div>
     </p>

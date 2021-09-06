@@ -120,7 +120,7 @@
     </div>
 
     <div class="project-content-block">
-      <p>The next step was passing in letters to the next function which loops over the spread phrase and appends the only the letters to the DOM. This got me a little trouble with a local variable. I had no clue wht closures were (still don't) and had my first expreience with scope so to solve I used a global variable.</p>
+      <p>The next step was passing in letters to the next function, which loops over the spread phrase and appends the only the letters to the DOM. This caused me a little trouble with a local variable. I had no clue what closures were (still don't) and had my first experience with scope, so to solve I used a global variable.</p>
        <code>function addPhraseToDisplay(letters) {      <br>               
         for (let i = 0; i < letters.length; i++) {   <br>
            let ul = document.getElementById("letterboxes") <br>              
@@ -139,7 +139,7 @@
 </div>
       
       <div class="project-content-block">
-        <p>The game progresses using an event listener on the parent element that holds the letters. After preventDefault() to stop bubbling, We had to toggle a "chosen" class for styling the chosen buttons and then disabling them so they could not be chosen again. If the letter was in the phrase, chosen would trigger a transition and if it wasn't we had to remove a "heart" or try from the user.</p>
+        <p>The game progresses using an event listener on the parent element that holds the letters. After preventDefault() to stop bubbling, we had to toggle a "chosen" class for styling the chosen buttons and then disabling them so they could not be chosen again. If the letter was in the phrase, chosen would trigger a transition and if it wasn't we had to remove a "heart" or try from the user.</p>
         <code>keyBoard.addEventListener('click', (button) => { <br>
         button.stopPropagation(); <br>
         if (button.target.nodeName === "BUTTON"){ <br>
@@ -149,8 +149,7 @@
       </div>
 
     <div class="project-content-block">
-      <p>The win conditions were the hard part. I first tried appending new buttons to the overlay with no success. Then, I decided instead to change the button we already got (start button) and simply changed the text content and made a if statement to handle win or lose conditions.
-        The logic for the win condition is as follows; If the amount of letters with the class ".show" was equal to the amount in the phrase then the user has won.
+      <p>The win conditions were the hard part. I first tried appending new buttons to the overlay with no success. Then, I decided instead to change the button we already had (start button) and simply changed the text content and made an if statement to handle win or lose conditions. The logic for the win condition is as follows: if the amount of letters with the class ".show" was equal to the amount in the phrase, then the user has won.
       </p>
 
       <code>const checkWin = () => { <br>
