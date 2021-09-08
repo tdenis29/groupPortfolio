@@ -1,4 +1,7 @@
-@media only screen and (min-width: 1068px){
+@media (min-width: 1068px){
+    .hello{
+        margin: 0;
+    }
     .testi-card{
      flex-direction: column!important;
     }
@@ -52,4 +55,27 @@
          margin: 0 .5rem;
   
      }
- }
+ 
+    //about 
+
+    .about-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .aboutme{
+        width: 50%;
+    }
+    .aboutmep{
+        width: 100%;
+    }
+    .about-me-progress{
+        width: 50%;
+        background-color: $nightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me-progress-title{
+        text-align: center;
+    }
+}

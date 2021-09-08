@@ -1,5 +1,5 @@
 // Med qu
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     
     .jumbotron{
         align-self: center;
@@ -12,6 +12,10 @@
     }
     .bottom-intro{
         height: 50%;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
     }
     .aboutme{
         flex-direction: column;

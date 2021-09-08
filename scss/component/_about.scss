@@ -1,3 +1,16 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+}
+.about-me-progress{
+    width:100%;
+    background-color: $nightblue;
+    padding-right: 1rem;
+
+}
+.about-me-progress-title{
+    text-align: center;;
+}
 .aboutme{
     width: 100%;
     margin: 0 auto;
@@ -44,6 +57,14 @@ h4{
     width: 100%;
     background-color: $nightblue;
 }
+.label{
+    height: em(60px);
+    border-bottom: solid 1px $grey;
+    position:relative;
+span{
+   position: absolute;
+   bottom: 0; 
+}}
 .spacer-div{
   height: 2rem;
   width: 100%;

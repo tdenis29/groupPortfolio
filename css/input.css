@@ -437,6 +437,7 @@ h1 {
   color: #34d6ff;
   font-family: "Cinzel", Cursive;
   font-Size: 44px;
+  margin: 0;
 }
 
 @keyframes dash {
@@ -739,6 +740,21 @@ h1 {
   justify-content: center;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-progress {
+  width: 100%;
+  background-color: #08095f;
+  padding-right: 1rem;
+}
+
+.about-me-progress-title {
+  text-align: center;
+}
+
 .aboutme {
   width: 100%;
   margin: 0 auto;
@@ -787,6 +803,16 @@ h1 {
 .aboutme {
   width: 100%;
   background-color: #08095f;
+}
+
+.label {
+  height: 3.3333333333em;
+  border-bottom: solid 1px #797e83;
+  position: relative;
+}
+.label span {
+  position: absolute;
+  bottom: 0;
 }
 
 .spacer-div {
@@ -980,7 +1006,7 @@ video {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .jumbotron {
     align-self: center;
   }
@@ -995,6 +1021,11 @@ video {
 
   .bottom-intro {
     height: 50%;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
   }
 
   .aboutme {
@@ -1145,7 +1176,11 @@ video {
     width: 25%;
   }
 }
-@media only screen and (min-width: 1068px) {
+@media (min-width: 1068px) {
+  .hello {
+    margin: 0;
+  }
+
   .testi-card {
     flex-direction: column !important;
   }
@@ -1203,6 +1238,31 @@ video {
 
   div.card-body > div > a {
     margin: 0 0.5rem;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutme {
+    width: 50%;
+  }
+
+  .aboutmep {
+    width: 100%;
+  }
+
+  .about-me-progress {
+    width: 50%;
+    background-color: #08095f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-progress-title {
+    text-align: center;
   }
 }
 /* Change all text and icon colors in the player. */
