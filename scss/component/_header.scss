@@ -1,6 +1,6 @@
 h1{
-    color: var(--main-blue);
-    font-Family: 'Cinzel', Cursive;
+    color: $lightblue;
+    font-family: $font-family--secondary;
     font-Size: 44px;
 }
 @keyframes dash {
@@ -52,13 +52,13 @@ svg{
 //little intro
 .hello{
     text-align: center;
-    font-Family: 'Fauna One', Serif;
-    font-size: 1.3rem;
+    font-family: $font-family--primary;
+    font-size: $base__font_size;
     background-color: transparent;
 }
 
 .lead{
-    font-Family: 'Fauna One', Serif;
+    font-Family: $font-family--primary;
 }
 .section-margin{
     margin: 0 2rem 0 2rem;
@@ -69,18 +69,19 @@ svg{
     justify-content: center;
     align-items: center; 
     // position: relative;
-    background-color:transparent; 
+    background-color:$transparent; 
 }
 //send and go to projects buttons and send
 .cta{
-    background-color: var(--main-dark);
-    border: 1px solid var(--main-red);
-    color: var(--main-light);
+    background-color: $black;
+    border: solid 1px $rubyred;
+    color: $white;
     margin: .5rem 0;
-    font-Family: 'Fauna One', Serif;
+    font-family: $font-family--primary;
+   
 }
 .cta:hover{
-    background-color: var(--main-red);
+    background-color: $rubyred;
       
 }
 // CUBER 
@@ -105,10 +106,10 @@ svg{
   .face {
     width: 9.75rem;
     height: 9.75rem;
-    border: 2px solid var(--main-blue);
+    border: solid 2px $lightblue;
     position: absolute;
     font-size: 2rem;
-    background-color: var(--main-dark);
+    background-color: $black;
   }
   .front {
     transform: translateZ(78px);

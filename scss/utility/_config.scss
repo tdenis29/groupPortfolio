@@ -1,12 +1,81 @@
 // Base Styles and Typo\
 
-:root{
-    --main-dark: #0E0B16;
-    --secondary-blue: #08095f;
-    --main-light: #F4FAFF;
-    --main-red: #FF01FB;
-    --main-blue: #34d6ff;
-    --main-other: #44ff7c;
+//FONT STACKS
+$font-url--google       : "https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One";
+
+$font-family--primary   :"Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+$font-family--secondary : "Cinzel", Cursive; 
+
+///variables
+$white   : #F4FAFF;
+$black   : #0E0B16;
+$grey    : #797e83;
+
+$nightblue : #08095f;
+$lightblue : #34d6ff;
+$rubyred   : #FF01FB;
+$codegreen : #44ff7c;
+$warningred: #cc0055;
+$transparent: transparent;
+
+//Color Usage 
+
+$color-primary: $lightblue;
+$color-secondary: $rubyred;
+$color-accent : $codegreen;
+
+
+//Color Map
+
+$ui-colors: (
+    default: $black,
+    transparent: $transparent,
+    ctahover: $rubyred,  
+    success: $codegreen,
+    error  : $warningred,
+    warning: $warningred,
+);
+
+//TEXT//
+
+$base__font_size  : 18px;
+$base__line       : 24px;
+
+///PATH TO ASSESTS
+$path-rel         :"../images";
+
+//Import Google Fonts if it exists
+
+@if variable-exists($font-url--google){
+    @import url($font_url--google);
+}
+
+//Em directive 
+@function em($target, $context: $base__font_size) {
+    @return ($target/$context) * 1em;
+}
+
+///MIXINS
+@mixin bg-colors($map) {
+    @each $theme, $color in $map{
+        &--#{$theme} {
+            background-color: $color;
+        }
+    }
+}
+@mixin imgreplace($img, $w,$h,$disp: block) {
+    background-image:url('#{path-rel}/#{img}');
+    background-repeat: no-repeat;
+    width: $w;
+    height: $h;
+    display: $disp;
+}
+
+///Pseudo element placeholder
+%pseudos {
+    display: block;
+    content: "";
+    position: absolute;
 }
 
 .sr-only{
