@@ -1,7 +1,7 @@
 .testimonial{
  
     margin: 0 auto;
-    background-color: var(--secondary-blue);
+    background-color: $nightblue;
 }
 .testi-title{
     padding-top: 1.5rem;
@@ -12,7 +12,7 @@
   width: 100px;
   background-size: 100%, 100%;
   border-radius: 50%;
-  color: var(--main-red);
+  color: $rubyred;
   background-image: none;
 }
 
@@ -20,13 +20,13 @@
 {
   content: '>';
   font-size: 55px;
-  color: var(--main-red);
+  color: $rubyred;
 }
 
 .carousel-control-prev-icon::after {
   content: '<';
   font-size: 55px;
-  color: var(--main-red);
+  color: $rubyred;
 }
 .testi-row{
     justify-content: space-evenly;
@@ -42,15 +42,15 @@
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
-    border: solid 4px var(--main-blue);
-    background-color: var(--main-dark);
+    border: solid 4px $lightblue;
+    background-color: $black;
     padding: 1rem;
 }
 .testi-card-title{
     font-size: 1.5rem;
-    font-Family: "Cinzel", Cursive;
+    font-family:$font-family--secondary ;
     
 }
 .testi-card-text{
-    font-Family: "Fauna One", Serif;
+    font-family: $font-family--primary;
 }

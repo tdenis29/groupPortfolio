@@ -3,7 +3,7 @@
     stroke-dasharray: 20;
 } 
 .navbar{
-    background-color: transparent;
+    background-color: $transparent;
 }
 .navbar-nav{
     background-color: transparentize($color: #011627, $amount: .99)!important;
@@ -11,25 +11,25 @@
 
  .nav-link{
      padding-left: 1rem;
-     color: var(--main-blue)!important; 
-     font-Family: 'Fauna One', Serif;
-     background-color: transparent;
+     color: $lightblue!important; 
+     font-family: $font-family--primary;
+     background-color: $transparent;
      text-decoration: underline;
-     text-decoration-color: var(--main-red);
+     text-decoration-color: $rubyred;
   
 }
 
  .nav-link:active{
-     background-color: var(--main-red);
+     background-color: $rubyred;
      border-radius: 25%;
  }
  .nav-link:hover{
-     background-color: var(--main-red);
-     color: var(--main-light)!important;
+     background-color: $rubyred;
+     color: $white;
  }
  .nav-link:visited{
-     color: var(--main-other);
+     color: $codegreen;
  }
  #navbarToggleExternalContent > ul > li> a {
-     background-color: transparent;
+     background-color: $transparent;
  }

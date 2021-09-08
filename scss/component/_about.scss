@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: var(--secondary-blue);
+    background-color: $nightblue;
 h4{
     margin: 1rem 0;
 }}
@@ -15,7 +15,7 @@ h4{
 }
 .decon-image-box{
   
-    border: solid 2px var(--main-blue);  
+    border: solid 2px $lightblue;
        
 }
 
@@ -24,7 +24,7 @@ h4{
     display: block;
     height: inherit;
     margin-top: -1.5rem;
-    background-color: #fff;
+    background-color: $white;
     background-size: cover;
     background-position-x: center;
     margin-left: -.5rem;
@@ -34,18 +34,18 @@ h4{
     padding: .5rem 1rem;
     width: 100%;
     font-size: 1.2rem;
-    font-Family: 'Fauna One', Serif;
+    font-family: $font-family--primary;
 }
 .decon-card-text{
     width: 75%;
-    font-Family: 'Fauna One', Serif;
+    font-family: $font-family--primary;
 }
 .aboutme{
     width: 100%;
-    background-color: var(--secondary-blue);
+    background-color: $nightblue;
 }
 .spacer-div{
   height: 2rem;
   width: 100%;
-  background: transparent;
+  background: $transparent;
 }

@@ -37,19 +37,19 @@
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
-    border: solid 4px var(--main-blue);
-    background-color: var(--main-dark);
+    border: solid 4px $lightblue;
+    background-color: $black;
     width: 100%;
     max-width: 640px;
 }
 .card-title{
-    color: var(--main-red);
-    font-Family: 'Cinzel', Cursive;
-    font-size: x-large
+    color: $rubyred;
+    font-family: $font-family--secondary;
+    font-size: em(30px);
     
 }
 .card-body{
-    font-Family: 'Fauna One', Serif;
+    font-family: $font-family--primary;
 }
 .projectbtns{
     display: flex;

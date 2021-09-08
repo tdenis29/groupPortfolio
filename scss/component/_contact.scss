@@ -17,39 +17,39 @@
     padding: 1rem 1rem;
     width: 100%;
     font-size: 1.2rem;
-    font-Family: 'Fauna One', Serif;
+    font-family: $font-family--primary;
     text-align: center;
    }
    .contact-icons{
     height: 2.5rem;
     width: 2.5rem;
     margin-bottom: 0.5rem;
-    fill: var(--main-blue);
+    fill: $lightblue;
    }
    .contact-icon-text{
-    font-Family: "Fauna One", Serif;
+    font-family: $font-family--secondary;
    }
    .email-me{
-    background-color:var(--main-dark);
-    color: var(--main-light);
+    background-color: $black;
+    color: $white;
     padding: 1rem;
-    border: solid 1px var(--main-red);
+    border: solid 1px $rubyred;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
     width: 50%;
     margin: 2.5rem auto;
-    font-Family: 'Fauna One', Serif;
+    font-family: $font-family--primary;
     border-radius: .3rem;
 
    }
     .email-me:hover{
-    background-color: var(--main-red);
-    color: var(--main-light);
+    background-color: $rubyred;
+    color: $white;
 }
     .email-me:visited{
-        background-color: var(--main-blue);
+       background-color: $lightblue;
     }
     address{
-        font-Family: 'Fauna One', Serif;
+        font-family: $font-family--primary
     }

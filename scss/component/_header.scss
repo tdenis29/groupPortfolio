@@ -46,7 +46,7 @@ svg{
     margin-top: 3rem;
 }
 .top-intro{
-    background-color:transparent;
+    background-color:$transparent;
     margin: 1rem 0;
 }
 //little intro
@@ -54,7 +54,7 @@ svg{
     text-align: center;
     font-family: $font-family--primary;
     font-size: $base__font_size;
-    background-color: transparent;
+    background-color: $transparent;
 }
 
 .lead{

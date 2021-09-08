@@ -1,26 +1,26 @@
 /* Change all text and icon colors in the player. */
 .vjs-matrix.video-js {
-    color: #54D1DB;
+    color: $lightblue;
   }
   
   /* Change the border of the big play button. */
   .vjs-matrix .vjs-big-play-button {
-    border-color: #54D1DB;
+    border-color:$lightblue;
   }
   
   /* Change the color of various "bars". */
   .vjs-matrix .vjs-volume-level,
   .vjs-matrix .vjs-play-progress,
   .vjs-matrix .vjs-slider-bar {
-    background: #54D1DB;
+    background: $lightblue;
   }
   .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
-    color:#54D1DB;
+    color:$lightblue;
   }
   .video-js .vjs-volume-level{
-    background-color: #54D1DB;
+    background-color: $lightblue;
   }
   .video-js .vjs-control-bar{
-    background-color: #54D1DB;
+    background-color: $lightblue;
     opacity: .7;
   }

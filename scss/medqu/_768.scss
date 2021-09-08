@@ -40,7 +40,7 @@
        }
        .card-title{
         font-size: 2rem;
-        font-Family: 'Cinzel', Cursive;
+        font-family: $font-family--secondary
  
     }
        .card-img-top{
@@ -126,8 +126,8 @@
            margin: 1rem auto;
         
        h4{
-           color: var(--main-red);
-           font-Family: 'Cinzel', Cursive;
+           color: $rubyred;
+           font-family: $font-family--secondary;
        p{
            font-size: 1.2rem;
        }}}
@@ -142,8 +142,8 @@
        .wash2{
         font-size: 2rem;
         font-weight: bolder;
-        font-family: "Cinzel", Cursive;
-        color: var(--main-blue)
+        font-family: $font-family--secondary;
+        color: $lightblue
 
        }
        .email-me{

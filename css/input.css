@@ -408,25 +408,25 @@ h4 {
 
 .nav-link {
   padding-left: 1rem;
-  color: var(--main-blue) !important;
-  font-Family: "Fauna One", Serif;
+  color: #34d6ff !important;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   background-color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--main-red);
+  text-decoration-color: #FF01FB;
 }
 
 .nav-link:active {
-  background-color: var(--main-red);
+  background-color: #FF01FB;
   border-radius: 25%;
 }
 
 .nav-link:hover {
-  background-color: var(--main-red);
-  color: var(--main-light) !important;
+  background-color: #FF01FB;
+  color: #F4FAFF;
 }
 
 .nav-link:visited {
-  color: var(--main-other);
+  color: #44ff7c;
 }
 
 #navbarToggleExternalContent > ul > li > a {
@@ -618,7 +618,7 @@ h1 {
 }
 .testimonial {
   margin: 0 auto;
-  background-color: var(--secondary-blue);
+  background-color: #08095f;
 }
 
 .testi-title {
@@ -631,20 +631,20 @@ h1 {
   width: 100px;
   background-size: 100%, 100%;
   border-radius: 50%;
-  color: var(--main-red);
+  color: #FF01FB;
   background-image: none;
 }
 
 .carousel-control-next-icon::after {
   content: ">";
   font-size: 55px;
-  color: var(--main-red);
+  color: #FF01FB;
 }
 
 .carousel-control-prev-icon::after {
   content: "<";
   font-size: 55px;
-  color: var(--main-red);
+  color: #FF01FB;
 }
 
 .testi-row {
@@ -662,18 +662,18 @@ h1 {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  border: solid 4px var(--main-blue);
-  background-color: var(--main-dark);
+  border: solid 4px #34d6ff;
+  background-color: #0E0B16;
   padding: 1rem;
 }
 
 .testi-card-title {
   font-size: 1.5rem;
-  font-Family: "Cinzel", Cursive;
+  font-family: "Cinzel", Cursive;
 }
 
 .testi-card-text {
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .col {
@@ -716,20 +716,20 @@ h1 {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  border: solid 4px var(--main-blue);
-  background-color: var(--main-dark);
+  border: solid 4px #34d6ff;
+  background-color: #0E0B16;
   width: 100%;
   max-width: 640px;
 }
 
 .card-title {
-  color: var(--main-red);
-  font-Family: "Cinzel", Cursive;
-  font-size: x-large;
+  color: #FF01FB;
+  font-family: "Cinzel", Cursive;
+  font-size: 1.6666666667em;
 }
 
 .card-body {
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .projectbtns {
@@ -747,7 +747,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: var(--secondary-blue);
+  background-color: #08095f;
 }
 .aboutme h4 {
   margin: 1rem 0;
@@ -758,7 +758,7 @@ h1 {
 }
 
 .decon-image-box {
-  border: solid 2px var(--main-blue);
+  border: solid 2px #34d6ff;
 }
 
 .decon-image {
@@ -766,7 +766,7 @@ h1 {
   display: block;
   height: inherit;
   margin-top: -1.5rem;
-  background-color: #fff;
+  background-color: #F4FAFF;
   background-size: cover;
   background-position-x: center;
   margin-left: -0.5rem;
@@ -776,17 +776,17 @@ h1 {
   padding: 0.5rem 1rem;
   width: 100%;
   font-size: 1.2rem;
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .decon-card-text {
   width: 75%;
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .aboutme {
   width: 100%;
-  background-color: var(--secondary-blue);
+  background-color: #08095f;
 }
 
 .spacer-div {
@@ -813,7 +813,7 @@ h1 {
   padding: 1rem 1rem;
   width: 100%;
   font-size: 1.2rem;
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   text-align: center;
 }
 
@@ -821,44 +821,44 @@ h1 {
   height: 2.5rem;
   width: 2.5rem;
   margin-bottom: 0.5rem;
-  fill: var(--main-blue);
+  fill: #34d6ff;
 }
 
 .contact-icon-text {
-  font-Family: "Fauna One", Serif;
+  font-family: "Cinzel", Cursive;
 }
 
 .email-me {
-  background-color: var(--main-dark);
-  color: var(--main-light);
+  background-color: #0E0B16;
+  color: #F4FAFF;
   padding: 1rem;
-  border: solid 1px var(--main-red);
+  border: solid 1px #FF01FB;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   width: 50%;
   margin: 2.5rem auto;
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   border-radius: 0.3rem;
 }
 
 .email-me:hover {
-  background-color: var(--main-red);
-  color: var(--main-light);
+  background-color: #FF01FB;
+  color: #F4FAFF;
 }
 
 .email-me:visited {
-  background-color: var(--main-blue);
+  background-color: #34d6ff;
 }
 
 address {
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .social-icon {
   height: 2rem;
   width: 2rem;
-  fill: #f2f5ea;
+  fill: #F4FAFF;
   margin: 0.5rem;
   text-decoration: none;
   cursor: pointer;
@@ -872,7 +872,7 @@ address {
   font-size: 2rem;
   font-weight: bolder;
   font-family: "Cinzel", Cursive;
-  color: var(--main-red);
+  color: #FF01FB;
   margin-bottom: revert;
 }
 
@@ -897,7 +897,7 @@ video {
 }
 
 .casestudy-top > h1 {
-  color: var(--main-blue);
+  color: #34d6ff;
 }
 
 .case-study-top-text {
@@ -906,12 +906,12 @@ video {
   margin-bottom: 2rem;
 }
 .case-study-top-text h2 {
-  color: var(--main-red);
-  font-Family: "Cinzel", Cursive;
+  color: #FF01FB;
+  font-family: "Cinzel", Cursive;
 }
 
 .case-study-top-text > p {
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .content-section {
@@ -926,17 +926,17 @@ video {
 
 .project-content-block {
   margin: 0 auto;
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   width: 95%;
 }
 
 .pp-sum {
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   padding: 0.5rem;
 }
 
 code {
-  color: var(--main-other);
+  color: #44ff7c;
 }
 
 .video-con {
@@ -967,7 +967,7 @@ video {
 }
 
 #wave0 path, #wave1 path, #wave2 path, #wave3 path, #wave5 path {
-  fill: var(--secondary-blue);
+  fill: #08095f;
 }
 
 .case-study-links {
@@ -1026,7 +1026,7 @@ video {
 
   .card-title {
     font-size: 2rem;
-    font-Family: "Cinzel", Cursive;
+    font-family: "Cinzel", Cursive;
   }
 
   .card-img-top {
@@ -1117,8 +1117,8 @@ video {
     margin: 1rem auto;
   }
   .pp-sum h4 {
-    color: var(--main-red);
-    font-Family: "Cinzel", Cursive;
+    color: #FF01FB;
+    font-family: "Cinzel", Cursive;
   }
   .pp-sum h4 p {
     font-size: 1.2rem;
@@ -1136,7 +1136,7 @@ video {
     font-size: 2rem;
     font-weight: bolder;
     font-family: "Cinzel", Cursive;
-    color: var(--main-blue);
+    color: #34d6ff;
   }
 
   .email-me {
@@ -1200,31 +1200,31 @@ video {
 }
 /* Change all text and icon colors in the player. */
 .vjs-matrix.video-js {
-  color: #54D1DB;
+  color: #34d6ff;
 }
 
 /* Change the border of the big play button. */
 .vjs-matrix .vjs-big-play-button {
-  border-color: #54D1DB;
+  border-color: #34d6ff;
 }
 
 /* Change the color of various "bars". */
 .vjs-matrix .vjs-volume-level,
 .vjs-matrix .vjs-play-progress,
 .vjs-matrix .vjs-slider-bar {
-  background: #54D1DB;
+  background: #34d6ff;
 }
 
 .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
-  color: #54D1DB;
+  color: #34d6ff;
 }
 
 .video-js .vjs-volume-level {
-  background-color: #54D1DB;
+  background-color: #34d6ff;
 }
 
 .video-js .vjs-control-bar {
-  background-color: #54D1DB;
+  background-color: #34d6ff;
   opacity: 0.7;
 }
 

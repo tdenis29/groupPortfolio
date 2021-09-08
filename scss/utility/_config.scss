@@ -70,7 +70,19 @@ $path-rel         :"../images";
     height: $h;
     display: $disp;
 }
-
+//pseudo element mixin extends %pseuodos
+@mixin p-el ($el, $el-w: null, $el-h: null) {
+    @if $el == "before" or $el == "after"{
+    &:#{$el} {
+        @extend %pseudos;
+        width: $el-w;
+        height: $el-h;
+        @content;
+    }
+} @else {
+    @warn "`#{$el}` is not a valid pseudo element";
+}
+}
 ///Pseudo element placeholder
 %pseudos {
     display: block;
