@@ -3,9 +3,11 @@ const newChart = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(newChart, {
     type: 'bar',
     data: {
-        labels: ['HTML5', 'CSS3', 'JS', 'SASS', 'Bootstrap', "UX/UI", "DishWasher"],
+        labels: ['HTML5', 'CSS3', 'JS', 'SASS', 'Bootstrap', "UX/UI", "Sous-Chef"],
+        
         datasets: [{
             label: "How I Enjoy Using These Technologies",
+         
             data: [2, 3, 4, 3, 2, 2, 5],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.7)',
@@ -24,9 +26,10 @@ var myChart = new Chart(newChart, {
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(235, 151, 78, 1, )',
-                'rgba(50, 205, 50, .7)'
-          
+                'rgba(50, 205, 50, .7)',
+            
             ],
+            fontColor: "white",
             borderWidth: 1
         }]
     },
@@ -36,12 +39,12 @@ var myChart = new Chart(newChart, {
                 display: true,
                 scaleLabel: {
                   display: true,
-                //   labelString: 'Level'
+                  fontColor: "white",
                 },
                 ticks: {
                   min: 0,
                   max: 5,
-                  
+                  fontColor: "white",
                   stepSize: 1,
                   suggestedMin: 0.5,
                   suggestedMax: 5.5,
@@ -63,9 +66,14 @@ var myChart = new Chart(newChart, {
                   }
                 },
                 gridLines: {
-                  display: false
+                  display: true,
                 }
-              }]
+              }],
+              xAxes: [{
+                ticks: {
+                    fontColor: "white",
+                }
+            }]
         }
     }
     });
