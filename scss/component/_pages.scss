@@ -43,9 +43,12 @@ h2{
     margin: 0 auto;
 }
 .project-content-block{
-    margin: 0 auto;
+    margin: 5rem auto;
     font-family: $font-family--primary;
     width: 95%;
+    display: flex;
+    gap: 1rem;
+
 }
 .pp-sum{
     font-family: $font-family--primary;

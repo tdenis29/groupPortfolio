@@ -925,9 +925,11 @@ video {
 }
 
 .project-content-block {
-  margin: 0 auto;
+  margin: 5rem auto;
   font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   width: 95%;
+  display: flex;
+  gap: 1rem;
 }
 
 .pp-sum {
@@ -1166,6 +1168,11 @@ video {
 
   .project-link {
     width: 35%;
+  }
+
+  .project-content-block {
+    margin: 5rem auto;
+    padding: 0 2rem;
   }
 
   .project-icon-con {
