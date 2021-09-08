@@ -821,6 +821,12 @@ h1 {
   background: transparent;
 }
 
+.techdegree-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-icons-con {
   display: flex;
   flex-direction: column;
