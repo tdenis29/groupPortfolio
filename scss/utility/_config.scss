@@ -1,0 +1,21 @@
+// Base Styles and Typo\
+
+:root{
+    --main-dark: #0E0B16;
+    --secondary-blue: #08095f;
+    --main-light: #F4FAFF;
+    --main-red: #FF01FB;
+    --main-blue: #34d6ff;
+    --main-other: #44ff7c;
+}
+
+.sr-only{
+clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+clip: rect(1px, 1px, 1px, 1px);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+}
+

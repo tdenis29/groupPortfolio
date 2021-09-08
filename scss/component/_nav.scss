@@ -1,0 +1,35 @@
+// Nav Bar
+.brand{
+    stroke-dasharray: 20;
+} 
+.navbar{
+    background-color: transparent;
+}
+.navbar-nav{
+    background-color: transparentize($color: #011627, $amount: .99)!important;
+}
+
+ .nav-link{
+     padding-left: 1rem;
+     color: var(--main-blue)!important; 
+     font-Family: 'Fauna One', Serif;
+     background-color: transparent;
+     text-decoration: underline;
+     text-decoration-color: var(--main-red);
+  
+}
+
+ .nav-link:active{
+     background-color: var(--main-red);
+     border-radius: 25%;
+ }
+ .nav-link:hover{
+     background-color: var(--main-red);
+     color: var(--main-light)!important;
+ }
+ .nav-link:visited{
+     color: var(--main-other);
+ }
+ #navbarToggleExternalContent > ul > li> a {
+     background-color: transparent;
+ }

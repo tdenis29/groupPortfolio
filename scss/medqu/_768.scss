@@ -1,0 +1,152 @@
+// Med qu
+@media only screen and (min-width: 768px) {
+    
+    .jumbotron{
+        align-self: center;
+    }
+    .right-col{
+        margin-top: 0;
+    }
+    .top-intro{
+        height: 50%;
+    }
+    .bottom-intro{
+        height: 50%;
+    }
+    .aboutme{
+        flex-direction: column;
+        width: 100%;
+    }
+    .aboutmep{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .about-me-title{
+        margin-bottom: 1.5rem;
+    }
+    .decon-card-text{
+        width: 75%;
+    }
+  
+        .hello{
+            margin-left: 3.5rem;
+            text-align: left;;
+        }
+       .card{
+           flex-direction: row;
+           width: 100%;
+           max-width: none;
+           
+       }
+       .card-title{
+        font-size: 2rem;
+        font-Family: 'Cinzel', Cursive;
+ 
+    }
+       .card-img-top{
+           width: 55%;
+       }
+       .card-body{
+           width: 45%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+       .project-icon-con{
+           width: 5%;
+           flex-direction: column;
+       }
+        .foot-component{
+        width: 33%;
+         }
+        .footer-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: nowrap!important;
+            align-items: center;
+        }
+        div.pp-con{
+            display: flex!important;
+            flex-direction: row!important;
+            justify-content: center;
+            align-items: center;
+      
+        }
+        .video-con{
+            width: 50%;
+        }
+        video{
+            width: 100%;
+        }
+        // case study
+        .casestudy-top{
+            display: flex!important;
+            flex-direction: row!important;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+       
+        .case-study-learn-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .case-study-top-text{
+            width: 50%;
+            padding: 1rem;
+           
+        }
+        .project-content-block{
+            width: 75%;
+            justify-self: center;
+            margin: 0 auto;
+
+        
+        }
+        .project-content-block > p{
+            width: 50%;
+            padding: 1rem 0;
+            margin: 0 auto;
+      
+
+        }
+        .project-content-block > code{
+            width: 50%;
+            display: block!important;
+            margin: 0 auto;
+        }
+
+       .pp-sum{
+           width: 50%;
+           margin: 1rem auto;
+        
+       h4{
+           color: var(--main-red);
+           font-Family: 'Cinzel', Cursive;
+       p{
+           font-size: 1.2rem;
+       }}}
+       .contact-icons-con{
+           flex-direction: row;
+        
+       }
+       .contact-icon-con{
+           width: 33%;
+       }
+    //    fix heading not in order projects
+       .wash2{
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: "Cinzel", Cursive;
+        color: var(--main-blue)
+
+       }
+       .email-me{
+           width: 25%;
+       }
+    }

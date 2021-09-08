@@ -1,0 +1,55 @@
+//    CONTACT
+.contact-icons-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+   .contact-icon-con{
+       display: flex;
+       flex-direction: column;
+       width: 50%;
+       align-items: center;
+   }
+   
+   .contact-p{
+    padding: 1rem 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    font-Family: 'Fauna One', Serif;
+    text-align: center;
+   }
+   .contact-icons{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: 0.5rem;
+    fill: var(--main-blue);
+   }
+   .contact-icon-text{
+    font-Family: "Fauna One", Serif;
+   }
+   .email-me{
+    background-color:var(--main-dark);
+    color: var(--main-light);
+    padding: 1rem;
+    border: solid 1px var(--main-red);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 50%;
+    margin: 2.5rem auto;
+    font-Family: 'Fauna One', Serif;
+    border-radius: .3rem;
+
+   }
+    .email-me:hover{
+    background-color: var(--main-red);
+    color: var(--main-light);
+}
+    .email-me:visited{
+        background-color: var(--main-blue);
+    }
+    address{
+        font-Family: 'Fauna One', Serif;
+    }

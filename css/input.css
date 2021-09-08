@@ -40,14 +40,36 @@ body {
   background-color: var(--main-dark);
 }
 
+main {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: var(--main-light);
+  line-height: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--main-dark);
+}
+
 h3 {
   font-size: 1.9rem;
   color: var(--main-red);
   font-Family: "Cinzel", Cursive;
-}
-
-main {
-  height: 100%;
 }
 
 .fade-in {
@@ -171,17 +193,6 @@ h1 {
   margin: 0 2rem 0 2rem;
 }
 
-div.pp-con {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-video {
-  width: 18.75rem;
-}
-
 .right-col {
   display: flex;
   justify-content: center;
@@ -296,51 +307,6 @@ video {
     -moz-transform: rotate3d(1, 1, 0, 360deg);
   }
 }
-.aboutme {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: var(--secondary-blue);
-}
-.aboutme h4 {
-  margin: 1rem 0;
-}
-
-.crossout {
-  text-decoration: line-through;
-}
-
-.decon-image-box {
-  border: solid 2px var(--main-blue);
-}
-
-.decon-image {
-  width: 100%;
-  display: block;
-  height: inherit;
-  margin-top: -1.5rem;
-  background-color: #fff;
-  background-size: cover;
-  background-position-x: center;
-  margin-left: -0.5rem;
-}
-
-.aboutmep {
-  padding: 0.5rem 1rem;
-  width: 100%;
-  font-size: 1.2rem;
-  font-Family: "Fauna One", Serif;
-}
-
-.decon-card-text {
-  width: 75%;
-  font-Family: "Fauna One", Serif;
-}
-
 .testimonial {
   margin: 0 auto;
   background-color: var(--secondary-blue);
@@ -466,6 +432,51 @@ video {
 
 .aboutme {
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondary-blue);
+}
+.aboutme h4 {
+  margin: 1rem 0;
+}
+
+.crossout {
+  text-decoration: line-through;
+}
+
+.decon-image-box {
+  border: solid 2px var(--main-blue);
+}
+
+.decon-image {
+  width: 100%;
+  display: block;
+  height: inherit;
+  margin-top: -1.5rem;
+  background-color: #fff;
+  background-size: cover;
+  background-position-x: center;
+  margin-left: -0.5rem;
+}
+
+.aboutmep {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-Family: "Fauna One", Serif;
+}
+
+.decon-card-text {
+  width: 75%;
+  font-Family: "Fauna One", Serif;
+}
+
+.aboutme {
+  width: 100%;
   background-color: var(--secondary-blue);
 }
 
@@ -473,27 +484,6 @@ video {
   height: 2rem;
   width: 100%;
   background: transparent;
-}
-
-.social-icon {
-  height: 2rem;
-  width: 2rem;
-  fill: #f2f5ea;
-  margin: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.foot-component {
-  margin: 1rem 0;
-}
-
-.wash2 {
-  font-size: 2rem;
-  font-weight: bolder;
-  font-family: "Cinzel", Cursive;
-  color: var(--main-red);
-  margin-bottom: revert;
 }
 
 .contact-icons-con {
@@ -554,6 +544,38 @@ video {
 
 address {
   font-Family: "Fauna One", Serif;
+}
+
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #f2f5ea;
+  margin: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.foot-component {
+  margin: 1rem 0;
+}
+
+.wash2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Cinzel", Cursive;
+  color: var(--main-red);
+  margin-bottom: revert;
+}
+
+div.pp-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 18.75rem;
 }
 
 .casestudy-top {

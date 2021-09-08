@@ -1,0 +1,59 @@
+// Projects
+
+.col{
+    width: 100%;
+}
+.projecticons{
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: .5rem;
+}
+
+.card-img-top{
+    position: relative;
+    height: auto;
+    max-width:  640px;
+    max-height: 430px;
+    img{
+        height: auto;
+        width: 100%;
+        max-width: 640px;
+        max-height: 430px;
+    }}
+.card-img-top::after{
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: linear-gradient(120deg, #A239CA, #33d0ff);
+    background-repeat: no-repeat;
+    opacity: .7;
+    max-width: 640px;
+    }
+
+.card{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    border: solid 4px var(--main-blue);
+    background-color: var(--main-dark);
+    width: 100%;
+    max-width: 640px;
+}
+.card-title{
+    color: var(--main-red);
+    font-Family: 'Cinzel', Cursive;
+    font-size: x-large
+    
+}
+.card-body{
+    font-Family: 'Fauna One', Serif;
+}
+.projectbtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
