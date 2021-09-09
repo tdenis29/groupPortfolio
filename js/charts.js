@@ -3,12 +3,12 @@ const newChart = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(newChart, {
     type: 'bar',
     data: {
-        labels: ['HTML5', 'CSS3', 'JS', 'SASS', 'Bootstrap', "UX/UI", "Sous-Chef"],
+        labels: ['HTML5', 'CSS3', 'JS', 'SASS', 'Bootstrap', "UX/UI", "Pizza Maker"],
         
         datasets: [{
             label: "How I Enjoy Using These Technologies",
          
-            data: [2, 3, 4, 3, 2, 2, 5],
+            data: [3, 3, 4, 3, 2, 2, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.7)',
                 'rgba(54, 162, 235, 0.7)',
@@ -30,6 +30,7 @@ var myChart = new Chart(newChart, {
             
             ],
             fontColor: "white",
+            fontSize: 18,
             borderWidth: 1
         }]
     },
@@ -45,23 +46,23 @@ var myChart = new Chart(newChart, {
                   min: 0,
                   max: 5,
                   fontColor: "white",
+                  fontSize: 16,
                   stepSize: 1,
                   suggestedMin: 0.5,
                   suggestedMax: 5.5,
                   callback: function(label, index, labels) {
                     switch (label) {
                       case 0:
-                        return 'What is a http?';
+                        return 'I actually hate this.';
                       case 1:
-                        return 'Box Model?';
+                        return 'Its ok, I guess.';
                       case 2:
-                        return 'I know some stuff';
+                        return 'Beats Cooking!';
                       case 3:
-                        return 'I made this work by googling';
+                        return 'Rock and Roll! ';
                       case 4:
                         return 'Knowledge is Power';
-                      case 5:
-                        return 'Rockstar or Johnny Depp?';
+                  
                     }
                   }
                 },
