@@ -746,9 +746,7 @@ h1 {
 }
 
 .about-me-progress {
-  width: 100%;
-  background-color: #08095f;
-  padding-right: 1rem;
+  display: none;
 }
 
 .about-me-progress-title {
@@ -1192,6 +1190,12 @@ video {
   .techdgree-img {
     width: 50% !important;
     display: block;
+  }
+
+  .about-me-progress {
+    width: 100%;
+    background-color: #08095f;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 1068px) {

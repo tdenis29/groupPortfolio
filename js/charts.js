@@ -7,6 +7,7 @@ var myChart = new Chart(newChart, {
         
         datasets: [{
             label: "How I Enjoy Using These Technologies",
+            fontColor: "white",
          
             data: [3, 3, 4, 3, 2, 2, 0],
             backgroundColor: [
@@ -35,6 +36,12 @@ var myChart = new Chart(newChart, {
         }]
     },
     options: {
+        legend: {
+            labels: {
+                fontColor: "white",
+                fontSize: 18
+            }
+        },
         scales: {
             yAxes: [{
                 display: true,
