@@ -845,7 +845,7 @@ h1 {
   padding: 1rem 1rem;
   width: 100%;
   font-size: 1.2rem;
-  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Cinzel", Cursive;
   text-align: center;
 }
 
@@ -857,7 +857,7 @@ h1 {
 }
 
 .contact-icon-text {
-  font-family: "Cinzel", Cursive;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .email-me {
