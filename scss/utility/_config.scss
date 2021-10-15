@@ -100,3 +100,15 @@ white-space: nowrap;
 width: 1px;
 }
 
+//BEM SELECTORS
+@mixin e ($element) {
+    &__#{$element}{
+        @content;
+    }
+}
+
+@mixin m ($modifier) {
+    &--#{$modifier}{
+        @content;
+    }
+}
