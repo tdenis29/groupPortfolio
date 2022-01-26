@@ -1,632 +1,848 @@
+@import "utility/index";
+@import "base/index";
+@import "component/index";
+@import "medqu/index";
+
+
+
 // Base Styles and Typo\
 
-:root{
-    --main-dark: #011627;
-    --main-light: #FDFFFC;
-    --main-red: #EA3471;
-    --main-blue: #6E44FF;
-    --main-other: #44ff7c;
-}
-//Base 
-.sr-only{
-clip: rect(1px 1px 1px 1px); /* IE 6/7 */
-clip: rect(1px, 1px, 1px, 1px);
-height: 1px;
-overflow: hidden;
-position: absolute;
-white-space: nowrap;
-width: 1px;
-}
-*{
-    box-sizing: border-box!important;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    color: var(--main-light); 
-    line-height: 24px;   
-}
-html {
-    scroll-behavior: smooth;
-  }
+
+
+// .sr-only{
+// clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+// clip: rect(1px, 1px, 1px, 1px);
+// height: 1px;
+// overflow: hidden;
+// position: absolute;
+// white-space: nowrap;
+// width: 1px;
+// }
+// *{
+//     box-sizing: border-box!important;
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+//     color: var(--main-light); 
+//     line-height: 24px;   
+// }
+// html {
+//     scroll-behavior: smooth;
+//     height: 100%;
+//     width: 100%;
+//   }
   
-body{
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color:var(--main-dark);
-    -webkit-background-size: 1000px 1000px!important;
-    -o-background-size: 1000px 1000px; 
-    -moz-background-size: 1000px 1000px; 
-    background-size: 1000px 1000px;
-    -webkit-background-composite: initial;
-    background-repeat:repeat;
-    background-image:url(../images/bubbles.svg)!important; 
-    fill: var(--main-blue);
-    }
+// body{
+//     width: 100%;
+//     max-width: 1400px;
+//     margin: 0 auto;
+//     background-color:var(--main-dark);
+//     }
 
   
-h3{
-    font-size: 1.9rem;
-    color: var(--main-red);
-    font-Family: 'Cinzel', Cursive;
-  
-   
-}
+// h3{
+//     font-size: 1.9rem;
+//     color: var(--main-red);
+//     font-Family: 'Cinzel', Cursive;
+// }
+// main{
+//     height: 100%;
+// }
 //fader
-.fade-in {
-    opacity: 0;
-    transition: opacity 500ms ease-in-out;
-  }
+// .fade-in {
+//     opacity: 0;
+//     transition: opacity 500ms ease-in-out;
+//   }
   
-  .fade-in.appear {
-    opacity: 1;
-  }
- //push off side
-.section{
-    margin: 0 3rem 0 3rem;
-}
+//   .fade-in.appear {
+//     opacity: 1;
+//   }
+//  //push off side
 
-h4{
-    padding-bottom: .5rem;
-}
-// Nav Bar 
-.navbar{
-    background-color: transparent;
-}
-.navbar-nav{
-    background-color: transparentize($color: #011627, $amount: .99)!important;
-}
 
- .nav-link{
-     padding-left: 1rem;
-     color: var(--main-light)!important; 
-     font-Family: 'Fauna One', Serif;
-     background-color: transparent;
-     text-decoration: underline;
-     text-decoration-color: var(--main-red);
-}
- .nav-link:active{
-     background-color: var(--main-red);
-     border-radius: 25%;
- }
- .nav-link:hover{
-     background-color: var(--main-red);
-     color: var(--main-light)!important;
- }
- #navbarToggleExternalContent > ul > li> a {
-     background-color: transparent;
- }
-// Landing
-//title
-h1{
-    margin: 3rem 0 3rem 0;
-    color: var(--main-red);
-    font-Family: 'Cinzel', Cursive;
-    font-Size: 44px;
-}
-//top row with bubbles
-.top-row{
-    height: 100vh;
-    margin: 1rem 0;
-    }
-    //title container
-.top-intro{
-    height: 50%;
-    background-color:transparent;
-    margin: 1rem 0;
-}
-//little intro
-.hello{
-    text-align: center;
-    font-Family: 'Fauna One', Serif;
-    font-size: 1.3rem;
-    background-color: transparent;
-}
-//bigger intro
-.bottom-intro{
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
-    margin: 1rem 0;
-    background-color: transparent;
-    font-Family: 'Fauna One', Serif;
-}
-.lead{
-    font-Family: 'Fauna One', Serif;
-}
-.section-margin{
-    margin: 0 2rem 0 2rem;
-}
+// h4{
+//     padding-bottom: .5rem;
+// }
+// // Nav Bar
+// .brand{
+//     stroke-dasharray: 20;
+// } 
+// .navbar{
+//     background-color: transparent;
+// }
+// .navbar-nav{
+//     background-color: transparentize($color: #011627, $amount: .99)!important;
+// }
+
+//  .nav-link{
+//      padding-left: 1rem;
+//      color: var(--main-blue)!important; 
+//      font-Family: 'Fauna One', Serif;
+//      background-color: transparent;
+//      text-decoration: underline;
+//      text-decoration-color: var(--main-red);
+  
+// }
+
+//  .nav-link:active{
+//      background-color: var(--main-red);
+//      border-radius: 25%;
+//  }
+//  .nav-link:hover{
+//      background-color: var(--main-red);
+//      color: var(--main-light)!important;
+//  }
+//  .nav-link:visited{
+//      color: var(--main-other);
+//  }
+//  #navbarToggleExternalContent > ul > li> a {
+//      background-color: transparent;
+//  }
+
+// h1{
+//     color: var(--main-blue);
+//     font-Family: 'Cinzel', Cursive;
+//     font-Size: 44px;
+// }
+// @keyframes dash {
+//     0% {
+//       stroke-dashoffset: 500;
+      
+//     }
+//     100% {
+//       stroke-dashoffset: 0;
+//     }
+//   }
+// .jumbotron{
+//     display: flex;
+//     position: relative;
+
+// }
+// .top-row{
+//     height: 85vh;
+//     margin: 0 0 5rem 0;
+//     position: relative;
+
+//  }
+// .path{
+//     stroke-dasharray: 500;
+//     stroke-dashoffset: 500;
+//     -webkit-animation: dash 10s infinite forwards;
+//     animation: dash 10s infinite forwards;
+   
+// }   
+// .background-div{
+//     height: 85vh;
+//     width: 100%;
+//     position: absolute;
+//     top: 20;
+//     right: 0;
+//     z-index: -1;
+// svg{
+//     height: inherit;
+//     width: inherit;
+// }}
+
+// .right-col{
+//     margin-top: 3rem;
+// }
+// .top-intro{
+//     background-color:transparent;
+//     margin: 1rem 0;
+// }
+// //little intro
+// .hello{
+//     text-align: center;
+//     font-Family: 'Fauna One', Serif;
+//     font-size: 1.3rem;
+//     background-color: transparent;
+// }
+
+// .lead{
+//     font-Family: 'Fauna One', Serif;
+// }
+// .section-margin{
+//     margin: 0 2rem 0 2rem;
+// }
 // project pages Landing
-div.pp-con{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: transparentize($color: #011627, $amount: .5);
-}
-video{
-    width: 18.75rem;
-}
+// div.pp-con{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+// video{
+//     width: 18.75rem;
+// }
 
 
 // case study PROJECT PAGES
-.casestudy-top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-}
-.casestudy-top > h1 {
-    color: var(--main-red);
-}
-.case-study-top-text{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-h2{
-    color: var(--main-red);
-    font-Family: 'Cinzel', Cursive;
-}}
-.case-study-top-text > p {
-    font-Family: 'Fauna One', Serif;
-}
-.content-section{
-    margin: 2rem;
-}
-.case-study-learn-list{
-    width: 100%;
-}
-.project-content-block > p {
-    margin: 1rem 0 1rem 0;
-    font-Family: 'Fauna One', Serif;
-}
-.pp-sum{
-    font-Family: 'Fauna One', Serif;
-}
+
+//side thingys
+
 //cubes box
-.right-col{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    // position: relative;
-    background-color:transparent; 
-}
-//send and go to projects buttons and send
-.cta{
-    background-color: var(--main-dark);
-    border: 1px solid var(--main-red);
-    color: var(--main-light);
-    margin: 2rem 0;
-    font-Family: 'Fauna One', Serif;
-}
-.cta:hover{
-    background-color: var(--main-red);
-    border: 4px solid var(--main-red);  
-}
-// CUBER 
-.container-cube {
-    width: 9.75rem;
-    height: 9.75rem;
-    perspective: 43rem;
-    -webkit-perspective: 43rem!important;
-    position: relative;
-  }
-  .cube {
-    position: relative;
-    width: 9.75rem!important;
-    height: 9.75rem!important;
-    transform-style: preserve-3d!important;
-    -webkit-transform-style: preserve-3d!important;
+// .right-col{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center; 
+//     // position: relative;
+//     background-color:transparent; 
+// }
+// //send and go to projects buttons and send
+// .cta{
+//     background-color: var(--main-dark);
+//     border: 1px solid var(--main-red);
+//     color: var(--main-light);
+//     margin: .5rem 0;
+//     font-Family: 'Fauna One', Serif;
+// }
+// .cta:hover{
+//     background-color: var(--main-red);
+      
+// }
+// // CUBER 
+// .container-cube {
+//     width: 9.75rem;
+//     height: 9.75rem;
+//     perspective: 43rem;
+//     -webkit-perspective: 43rem!important;
+//     position: relative;
+//   }
+//   .cube {
+//     position: relative;
+//     width: 9.75rem!important;
+//     height: 9.75rem!important;
+//     transform-style: preserve-3d!important;
+//     -webkit-transform-style: preserve-3d!important;
+   
 
-   // to get the animation order right 
-    // animation: name duration timing-function delay iteration-count direction fill-mode;;
-  }
-  .face {
-    width: 9.75rem;
-    height: 9.75rem;
-    border: 2px solid var(--main-red);
-    position: absolute;
-    font-size: 2rem;
-    background-color: var(--main-dark);
-  }
-  .front {
-    transform: translateZ(78px);
-    -webkit-transform:translateZ(78px) ;
-    -moz-transform: translateZ(78px);
+//    // to get the animation order right 
+//     // animation: name duration timing-function delay iteration-count direction fill-mode;;
+//   }
+//   .face {
+//     width: 9.75rem;
+//     height: 9.75rem;
+//     border: 2px solid var(--main-blue);
+//     position: absolute;
+//     font-size: 2rem;
+//     background-color: var(--main-dark);
+//   }
+//   .front {
+//     transform: translateZ(78px);
+//     -webkit-transform:translateZ(78px) ;
+//     -moz-transform: translateZ(78px);
     
-  }
-  .back {
-    transform: translateZ(-78px) rotateY(180deg);
-    -webkit-transform:translateZ(-78px) rotateY(180deg);
-    -moz-transform:translateZ(-78px) rotateY(180deg);
-  }
-  .left {
-    transform: translateX(-78px) rotateY(-90deg);
-    -webkit-transform:translateX(-78px) rotateY(-90deg);
-    -moz-transform:translateX(-78px) rotateY(-90deg);
-  }
-  .right {
-    transform: translateX(78px) rotateY(90deg);
-    -webkit-transform:translateX(78px) rotateY(90deg);
-    -moz-transform: translateX(78px) rotateY(90deg) ;
-  }
-  .top {
-    transform: translateY(-78px) rotateX(90deg);
-    -webkit-transform: translateY(-78px) rotateX(90deg);
-    -moz-transform:translateY(-78px) rotateX(90deg);
-  }
-  .bottom {
-    transform: translateY(78px) rotateX(-90deg);
-    -webkit-transform: translateY(78px) rotateX(-90deg);
-    -moz-transform: translateY(78px) rotateX(-90deg);
-  }
-// rotate cube
-//   full animation 0-100%(Stackoverflow) @webkit transforms -webkitKeyrames MUST come before keyframes in the cascade for Safari
-@-webkit-keyframes turn {
-    0% { 
-        transform: rotate3d(0, 0, 0,0deg);
-        -webkit-transform: rotate3d(0, 0, 0,0deg);
-        -moz-transform: rotate3d(0, 0, 0,0deg) ;
-     }
-     50%{
-        transform: rotate3d(0, 0, 0, 0deg);
-        -webkit-transform: rotate3d(0, 0, 0, 0deg);
-        -moz-transform: rotate3d(0, 0, 0, 0deg);
-     }
-    100% { 
-        transform: rotate3d(1, 1, 0, 360deg);
-        -webkit-transform: rotate3d(1, 1, 0, 360deg);
-        -moz-transform: rotate3d(1, 1, 0, 360deg);
-    }
-  }
-@keyframes turn {
-    0% { 
-        transform: rotate3d(0, 0, 0, 0deg);
-        -webkit-transform: rotate3d(0, 0, 0, 0deg);
-        -moz-transform: rotate3d(0, 0, 0, 0deg);
-     }
-     50%{
-        transform: rotate3d(.5, .5, 0, 0deg);
-        -webkit-transform: rotate3d(.5, .5, 0, 180deg);
-        -moz-transform: rotate3d(.5, .5, 0, 180deg);
-     }
-    100% { 
-        transform: rotate3d(1, 1, 0, 360deg);
-        -webkit-transform: rotate3d(1, 1, 0, 360deg);
-        -moz-transform: rotate3d(1, 1, 0, 360deg) ;
-    }
-  }
+//   }
+//   .back {
+//     transform: translateZ(-78px) rotateY(180deg);
+//     -webkit-transform:translateZ(-78px) rotateY(180deg);
+//     -moz-transform:translateZ(-78px) rotateY(180deg);
+//   }
+//   .left {
+//     transform: translateX(-78px) rotateY(-90deg);
+//     -webkit-transform:translateX(-78px) rotateY(-90deg);
+//     -moz-transform:translateX(-78px) rotateY(-90deg);
+//   }
+//   .right {
+//     transform: translateX(78px) rotateY(90deg);
+//     -webkit-transform:translateX(78px) rotateY(90deg);
+//     -moz-transform: translateX(78px) rotateY(90deg) ;
+//   }
+//   .top {
+//     transform: translateY(-78px) rotateX(90deg);
+//     -webkit-transform: translateY(-78px) rotateX(90deg);
+//     -moz-transform:translateY(-78px) rotateX(90deg);
+//   }
+//   .bottom {
+//     transform: translateY(78px) rotateX(-90deg);
+//     -webkit-transform: translateY(78px) rotateX(-90deg);
+//     -moz-transform: translateY(78px) rotateX(-90deg);
+//   }
+// // rotate cube
+// //   full animation 0-100%(Stackoverflow) @webkit transforms -webkitKeyrames MUST come before keyframes in the cascade for Safari
+// @-webkit-keyframes turn {
+//     0% { 
+//         transform: rotate3d(0, 0, 0,0deg);
+//         -webkit-transform: rotate3d(0, 0, 0,0deg);
+//         -moz-transform: rotate3d(0, 0, 0,0deg) ;
+//      }
+//      50%{
+//         transform: rotate3d(0, 0, 0, 0deg);
+//         -webkit-transform: rotate3d(0, 0, 0, 0deg);
+//         -moz-transform: rotate3d(0, 0, 0, 0deg);
+//      }
+//     100% { 
+//         transform: rotate3d(1, 1, 0, 360deg);
+//         -webkit-transform: rotate3d(1, 1, 0, 360deg);
+//         -moz-transform: rotate3d(1, 1, 0, 360deg);
+//     }
+//   }
+// @keyframes turn {
+//     0% { 
+//         transform: rotate3d(0, 0, 0, 0deg);
+//         -webkit-transform: rotate3d(0, 0, 0, 0deg);
+//         -moz-transform: rotate3d(0, 0, 0, 0deg);
+//      }
+//      50%{
+//         transform: rotate3d(.5, .5, 0, 0deg);
+//         -webkit-transform: rotate3d(.5, .5, 0, 180deg);
+//         -moz-transform: rotate3d(.5, .5, 0, 180deg);
+//      }
+//     100% { 
+//         transform: rotate3d(1, 1, 0, 360deg);
+//         -webkit-transform: rotate3d(1, 1, 0, 360deg);
+//         -moz-transform: rotate3d(1, 1, 0, 360deg) ;
+//     }
+//   }
 
-// about
-.about-section{
-    margin: 4rem auto;
-}
-.aboutme{
-    width: 60%;
-    margin: 3rem auto;
-    display: flex;
-    flex-direction: column!important;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-h4{
-    margin: 1rem 0;
-}}
-.crossout{
-    text-decoration: line-through;
-}
-.decon-image-box{
-    position: relative;
-    z-index: 1; 
-    border: solid 2px var(--main-red);     
-}
 
-.decon-image{
-    width: 100%;
-    display: block;
-    height: inherit;
-    margin-top: -1.5rem;
-    background-color: #fff;
-    background-size: cover;
-    background-position-x: center;
-    margin-left: -.5rem;
- 
-}
-.aboutmep{
-    padding: 1rem 1rem;
-    width: 100%;
-    font-size: 1.2rem;
-    font-Family: 'Fauna One', Serif;
-}
-.decon-card-text{
-    width: 100%;
-    max-height: 300px;
-    font-Family: 'Fauna One', Serif;
-}
-//testmonial
-.testimonial{
-    height: 27.5rem;
-    margin: 4rem 0;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  color: var(--main-red);
-  background-image: none;
-}
-
-.carousel-control-next-icon::after
-{
-  content: '>';
-  font-size: 55px;
-  color: var(--main-red);
-}
-
-.carousel-control-prev-icon::after {
-  content: '<';
-  font-size: 55px;
-  color: var(--main-red);
-}
-.testi-row{
-    justify-content: space-evenly;
-    align-items: center;
-}
-.avatar-box{
-    width: 144px;
-    height: 144px;
-    border: solid 2px var(--main-blue);
-    margin-top: 1.5rem;
-}
-.avatar{
-    margin-left: -1.5rem;
-    margin-top: - 1.25rem;
-}
-// Projects
-
-.projecticons{
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-.card-img-top{
-    position: relative;
-    img{
-        height: auto;
-        width: 100%;
-    }}
-.card-img-top::after{
-    content: ""; 
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-    background-repeat: no-repeat;
-    opacity: .7;
-    }
-
-.card{
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    border: solid 4px var(--main-red);
-    max-width: 600px;
-    background-color: var(--main-dark);
+// .aboutme{
+//     width: 100%;
+//     margin: 0 auto;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     background-color: var(--secondary-blue);
+// h4{
+//     margin: 1rem 0;
+// }}
+// .crossout{
+//     text-decoration: line-through;
+// }
+// .decon-image-box{
   
-}
-.card-title{
-    font-size: 2rem;
-    font-Family: 'Cinzel', Cursive;
-    font-size: x-large;
-}
-.card-body{
-    font-Family: 'Fauna One', Serif;
-}
-.project-link{
-    background-color:var(--main-dark);
-    color: var(--main-light);
-    padding: 1rem;
-    border: solid 1px var(--main-red);
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    font-Family: 'Fauna One', Serif;
-    border-radius: .3rem;
-}
-.project-link:hover{
-    background-color: var(--main-red);
-    color: var(--main-light);
-}
-.project-link:active{
-    transition: transform}
-    //about 
-    .aboutme{
-        height: 18.75rem;
-        
-        width: 90%;
-    }
-  .spacer-div{
-      height: 10rem;
-      width: 100%;
-      background: transparent;
-  }
-// footer
-.social-icon{
-    height: 2rem;
-    width: 2rem;
-    fill: #f2f5ea;
-    margin: .5rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-.foot-component{
-    margin: 1rem 0;
-}
-.wash2{
-    font-size: 2rem;
-    font-weight: bolder;
-    font-family: "Cinzel", Cursive;
-    color: var(--main-red)
-   }
-   .email-me{
-    background-color:var(--main-dark);
-    color: var(--main-light);
-    padding: 1rem;
-    border: solid 1px var(--main-red);
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    width: 50%;
-    margin: 2.5rem auto;
-    font-Family: 'Fauna One', Serif;
-    border-radius: .3rem;
-
-   }
-    .email-me:hover{
-    background-color: var(--main-red);
-    color: var(--main-light);
-}
-    .email-me:visited{
-        background-color: var(--main-blue);
-    }
-
-// PROJECT PAGES
-code{
-    color: var(--main-other);
-}
-
-
-// Med qu
-@media only screen and (min-width: 786px) {
-
-    .jumbotron{
-        align-self: center;
-    }
-    
-    .top-intro{
-        height: 50%;
-    }
-    .bottom-intro{
-        height: 50%;
-    }
-    .aboutme{
-        flex-direction: column;
-    }
-    .about-section{
-        margin: 4rem auto;
-    }
-    .decon-card-text{
-        width: 75%;
-    }
-    .top-row{
-        height: 100vh;
-    
-        }
-        .hello{
-            margin-left: 3.5rem;
-            text-align: left;;
-        }
-        .aboutme{
-            width: 50%;
-        }
-       #about{
-           margin-bottom: 1.5rem;
-       }
-        .foot-component{
-        width: 33%;
-         }
-        .footer-div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: nowrap!important;
-            align-items: center;
-        }
-        div.pp-con{
-            display: flex!important;
-            flex-direction: row!important;
-            justify-content: center;
-            align-items: center;
-            background-color: transparentize($color: #011627, $amount: .5);
-        }
-
-        video{
-            width: auto;
-        }
-        // case study
-        .casestudy-top{
-            display: flex!important;
-            flex-direction: row!important;
-            align-items: center;
-            justify-content: space-between;
-            width: 90%;
-            margin: 0 auto;
-        }
+//     border: solid 2px var(--main-blue);  
        
-        .case-study-learn-list{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .case-study-top-text{
-            width: 50%;
-            padding: 1rem;
-            margin-bottom: 2rem;
-        }
-        .project-content-block{
-            width: 75%;
-            justify-self: center;
-            margin: 0 auto;
-            background-color: transparentize($color: #011627, $amount: .5);
-        }
-        .project-content-block > p{
-            width: 50%;
-            margin: 1rem auto;
+// }
 
-        }
-        .project-content-block > code{
-            width: 50%;
-            display: block!important;
-            margin: 1rem auto;
-        }
+// .decon-image{
+//     width: 100%;
+//     display: block;
+//     height: inherit;
+//     margin-top: -1.5rem;
+//     background-color: #fff;
+//     background-size: cover;
+//     background-position-x: center;
+//     margin-left: -.5rem;
+ 
+// }
+// .aboutmep{
+//     padding: .5rem 1rem;
+//     width: 100%;
+//     font-size: 1.2rem;
+//     font-Family: 'Fauna One', Serif;
+// }
+// .decon-card-text{
+//     width: 75%;
+//     font-Family: 'Fauna One', Serif;
+// }
+//testmonial
+// .testimonial{
+ 
+//     margin: 0 auto;
+//     background-color: var(--secondary-blue);
+// }
+// .testi-title{
+//     padding-top: 1.5rem;
+// }
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//   height: 100px;
+//   width: 100px;
+//   background-size: 100%, 100%;
+//   border-radius: 50%;
+//   color: var(--main-red);
+//   background-image: none;
+// }
 
-       .pp-sum{
-           width: 50%;
-           margin: 1rem auto;
-        
-       h4{
-           color: var(--main-red);
-           font-Family: 'Cinzel', Cursive;
-       p{
-           font-size: 1.2rem;
-       }}}
+// .carousel-control-next-icon::after
+// {
+//   content: '>';
+//   font-size: 55px;
+//   color: var(--main-red);
+// }
+
+// .carousel-control-prev-icon::after {
+//   content: '<';
+//   font-size: 55px;
+//   color: var(--main-red);
+// }
+// .testi-row{
+//     justify-content: space-evenly;
+//     align-items: center;
+// }
+
+// .avatar{
+//  height: 9.75rem;
+//  width: 9.75rem;
+// }
+// .testi-card{
+//     max-width: 600px;
+//     margin: 2rem 0;
+//     display: flex;
+//     flex-direction: column;
+//     border: solid 4px var(--main-blue);
+//     background-color: var(--main-dark);
+//     padding: 1rem;
+// }
+// .testi-card-title{
+//     font-size: 1.5rem;
+//     font-Family: "Cinzel", Cursive;
     
-    //    fix heading not in order projects
-       .wash2{
-        font-size: 2rem;
-        font-weight: bolder;
-        font-family: "Cinzel", Cursive;
-        color: var(--main-red)
-       }
-    }
-@media only screen and (max-device-width: 1068px){
-    .aboutme{
-        flex-direction: row;
-    }
+// }
+// .testi-card-text{
+//     font-Family: "Fauna One", Serif;
+// }
+// // Projects
+
+// .col{
+//     width: 100%;
+// }
+// .projecticons{
+//     height: 2rem;
+//     width: 2rem;
+//     margin-bottom: .5rem;
+// }
+
+// .card-img-top{
+//     position: relative;
+//     height: auto;
+//     max-width:  640px;
+//     max-height: 430px;
+//     img{
+//         height: auto;
+//         width: 100%;
+//         max-width: 640px;
+//         max-height: 430px;
+//     }}
+// .card-img-top::after{
+//     content: ""; 
+//     position: absolute;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     background-image: linear-gradient(120deg, #A239CA, #33d0ff);
+//     background-repeat: no-repeat;
+//     opacity: .7;
+//     max-width: 640px;
+//     }
+
+// .card{
+//     margin: 2rem 0;
+//     display: flex;
+//     flex-direction: column;
+//     border: solid 4px var(--main-blue);
+//     background-color: var(--main-dark);
+//     width: 100%;
+//     max-width: 640px;
+// }
+// .card-title{
+//     color: var(--main-red);
+//     font-Family: 'Cinzel', Cursive;
+//     font-size: x-large
+    
+// }
+// .card-body{
+//     font-Family: 'Fauna One', Serif;
+// }
+// .projectbtns{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+    //about 
+//     .aboutme{
+//         width: 100%;
+//         background-color: var(--secondary-blue);
+//     }
+//   .spacer-div{
+//       height: 2rem;
+//       width: 100%;
+//       background: transparent;
+//   }
+// footer
+// .social-icon{
+//     height: 2rem;
+//     width: 2rem;
+//     fill: #f2f5ea;
+//     margin: .5rem;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
+// .foot-component{
+//     margin: 1rem 0;
+// }
+// .wash2{
+//     font-size: 2rem;
+//     font-weight: bolder;
+//     font-family: "Cinzel", Cursive;
+//     color: var(--main-red);
+//     margin-bottom: revert;
+//    }
+// //    CONTACT
+// .contact-icons-con{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+    
+// }
+//    .contact-icon-con{
+//        display: flex;
+//        flex-direction: column;
+//        width: 50%;
+//        align-items: center;
+//    }
+   
+//    .contact-p{
+//     padding: 1rem 1rem;
+//     width: 100%;
+//     font-size: 1.2rem;
+//     font-Family: 'Fauna One', Serif;
+//     text-align: center;
+//    }
+//    .contact-icons{
+//     height: 2.5rem;
+//     width: 2.5rem;
+//     margin-bottom: 0.5rem;
+//     fill: var(--main-blue);
+//    }
+//    .contact-icon-text{
+//     font-Family: "Fauna One", Serif;
+//    }
+//    .email-me{
+//     background-color:var(--main-dark);
+//     color: var(--main-light);
+//     padding: 1rem;
+//     border: solid 1px var(--main-red);
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     display: block;
+//     width: 50%;
+//     margin: 2.5rem auto;
+//     font-Family: 'Fauna One', Serif;
+//     border-radius: .3rem;
+
+//    }
+//     .email-me:hover{
+//     background-color: var(--main-red);
+//     color: var(--main-light);
+// }
+//     .email-me:visited{
+//         background-color: var(--main-blue);
+//     }
+//     address{
+//         font-Family: 'Fauna One', Serif;
+//     }
+// // PROJECT PAGES
+// .casestudy-top{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 90%;
+//     margin: 0 auto;
+// }
+// .casestudy-top > h1 {
+//     color: var(--main-blue);
+// }
+// .case-study-top-text{
+//     width: 100%;
+//     padding: .5rem;
+//     margin-bottom: 2rem;
+// h2{
+//     color: var(--main-red);
+//     font-Family: 'Cinzel', Cursive;
+// }}
+// .case-study-top-text > p {
+//     font-Family: 'Fauna One', Serif;
+    
+// }
+// .content-section{
+//     margin: 2rem 0;
+//     width: 100%;
+// }
+// .case-study-learn-list{
+//     width: 100%;
+//     margin: 0 auto;
+// }
+// .project-content-block{
+//     margin: 0 auto;
+//     font-Family: 'Fauna One', Serif;
+//     width: 95%;
+// }
+// .pp-sum{
+//     font-Family: 'Fauna One', Serif;
+//     padding: .5rem;
+// }
+
+// code{
+//     color: var(--main-other);
   
-}
-// Project pages 
+// }
+//     .video-con{
+//         width: 98%;
+//     }
 
+//     video{
+//         width: 100%;
+//         height: auto;
+//     }
+//     #wave1{
+//         margin-top: -.5rem;
+//     }
+//     #wave3{
+//         display: block;
+//         margin-top: -.5rem;
+//     }
+//     #wave0{
+//         margin-bottom: -.5rem;
+//     }
+//     #wave5{
+//         margin-top: -.5rem;
+//         display: none;
+//     }
+//     #wave0 path,#wave1 path,#wave2 path,#wave3 path, #wave5 path{
+//         fill: var(--secondary-blue);
+//     }
+//     .case-study-links{
+//         margin-bottom: 3rem;
+//     }
+//     .footer-pp{
+//         width: 100%;
+//     }
+    
 
+// // Med qu
+// @media only screen and (min-width: 768px) {
+    
+//     .jumbotron{
+//         align-self: center;
+//     }
+//     .right-col{
+//         margin-top: 0;
+//     }
+//     .top-intro{
+//         height: 50%;
+//     }
+//     .bottom-intro{
+//         height: 50%;
+//     }
+//     .aboutme{
+//         flex-direction: column;
+//         width: 100%;
+//     }
+//     .aboutmep{
+//         width: 65%;
+//         margin: 0 auto;
+//     }
+//     .about-me-title{
+//         margin-bottom: 1.5rem;
+//     }
+//     .decon-card-text{
+//         width: 75%;
+//     }
+  
+//         .hello{
+//             margin-left: 3.5rem;
+//             text-align: left;;
+//         }
+//        .card{
+//            flex-direction: row;
+//            width: 100%;
+//            max-width: none;
+           
+//        }
+//        .card-title{
+//         font-size: 2rem;
+//         font-Family: 'Cinzel', Cursive;
+ 
+//     }
+//        .card-img-top{
+//            width: 55%;
+//        }
+//        .card-body{
+//            width: 45%;
+//            display: flex;
+//            flex-direction: column;
+//            align-items: center;
+//            justify-content: center;
+//        }
+//        .project-icon-con{
+//            width: 5%;
+//            flex-direction: column;
+//        }
+//         .foot-component{
+//         width: 33%;
+//          }
+//         .footer-div{
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: space-evenly;
+//             flex-wrap: nowrap!important;
+//             align-items: center;
+//         }
+//         div.pp-con{
+//             display: flex!important;
+//             flex-direction: row!important;
+//             justify-content: center;
+//             align-items: center;
+      
+//         }
+//         .video-con{
+//             width: 50%;
+//         }
+//         video{
+//             width: 100%;
+//         }
+//         // case study
+//         .casestudy-top{
+//             display: flex!important;
+//             flex-direction: row!important;
+//             align-items: center;
+//             justify-content: space-between;
+//             width: 90%;
+//             margin: 0 auto;
+//         }
+       
+//         .case-study-learn-list{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//         }
+//         .case-study-top-text{
+//             width: 50%;
+//             padding: 1rem;
+           
+//         }
+//         .project-content-block{
+//             width: 75%;
+//             justify-self: center;
+//             margin: 0 auto;
+
+        
+//         }
+//         .project-content-block > p{
+//             width: 50%;
+//             padding: 1rem 0;
+//             margin: 0 auto;
+      
+
+//         }
+//         .project-content-block > code{
+//             width: 50%;
+//             display: block!important;
+//             margin: 0 auto;
+//         }
+
+//        .pp-sum{
+//            width: 50%;
+//            margin: 1rem auto;
+        
+//        h4{
+//            color: var(--main-red);
+//            font-Family: 'Cinzel', Cursive;
+//        p{
+//            font-size: 1.2rem;
+//        }}}
+//        .contact-icons-con{
+//            flex-direction: row;
+        
+//        }
+//        .contact-icon-con{
+//            width: 33%;
+//        }
+//     //    fix heading not in order projects
+//        .wash2{
+//         font-size: 2rem;
+//         font-weight: bolder;
+//         font-family: "Cinzel", Cursive;
+//         color: var(--main-blue)
+
+//        }
+//        .email-me{
+//            width: 25%;
+//        }
+//     }
+// @media only screen and (min-width: 1068px){
+//    .testi-card{
+//     flex-direction: column!important;
+//    }
+//     .card{
+//         max-height: 450px;
+//     }
+//     .card-body{
+//       width: 45%;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: space-evenly;
+   
+
+//     p{
+//         width: 75%;
+//         margin: .5rem 0;
+//     }}
+//     .project-link{
+//         width: 35%;
+//     }
+//     .project-icon-con{
+//         display: flex;
+//         flex-direction: column;
+//         margin: 0 auto;
+       
+//         justify-content: center;
+//     .projecticons{
+//         display:block
+//     }}
+//    .projectbtns{
+//        width: 100%;
+//        display: flex;
+//        flex-direction: row;
+//        justify-content: center;
+//    }
+//    .card.card-right .card-img-top{
+//        order: 3;
+//    }
+//    .card.card-right .project-icon-con{
+//        order:2;
+//        align-items: flex-end;
+//    }
+//     div.card-body > div > a{
+//         margin: 0 .5rem;
+ 
+//     }
+// }
+
+// /* Change all text and icon colors in the player. */
+// .vjs-matrix.video-js {
+//     color: #54D1DB;
+//   }
+  
+//   /* Change the border of the big play button. */
+//   .vjs-matrix .vjs-big-play-button {
+//     border-color: #54D1DB;
+//   }
+  
+//   /* Change the color of various "bars". */
+//   .vjs-matrix .vjs-volume-level,
+//   .vjs-matrix .vjs-play-progress,
+//   .vjs-matrix .vjs-slider-bar {
+//     background: #54D1DB;
+//   }
+//   .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+//     color:#54D1DB;
+//   }
+//   .video-js .vjs-volume-level{
+//     background-color: #54D1DB;
+//   }
+//   .video-js .vjs-control-bar{
+//     background-color: #54D1DB;
+//     opacity: .7;
+//   }

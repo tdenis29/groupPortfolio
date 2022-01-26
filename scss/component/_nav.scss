@@ -1,0 +1,35 @@
+// Nav Bar
+.brand{
+    stroke-dasharray: 20;
+} 
+.navbar{
+    background-color: $transparent;
+}
+.navbar-nav{
+    background-color: transparentize($color: #011627, $amount: .99)!important;
+}
+
+ .nav-link{
+     padding-left: 1rem;
+     color: $lightblue!important; 
+     font-family: $font-family--primary;
+     background-color: $transparent;
+     text-decoration: underline;
+     text-decoration-color: $rubyred;
+  
+}
+
+ .nav-link:active{
+     background-color: $rubyred;
+     border-radius: 25%;
+ }
+ .nav-link:hover{
+     background-color: $rubyred;
+     color: $white;
+ }
+ .nav-link:visited{
+     color: $codegreen;
+ }
+ #navbarToggleExternalContent > ul > li> a {
+     background-color: $transparent;
+ }

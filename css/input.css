@@ -1,11 +1,3 @@
-:root {
-  --main-dark: #011627;
-  --main-light: #FDFFFC;
-  --main-red: #EA3471;
-  --main-blue: #6E44FF;
-  --main-other: #44ff7c;
-}
-
 .sr-only {
   clip: rect(1px 1px 1px 1px);
   /* IE 6/7 */
@@ -17,37 +9,376 @@
   width: 1px;
 }
 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
 * {
   box-sizing: border-box !important;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: var(--main-light);
-  line-height: 24px;
+  color: #F4FAFF;
 }
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
 }
 
 body {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  background-color: var(--main-dark);
-  -webkit-background-size: 1000px 1000px !important;
-  -o-background-size: 1000px 1000px;
-  -moz-background-size: 1000px 1000px;
-  background-size: 1000px 1000px;
-  -webkit-background-composite: initial;
-  background-repeat: repeat;
-  background-image: url(../images/bubbles.svg) !important;
-  fill: var(--main-blue);
+  background-color: #0E0B16;
+  font-size: 18px;
+  line-height: 1.3333333333;
+}
+
+main {
+  height: 100%;
 }
 
 h3 {
   font-size: 1.9rem;
-  color: var(--main-red);
-  font-Family: "Cinzel", Cursive;
+  color: #FF01FB;
+  font-family: "Cinzel", Cursive;
 }
 
 .fade-in {
@@ -59,12 +390,12 @@ h3 {
   opacity: 1;
 }
 
-.section {
-  margin: 0 3rem 0 3rem;
-}
-
 h4 {
   padding-bottom: 0.5rem;
+}
+
+.brand {
+  stroke-dasharray: 20;
 }
 
 .navbar {
@@ -77,21 +408,25 @@ h4 {
 
 .nav-link {
   padding-left: 1rem;
-  color: var(--main-light) !important;
-  font-Family: "Fauna One", Serif;
+  color: #34d6ff !important;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   background-color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--main-red);
+  text-decoration-color: #FF01FB;
 }
 
 .nav-link:active {
-  background-color: var(--main-red);
+  background-color: #FF01FB;
   border-radius: 25%;
 }
 
 .nav-link:hover {
-  background-color: var(--main-red);
-  color: var(--main-light) !important;
+  background-color: #FF01FB;
+  color: #F4FAFF;
+}
+
+.nav-link:visited {
+  color: #44ff7c;
 }
 
 #navbarToggleExternalContent > ul > li > a {
@@ -99,103 +434,73 @@ h4 {
 }
 
 h1 {
-  margin: 3rem 0 3rem 0;
-  color: var(--main-red);
-  font-Family: "Cinzel", Cursive;
+  color: #34d6ff;
+  font-family: "Cinzel", Cursive;
   font-Size: 44px;
+  margin: 0;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.jumbotron {
+  display: flex;
+  position: relative;
 }
 
 .top-row {
-  height: 100vh;
-  margin: 1rem 0;
+  height: 85vh;
+  margin: 0 0 5rem 0;
+  position: relative;
+}
+
+.path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: dash 10s infinite forwards;
+  animation: dash 10s infinite forwards;
+}
+
+.background-div {
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+  top: 20;
+  right: 0;
+  z-index: -1;
+}
+.background-div svg {
+  height: inherit;
+  width: inherit;
+}
+
+.right-col {
+  margin-top: 3rem;
 }
 
 .top-intro {
-  height: 50%;
   background-color: transparent;
   margin: 1rem 0;
 }
 
 .hello {
   text-align: center;
-  font-Family: "Fauna One", Serif;
-  font-size: 1.3rem;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
   background-color: transparent;
-}
-
-.bottom-intro {
-  height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-  margin: 1rem 0;
-  background-color: transparent;
-  font-Family: "Fauna One", Serif;
 }
 
 .lead {
-  font-Family: "Fauna One", Serif;
+  font-Family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .section-margin {
   margin: 0 2rem 0 2rem;
-}
-
-div.pp-con {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(1, 22, 39, 0.5);
-}
-
-video {
-  width: 18.75rem;
-}
-
-.casestudy-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.casestudy-top > h1 {
-  color: var(--main-red);
-}
-
-.case-study-top-text {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-.case-study-top-text h2 {
-  color: var(--main-red);
-  font-Family: "Cinzel", Cursive;
-}
-
-.case-study-top-text > p {
-  font-Family: "Fauna One", Serif;
-}
-
-.content-section {
-  margin: 2rem;
-}
-
-.case-study-learn-list {
-  width: 100%;
-}
-
-.project-content-block > p {
-  margin: 1rem 0 1rem 0;
-  font-Family: "Fauna One", Serif;
-}
-
-.pp-sum {
-  font-Family: "Fauna One", Serif;
 }
 
 .right-col {
@@ -206,16 +511,15 @@ video {
 }
 
 .cta {
-  background-color: var(--main-dark);
-  border: 1px solid var(--main-red);
-  color: var(--main-light);
-  margin: 2rem 0;
-  font-Family: "Fauna One", Serif;
+  background-color: #0E0B16;
+  border: solid 1px #FF01FB;
+  color: #F4FAFF;
+  margin: 0.5rem 0;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .cta:hover {
-  background-color: var(--main-red);
-  border: 4px solid var(--main-red);
+  background-color: #FF01FB;
 }
 
 .container-cube {
@@ -237,10 +541,10 @@ video {
 .face {
   width: 9.75rem;
   height: 9.75rem;
-  border: 2px solid var(--main-red);
+  border: solid 2px #34d6ff;
   position: absolute;
   font-size: 2rem;
-  background-color: var(--main-dark);
+  background-color: #0E0B16;
 }
 
 .front {
@@ -313,18 +617,151 @@ video {
     -moz-transform: rotate3d(1, 1, 0, 360deg);
   }
 }
+.testimonial {
+  margin: 0 auto;
+  background-color: #08095f;
+}
+
+.testi-title {
+  padding-top: 1.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  color: #FF01FB;
+  background-image: none;
+}
+
+.carousel-control-next-icon::after {
+  content: ">";
+  font-size: 55px;
+  color: #FF01FB;
+}
+
+.carousel-control-prev-icon::after {
+  content: "<";
+  font-size: 55px;
+  color: #FF01FB;
+}
+
+.testi-row {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.avatar {
+  height: 9.75rem;
+  width: 9.75rem;
+}
+
+.testi-card {
+  max-width: 600px;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  border: solid 4px #34d6ff;
+  background-color: #0E0B16;
+  padding: 1rem;
+}
+
+.testi-card-title {
+  font-size: 1.5rem;
+  font-family: "Cinzel", Cursive;
+}
+
+.testi-card-text {
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.col {
+  width: 100%;
+}
+
+.projecticons {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-img-top {
+  position: relative;
+  height: auto;
+  max-width: 640px;
+  max-height: 430px;
+}
+.card-img-top img {
+  height: auto;
+  width: 100%;
+  max-width: 640px;
+  max-height: 430px;
+}
+
+.card-img-top::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(120deg, #A239CA, #33d0ff);
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  max-width: 640px;
+}
+
+.card {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  border: solid 4px #34d6ff;
+  background-color: #0E0B16;
+  width: 100%;
+  max-width: 640px;
+}
+
+.card-title {
+  color: #FF01FB;
+  font-family: "Cinzel", Cursive;
+  font-size: 1.6666666667em;
+}
+
+.card-body {
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.projectbtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-section {
-  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-progress {
+  display: none;
+}
+
+.about-me-progress-title {
+  text-align: center;
 }
 
 .aboutme {
-  width: 60%;
-  margin: 3rem auto;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column !important;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #08095f;
 }
 .aboutme h4 {
   margin: 1rem 0;
@@ -335,9 +772,7 @@ video {
 }
 
 .decon-image-box {
-  position: relative;
-  z-index: 1;
-  border: solid 2px var(--main-red);
+  border: solid 2px #34d6ff;
 }
 
 .decon-image {
@@ -345,152 +780,120 @@ video {
   display: block;
   height: inherit;
   margin-top: -1.5rem;
-  background-color: #fff;
+  background-color: #F4FAFF;
   background-size: cover;
   background-position-x: center;
   margin-left: -0.5rem;
 }
 
 .aboutmep {
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   font-size: 1.2rem;
-  font-Family: "Fauna One", Serif;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .decon-card-text {
+  width: 75%;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.aboutme {
   width: 100%;
-  max-height: 300px;
-  font-Family: "Fauna One", Serif;
+  background-color: #08095f;
 }
 
-.testimonial {
-  height: 27.5rem;
-  margin: 4rem 0;
+.label {
+  height: 3.3333333333em;
+  border-bottom: solid 1px #797e83;
+  position: relative;
+}
+.label span {
+  position: absolute;
+  bottom: 0;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  color: var(--main-red);
-  background-image: none;
+.spacer-div {
+  height: 2rem;
+  width: 100%;
+  background: transparent;
 }
 
-.carousel-control-next-icon::after {
-  content: ">";
-  font-size: 55px;
-  color: var(--main-red);
-}
-
-.carousel-control-prev-icon::after {
-  content: "<";
-  font-size: 55px;
-  color: var(--main-red);
-}
-
-.testi-row {
-  justify-content: space-evenly;
+.techdegree-section {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.avatar-box {
-  width: 144px;
-  height: 144px;
-  border: solid 2px var(--main-blue);
-  margin-top: 1.5rem;
-}
-
-.avatar {
-  margin-left: -1.5rem;
-  margin-top: -1.25rem;
-}
-
-.projecticons {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-img-top {
-  position: relative;
-}
-.card-img-top img {
+.techdegree-img {
+  width: 90%;
   height: auto;
-  width: 100%;
 }
 
-.card-img-top::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-  background-repeat: no-repeat;
-  opacity: 0.7;
-}
-
-.card {
-  margin: 2rem 0;
+.contact-icons-con {
   display: flex;
   flex-direction: column;
-  border: solid 4px var(--main-red);
-  max-width: 600px;
-  background-color: var(--main-dark);
+  justify-content: center;
+  align-items: center;
 }
 
-.card-title {
-  font-size: 2rem;
-  font-Family: "Cinzel", Cursive;
-  font-size: x-large;
+.contact-icon-con {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
 }
 
-.card-body {
-  font-Family: "Fauna One", Serif;
+.contact-p {
+  padding: 1rem 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Cinzel", Cursive;
+  text-align: center;
 }
 
-.project-link {
-  background-color: var(--main-dark);
-  color: var(--main-light);
+.contact-icons {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+  fill: #34d6ff;
+}
+
+.contact-icon-text {
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.email-me {
+  background-color: #0E0B16;
+  color: #F4FAFF;
   padding: 1rem;
-  border: solid 1px var(--main-red);
+  border: solid 1px #FF01FB;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   width: 50%;
-  margin: 0 auto;
-  font-Family: "Fauna One", Serif;
+  margin: 2.5rem auto;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
   border-radius: 0.3rem;
 }
 
-.project-link:hover {
-  background-color: var(--main-red);
-  color: var(--main-light);
+.email-me:hover {
+  background-color: #FF01FB;
+  color: #F4FAFF;
 }
 
-.project-link:active {
-  transition: transform;
+.email-me:visited {
+  background-color: #34d6ff;
 }
 
-.aboutme {
-  height: 18.75rem;
-  width: 90%;
-}
-
-.spacer-div {
-  height: 10rem;
-  width: 100%;
-  background: transparent;
+address {
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .social-icon {
   height: 2rem;
   width: 2rem;
-  fill: #f2f5ea;
+  fill: #F4FAFF;
   margin: 0.5rem;
   text-decoration: none;
   cursor: pointer;
@@ -504,39 +907,122 @@ video {
   font-size: 2rem;
   font-weight: bolder;
   font-family: "Cinzel", Cursive;
-  color: var(--main-red);
+  color: #FF01FB;
+  margin-bottom: revert;
 }
 
-.email-me {
-  background-color: var(--main-dark);
-  color: var(--main-light);
-  padding: 1rem;
-  border: solid 1px var(--main-red);
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  width: 50%;
-  margin: 2.5rem auto;
-  font-Family: "Fauna One", Serif;
-  border-radius: 0.3rem;
+div.pp-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.email-me:hover {
-  background-color: var(--main-red);
-  color: var(--main-light);
+video {
+  width: 18.75rem;
 }
 
-.email-me:visited {
-  background-color: var(--main-blue);
+.casestudy-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.casestudy-top > h1 {
+  color: #34d6ff;
+}
+
+.case-study-top-text {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.case-study-top-text h2 {
+  color: #FF01FB;
+  font-family: "Cinzel", Cursive;
+}
+
+.case-study-top-text > p {
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.content-section {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.case-study-learn-list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-content-block {
+  margin: 5rem auto;
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pp-sum {
+  font-family: "Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+  padding: 0.5rem;
 }
 
 code {
-  color: var(--main-other);
+  color: #44ff7c;
 }
 
-@media only screen and (min-width: 786px) {
+.video-con {
+  width: 98%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+#wave1 {
+  margin-top: -0.5rem;
+}
+
+#wave3 {
+  display: block;
+  margin-top: -0.5rem;
+}
+
+#wave0 {
+  margin-bottom: -0.5rem;
+}
+
+#wave5 {
+  margin-top: -0.5rem;
+  display: none;
+}
+
+#wave0 path, #wave1 path, #wave2 path, #wave3 path, #wave5 path {
+  fill: #08095f;
+}
+
+.case-study-links {
+  margin-bottom: 3rem;
+}
+
+.footer-pp {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
   .jumbotron {
     align-self: center;
+  }
+
+  .right-col {
+    margin-top: 0;
   }
 
   .top-intro {
@@ -547,20 +1033,27 @@ code {
     height: 50%;
   }
 
-  .aboutme {
+  .about-section {
+    display: flex;
     flex-direction: column;
   }
 
-  .about-section {
-    margin: 4rem auto;
+  .aboutme {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .aboutmep {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .about-me-title {
+    margin-bottom: 1.5rem;
   }
 
   .decon-card-text {
     width: 75%;
-  }
-
-  .top-row {
-    height: 100vh;
   }
 
   .hello {
@@ -568,12 +1061,32 @@ code {
     text-align: left;
   }
 
-  .aboutme {
-    width: 50%;
+  .card {
+    flex-direction: row;
+    width: 100%;
+    max-width: none;
   }
 
-  #about {
-    margin-bottom: 1.5rem;
+  .card-title {
+    font-size: 2rem;
+    font-family: "Cinzel", Cursive;
+  }
+
+  .card-img-top {
+    width: 55%;
+  }
+
+  .card-body {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-icon-con {
+    width: 5%;
+    flex-direction: column;
   }
 
   .foot-component {
@@ -593,11 +1106,14 @@ code {
     flex-direction: row !important;
     justify-content: center;
     align-items: center;
-    background-color: rgba(1, 22, 39, 0.5);
+  }
+
+  .video-con {
+    width: 50%;
   }
 
   video {
-    width: auto;
+    width: 100%;
   }
 
   .casestudy-top {
@@ -619,25 +1135,25 @@ code {
   .case-study-top-text {
     width: 50%;
     padding: 1rem;
-    margin-bottom: 2rem;
   }
 
   .project-content-block {
     width: 75%;
     justify-self: center;
     margin: 0 auto;
-    background-color: rgba(1, 22, 39, 0.5);
+    flex-direction: column;
   }
 
   .project-content-block > p {
     width: 50%;
-    margin: 1rem auto;
+    padding: 1rem 0;
+    margin: 0 auto;
   }
 
   .project-content-block > code {
     width: 50%;
     display: block !important;
-    margin: 1rem auto;
+    margin: 0 auto;
   }
 
   .pp-sum {
@@ -645,24 +1161,166 @@ code {
     margin: 1rem auto;
   }
   .pp-sum h4 {
-    color: var(--main-red);
-    font-Family: "Cinzel", Cursive;
+    color: #FF01FB;
+    font-family: "Cinzel", Cursive;
   }
   .pp-sum h4 p {
     font-size: 1.2rem;
+  }
+
+  .contact-icons-con {
+    flex-direction: row;
+  }
+
+  .contact-icon-con {
+    width: 33%;
   }
 
   .wash2 {
     font-size: 2rem;
     font-weight: bolder;
     font-family: "Cinzel", Cursive;
-    color: var(--main-red);
+    color: #34d6ff;
+  }
+
+  .email-me {
+    width: 25%;
+  }
+
+  .techdgree-img {
+    width: 50% !important;
+    display: block;
+  }
+
+  .about-me-progress {
+    width: 100%;
+    background-color: #08095f;
+    padding-right: 1rem;
   }
 }
-@media only screen and (max-device-width: 1068px) {
-  .aboutme {
+@media (min-width: 1068px) {
+  .hello {
+    margin: 0;
+  }
+
+  .testi-card {
+    flex-direction: column !important;
+  }
+
+  .card {
+    max-height: 450px;
+  }
+
+  .card-body {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .card-body p {
+    width: 75%;
+    margin: 0.5rem 0;
+  }
+
+  .project-link {
+    width: 35%;
+  }
+
+  .project-content-block {
+    margin: 5rem auto;
+    padding: 0 2rem;
     flex-direction: row;
   }
+
+  .project-icon-con {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .project-icon-con .projecticons {
+    display: block;
+  }
+
+  .projectbtns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card.card-right .card-img-top {
+    order: 3;
+  }
+
+  .card.card-right .project-icon-con {
+    order: 2;
+    align-items: flex-end;
+  }
+
+  div.card-body > div > a {
+    margin: 0 0.5rem;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutme {
+    width: 50%;
+  }
+
+  .aboutmep {
+    width: 100%;
+  }
+
+  .about-me-progress {
+    width: 50%;
+    background-color: #08095f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-progress-title {
+    text-align: center;
+  }
+
+  .techdegree-img {
+    width: 50% !important;
+    display: block;
+  }
+}
+/* Change all text and icon colors in the player. */
+.vjs-matrix.video-js {
+  color: #34d6ff;
+}
+
+/* Change the border of the big play button. */
+.vjs-matrix .vjs-big-play-button {
+  border-color: #34d6ff;
+}
+
+/* Change the color of various "bars". */
+.vjs-matrix .vjs-volume-level,
+.vjs-matrix .vjs-play-progress,
+.vjs-matrix .vjs-slider-bar {
+  background: #34d6ff;
+}
+
+.vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+  color: #34d6ff;
+}
+
+.video-js .vjs-volume-level {
+  background-color: #34d6ff;
+}
+
+.video-js .vjs-control-bar {
+  background-color: #34d6ff;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=input.css.map */

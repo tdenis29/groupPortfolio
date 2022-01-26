@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html class="rellax" lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="Tyson Denis" content="Tyson Denis Web Development Portfolio">
-        <meta name="description" content="A portfolio showcasing Tyson Denis'Front-End web developer skils, go there to see Web Dev projects!">
+        <meta name="description" content="A portfolio showcasing Tyson Denis' Front-End web developer skills, go there to see Web Dev projects!">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="css/input.css"/>
+        <link rel="icon" href="images/logotd.svg" sizes="16x16">
         <title>Tyson Denis's Group Portfolio</title>
     </head>
-    <body class="rellax" data-rellax-speed="-1" id="body">
+    <body>
  
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container nav-con">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" aria-describedby="brand-link" href="index.html">
+                  <p class="sr-only" id="brand-link">Links back to Home-page</p>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="40pt" height="24.000000pt" viewBox="0 0 190.000000 130.000000"
                     preserveAspectRatio="xMidYMid meet" class="logo">
@@ -24,7 +26,7 @@
                     Created by potrace 1.16, written by Peter Selinger 2001-2019
                     </metadata>
                     <g transform="translate(0.000000,130.000000) scale(0.100000,-0.100000)"
-                    fill="#D81E5B" stroke="none">
+                    fill="#34d6ff" stroke="none">
                     <path d="M1100 1281 c-109 -24 -169 -45 -251 -87 -52 -27 -77 -34 -125 -34
                     -269 -1 -473 -68 -605 -200 -81 -80 -112 -142 -117 -232 -5 -85 9 -128 58
                     -172 44 -40 92 -56 168 -56 28 0 52 -2 52 -4 0 -2 -14 -33 -30 -68 -36 -77
@@ -47,6 +49,7 @@
                     </g>
                     </svg>
                 </a>
+               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -56,10 +59,10 @@
                           <a class="nav-link active" aria-current="true" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#about">About </a>
+                          <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#projects">Projects</a>
+                          <a class="nav-link" href="#about">About </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#contact" tabindex="-1" >Contact</a>
@@ -68,45 +71,29 @@
                   </div>
               </div>
         </nav>
-     
+        <svg id="wave5" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path style="transform:translate(0, 0px); opacity:1; margin-top: -.25rem;" fill="#243d55" d="M0,20L240,28.3C480,37,960,53,1440,53.3C1920,53,2400,37,2880,35C3360,33,3840,47,4320,48.3C4800,50,5280,40,5760,36.7C6240,33,6720,37,7200,36.7C7680,37,8160,33,8640,33.3C9120,33,9600,37,10080,31.7C10560,27,11040,13,11520,13.3C12000,13,12480,27,12960,28.3C13440,30,13920,20,14400,13.3C14880,7,15360,3,15840,15C16320,27,16800,53,17280,58.3C17760,63,18240,47,18720,40C19200,33,19680,37,20160,40C20640,43,21120,47,21600,40C22080,33,22560,17,23040,23.3C23520,30,24000,60,24480,75C24960,90,25440,90,25920,88.3C26400,87,26880,83,27360,75C27840,67,28320,53,28800,40C29280,27,29760,13,30240,13.3C30720,13,31200,27,31680,28.3C32160,30,32640,20,33120,21.7C33600,23,34080,37,34320,43.3L34560,50L34560,100L34320,100C34080,100,33600,100,33120,100C32640,100,32160,100,31680,100C31200,100,30720,100,30240,100C29760,100,29280,100,28800,100C28320,100,27840,100,27360,100C26880,100,26400,100,25920,100C25440,100,24960,100,24480,100C24000,100,23520,100,23040,100C22560,100,22080,100,21600,100C21120,100,20640,100,20160,100C19680,100,19200,100,18720,100C18240,100,17760,100,17280,100C16800,100,16320,100,15840,100C15360,100,14880,100,14400,100C13920,100,13440,100,12960,100C12480,100,12000,100,11520,100C11040,100,10560,100,10080,100C9600,100,9120,100,8640,100C8160,100,7680,100,7200,100C6720,100,6240,100,5760,100C5280,100,4800,100,4320,100C3840,100,3360,100,2880,100C2400,100,1920,100,1440,100C960,100,480,100,240,100L0,100Z"></path></svg>
      <main>
+       <div class="background-div">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 100 150 100" width="100%" height="100%" ><path class="path" opacity=".4" stroke="#FF01FB" stroke-width="1" d="M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg>
+       </div>
          <!-- HERO/LANDING -->
-      <div class="row top-row container-fluid rellax"  data-rellax-speed="-5" id="home">
+      <div class="row top-row container-fluid" id="home">
+       
         <div class="jumbotron jumbtron-fluid text-center col-md-6">
           <div class="top-intro">
             <p class="hello" >Hello I'm</p>
-            <h1 class="title display-1 mb-3">Tyson Denis</h1>
-                <p class="lead my-0 px-0">Welcome to my Front-End Portfolio!</p>
-          </div>
-        
-          <div class="bottom-intro">
+            <h1 class="title display-1">Tyson Denis</h1>
+                <p class="lead">Welcome to my Front-End Portfolio!</p>
                 <p class="lead">
                 <a class="btn btn-primary btn-lg cta" href="#projects" role="button">Let's See the Work!</a>
                 </p>
           </div>
       </div>
-     
+ 
       <div class="right-col col-md-6" id="right">
         <div class="container-cube">
           <div class="cube" id="cube">
-            <noscript>
-              <style type="text/css">
-                  .cube {
-                      -webkit-animation-name: turn;
-                      animation-name: turn;
-                      -webkit-animation-duration: 5s;
-                      animation-duration: 5s;
-                      -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
-                      animation-timing-function:cubic-bezier(1, 0, 0, 1);
-                      -webkit-animation-delay: .1s;
-                      animation-delay: .1s;
-                      -webkit-animation-timing-function: linear;
-                      animation-timing-function: linear;
-                      -webkit-animation-iteration-count: infinite;
-                      animation-iteration-count: infinite;
-                  }
-              </style>
-          </noscript>
+            
             <div class="face top"></div>
             <div class="face bottom">
               <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/>
@@ -133,26 +120,23 @@
 
       </div>
     </div>
-    <div class="spacer-div">
-
-    </div>
-      <!-- /HERO/LANDING --> 
+   
+  
+    <svg id="wave0" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path style="transform:translate(0, 0px); opacity:1; margin-top: -.25rem;" d="M0,20L240,28.3C480,37,960,53,1440,53.3C1920,53,2400,37,2880,35C3360,33,3840,47,4320,48.3C4800,50,5280,40,5760,36.7C6240,33,6720,37,7200,36.7C7680,37,8160,33,8640,33.3C9120,33,9600,37,10080,31.7C10560,27,11040,13,11520,13.3C12000,13,12480,27,12960,28.3C13440,30,13920,20,14400,13.3C14880,7,15360,3,15840,15C16320,27,16800,53,17280,58.3C17760,63,18240,47,18720,40C19200,33,19680,37,20160,40C20640,43,21120,47,21600,40C22080,33,22560,17,23040,23.3C23520,30,24000,60,24480,75C24960,90,25440,90,25920,88.3C26400,87,26880,83,27360,75C27840,67,28320,53,28800,40C29280,27,29760,13,30240,13.3C30720,13,31200,27,31680,28.3C32160,30,32640,20,33120,21.7C33600,23,34080,37,34320,43.3L34560,50L34560,100L34320,100C34080,100,33600,100,33120,100C32640,100,32160,100,31680,100C31200,100,30720,100,30240,100C29760,100,29280,100,28800,100C28320,100,27840,100,27360,100C26880,100,26400,100,25920,100C25440,100,24960,100,24480,100C24000,100,23520,100,23040,100C22560,100,22080,100,21600,100C21120,100,20640,100,20160,100C19680,100,19200,100,18720,100C18240,100,17760,100,17280,100C16800,100,16320,100,15840,100C15360,100,14880,100,14400,100C13920,100,13440,100,12960,100C12480,100,12000,100,11520,100C11040,100,10560,100,10080,100C9600,100,9120,100,8640,100C8160,100,7680,100,7200,100C6720,100,6240,100,5760,100C5280,100,4800,100,4320,100C3840,100,3360,100,2880,100C2400,100,1920,100,1440,100C960,100,480,100,240,100L0,100Z"></path></svg>
    <!-- Testimonial -->
-   <section class="testimonial text-center fade-in rellax" data-rellax-speed="-1" id="testimonial">
-     <h2 class="wash2">Testimonials</h2>
+   <section class="testimonial text-center" id="testimonial">
+     <h2 class="testi-title wash2">Testimonials</h2>
    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
         <div>
-          <div class="card testimonial-card justify-content-center mx-auto">
-            <div class="row g-0 testi-row">
-              <div class="col-md-6 avatar-box">
-                <img class="img-fluid avatar" src="images/person3.jpeg" alt="treehouse instructor photo a middle-aged woman smiling she has white teeth">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">Treehouse Insructor Says:</h3>
-                  <p class="card-text">"Very impressive work so far @Tyson Denis! I love how organized your SASS is! It's great to see you are still utilizing it for these later projects! "</p>
+          <div class="testi-card justify-content-center mx-auto">
+            <div class="row testi-row">
+              <div class="col-md-12 avatar-box">
+                <img class="img-fluid avatar" src="images/quote.svg" alt="decorative large quotation Marks">
+                <div class="testi-card-body">
+                  <h3 class="testi-card-title">Treehouse Insructor Says:</h3>
+                  <p class="testi-card-text">"Very impressive work so far @Tyson Denis! I love how organized your SASS is! It's great to see you are still utilizing it for these later projects! "</p>
                   <p></p>
                 </div>
               </div>
@@ -163,15 +147,13 @@
       <!-- These will be different -->
       <div class="carousel-item" data-bs-interval="2000">
         <div>
-          <div class="card testimonial-card justify-content-center mx-auto">
-            <div class="row g-0 testi-row">
-              <div class="col-md-6 avatar-box">
-                <img class="img-fluid avatar" src="images/person3.jpeg" alt="treehouse instructor photo a middle-aged woman smiling she has white teeth">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">Treehouse Insructor Says:</h3>
-                  <p class="card-text">"Very impressive work so far @Tyson Denis! Thses will all be different! It's great to see you are still utilizing it for these later projects! "</p>
+          <div class="testi-card testimonial-card justify-content-center mx-auto">
+            <div class="row testi-row">
+              <div class="col-md-12 avatar-box">
+                <img class="img-fluid avatar" src="images/quote.svg" alt="decorative large quotation Marks">
+                <div class="testi-card-body">
+                  <h3 class="testi-card-title">Literacy Alberni Instructor says: </h3>
+                  <p class="testi-card-text">"Hi Tyson, Overall, everything is looking good! From my end, it feel like you’ve taken to this stuff like a natural, so I’d definitely encourage you to keep going with it!"</p>
                   <p></p>
                 </div>
               </div>
@@ -179,24 +161,22 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div>
-          <div class="card testimonial-card justify-content-center mx-auto">
-            <div class="row g-0 testi-row">
-              <div class="col-md-6 avatar-box">
-                <img class="img-fluid avatar" src="images/person3.jpeg" alt="treehouse instructor photo a middle-aged woman smiling she has white teeth">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">Treehouse Insructor Says:</h3>
-                  <p class="card-text">"Very impressive work so far @Tyson Denis! These will all be different It's great to see you are still utilizing it for these later projects! "</p>
+          <div class="testi-card testimonial-card justify-content-center mx-auto">
+            <div class="row testi-row">
+              <div class="col-md-12 avatar-box">
+                <img class="img-fluid avatar" src="images/quote.svg" alt="decorative large quotation Marks">
+                <div class="testi-card-body">
+                  <h3 class="testi-card-title">Treehouse Insructor Says:</h3>
+                  <p class="testi-card-text">"Very impressive work so far @Tyson Denis! These will all be different It's great to see you are still utilizing it for these later projects! "</p>
                   <p></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -209,192 +189,314 @@
     </button>
   </div>
 </section>
+
     <!-- /Testimonial -->
 
-    <div class="spacer-div">
-
-    </div>
+    <svg id="wave1" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path style="transform:translate(0, 0px); opacity:1; margin-top: -.25rem;" d="M0,20L240,28.3C480,37,960,53,1440,53.3C1920,53,2400,37,2880,35C3360,33,3840,47,4320,48.3C4800,50,5280,40,5760,36.7C6240,33,6720,37,7200,36.7C7680,37,8160,33,8640,33.3C9120,33,9600,37,10080,31.7C10560,27,11040,13,11520,13.3C12000,13,12480,27,12960,28.3C13440,30,13920,20,14400,13.3C14880,7,15360,3,15840,15C16320,27,16800,53,17280,58.3C17760,63,18240,47,18720,40C19200,33,19680,37,20160,40C20640,43,21120,47,21600,40C22080,33,22560,17,23040,23.3C23520,30,24000,60,24480,75C24960,90,25440,90,25920,88.3C26400,87,26880,83,27360,75C27840,67,28320,53,28800,40C29280,27,29760,13,30240,13.3C30720,13,31200,27,31680,28.3C32160,30,32640,20,33120,21.7C33600,23,34080,37,34320,43.3L34560,50L34560,100L34320,100C34080,100,33600,100,33120,100C32640,100,32160,100,31680,100C31200,100,30720,100,30240,100C29760,100,29280,100,28800,100C28320,100,27840,100,27360,100C26880,100,26400,100,25920,100C25440,100,24960,100,24480,100C24000,100,23520,100,23040,100C22560,100,22080,100,21600,100C21120,100,20640,100,20160,100C19680,100,19200,100,18720,100C18240,100,17760,100,17280,100C16800,100,16320,100,15840,100C15360,100,14880,100,14400,100C13920,100,13440,100,12960,100C12480,100,12000,100,11520,100C11040,100,10560,100,10080,100C9600,100,9120,100,8640,100C8160,100,7680,100,7200,100C6720,100,6240,100,5760,100C5280,100,4800,100,4320,100C3840,100,3360,100,2880,100C2400,100,1920,100,1440,100C960,100,480,100,240,100L0,100Z"></path></svg>
+          
     
    
         <!-- Content -->
-       <section class="card-section container-fluid rellax" data-rellax-speed="-1" >
+       <section class="card-section container">
          <h4 class="text-center wash2" id="projects">Projects</h4>
-         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col fade-in">
+         <div class="myRow">
+          <div class="fade-in">
             <div class="card">
               <div class="card-img-top">
-                <img src="images/gamecrop.jpg" class="img-fluid" alt="a close up of a multi-colored keyboard">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/gamephone.jpg">
+                  <source media="(max-width: 1067px)" srcset="images/gamrtablet.jpg">
+                
+                  <source media="(min-width: 1068px)" srcset="images/gamereg.jpg">
+                  <img src="images/gamereg.jpg" class="img-fluid" alt="Decorative photos of retro gaming systems like gameboy.">
+                </picture>
+               
+          
               </div>
+              <span class="project-icon-con">
+                <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 384"><path fill="#CF649A" d="M440.6 220.6c-17.9.101-33.4 4.4-46.4 10.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384 178.6 389 166.4 389 165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2 2-20.2 4.7-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199 1.1-8.601 6.1-20.8 6.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3C281.9 201.4 256.9 257 250.4 271.5c-3.3 7.4-6.199 13.3-8.3 17.3-2.1 4-.1.3-.3.7-1.8 3.4-2.8 5.3-2.8 5.3v.101c-1.4 2.5-2.9 4.899-3.601 4.899-.5 0-1.5-6.7.2-15.899 3.7-19.301 12.7-49.4 12.601-50.5 0-.5 1.699-5.801-5.801-8.5-7.3-2.7-9.899 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.899-15.5-33.899c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.899-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1L117.9 251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.601-101.8 78.3-39 141-28.3 151.899-4.5 15.5 34-33.5 97.2-114.899 106.3-31 3.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.899 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4 27.4 75.8 50.8 43 81.5 4 117.9-2.2 149.7.4 162.9c9.101 47.1 74 77.8 100 100.5-1.3.699-2.5 1.399-3.6 2-13 6.399-62.5 32.3-74.9 59.699-14 31 2.2 53.301 13 56.301 33.4 9.3 67.6-7.4 86.1-34.9 18.399-27.5 16.2-63.2 7.7-79.5l-.301-.6 10.2-6c6.601-3.9 13.101-7.5 18.8-10.601-3.199 8.7-5.5 19-6.699 34-1.4 17.601 5.8 40.4 15.3 49.4 4.2 3.899 9.2 4 12.3 4 11 0 16-9.101 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1a36.13 36.13 0 0 0 1.2-1.899v-.2c3-5.2 9.7-17.1 19.7-36.8 12.899-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.199 7.601 6.999 15.9 10.699 24-3 4.2-4.8 6.601-4.8 6.601l.1.1c-2.399 3.2-5.1 6.601-7.899 10-10.2 12.2-22.4 26.101-24 30.101-1.9 4.699-1.5 8.199 2.2 11 2.7 2 7.5 2.399 12.6 2 9.2-.601 15.6-2.9 18.8-4.301 5-1.8 10.7-4.5 16.2-8.5 10-7.399 16.1-17.899 15.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.801-2.601 2.7-4 15.8-23.101 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.899 6.5 5.7 13.601 9.1 20.601-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.899.8 9.5-1 13.699-2.8 5.2-1.7 11.5-4.601 17.301-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.899-8.2 49.6-5.7 44.5 5.2 53.3 33 51.601 44.6-1.7 11.601-11 18-14.101 20-3.1 1.9-4.1 2.601-3.8 4 .4 2.101 1.8 2 4.5 1.601 3.7-.601 23.4-9.5 24.2-30.899 1.2-27.504-24.9-57.504-71.2-57.205zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.801-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.199 9.1-5.5.6-.399 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.601-1.5-9-25.8-1.101-49.8 4-12.101 12.5-26.5 17.5-32.101 8.101-9 16.9-12 19.101-8.3 2.6 4.801-9.9 39.601-13.1 47.401zm88.7 42.4c-2.2 1.101-4.2 1.9-5.1 1.301-.7-.4.899-1.9.899-1.9s11.1-11.9 15.5-17.4c2.5-3.199 5.5-6.899 8.7-11.1v1.2C313.6 292.1 299.8 301.7 293.6 305.6zm68.399-15.6c-1.6-1.2-1.399-4.9 4-16.5 2.101-4.6 6.9-12.3 15.2-19.6 1 3 1.601 5.899 1.5 8.6-.099 18-12.899 24.7-20.7 27.5z"/>
+              </svg>
+              </span>
               <div class="card-body">
-                <span>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
-                </span>
                 <h5 class="card-title">Tech Degree Project 6</h5>
-                <p class="card-text">The Treehouse Project 6, was a challenge to create a Hangman/Wheel of Fortune mash-up game, in which a player guesses a Random Phrase. 
-                  This was the first big JavaScript Project and involves array iteration and styling based on class toggling.</p>
-                  <a class="project-link text-center" aria-describedby="project-page-6-description" href="pp6.html">Go to Project 6</a>
-                  <p class="sr-only" id="project-page-6-description">Goes to Project 6 Case Study(opens in a new tab)</p>
+                <p class="card-text">The Treehouse Project 6, was a challenge to create a Hangman style game, where a player guesses a Random Phrase. This was the second JavaScript Project and involves array iteration and styling based on class toggling.</p>
+                  <div class="projectbtns">
+                    <a class="btn btn-primary btn-lg cta" href="https://tdenis29.github.io/techdegree6" role="button">Live Demo</a>
+                    <a class="btn btn-primary btn-lg cta" aria-describedby="project-page-6-description" href="pp6.html">Go to Case Study</a>
+                    <p class="sr-only" id="project-page-6-description">Goes to Project 6 Case Study(opens in a new tab)</p>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col fade-in">
-           
-            <div class="card">
+            <div class="card card-right">
               <div class="card-img-top">
-               <img src="images/chartcrop.jpg" class="img-fluid" alt="decorative image of graphs and charts on a dark-themed computer screen">
-              </div>
-              <div class="card-body">
-                <span>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
-                </span>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/chartsphone.jpg">
+                  <source media="(max-width: 1067px)" srcset="images/chartstablet.jpg">
+                  <source media="(min-width: 1068px)" srcset="images/charts.jpg">
+                  <img src="images/charts.jpg" class="img-fluid" alt="Decorative photos of retro gaming systems like gameboy.">
+                </picture>
+               </div>
+        
+              <span class="project-icon-con">
+                <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
+                 <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 384"><path fill="#CF649A" d="M440.6 220.6c-17.9.101-33.4 4.4-46.4 10.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384 178.6 389 166.4 389 165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2 2-20.2 4.7-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199 1.1-8.601 6.1-20.8 6.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3C281.9 201.4 256.9 257 250.4 271.5c-3.3 7.4-6.199 13.3-8.3 17.3-2.1 4-.1.3-.3.7-1.8 3.4-2.8 5.3-2.8 5.3v.101c-1.4 2.5-2.9 4.899-3.601 4.899-.5 0-1.5-6.7.2-15.899 3.7-19.301 12.7-49.4 12.601-50.5 0-.5 1.699-5.801-5.801-8.5-7.3-2.7-9.899 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.899-15.5-33.899c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.899-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1L117.9 251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.601-101.8 78.3-39 141-28.3 151.899-4.5 15.5 34-33.5 97.2-114.899 106.3-31 3.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.899 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4 27.4 75.8 50.8 43 81.5 4 117.9-2.2 149.7.4 162.9c9.101 47.1 74 77.8 100 100.5-1.3.699-2.5 1.399-3.6 2-13 6.399-62.5 32.3-74.9 59.699-14 31 2.2 53.301 13 56.301 33.4 9.3 67.6-7.4 86.1-34.9 18.399-27.5 16.2-63.2 7.7-79.5l-.301-.6 10.2-6c6.601-3.9 13.101-7.5 18.8-10.601-3.199 8.7-5.5 19-6.699 34-1.4 17.601 5.8 40.4 15.3 49.4 4.2 3.899 9.2 4 12.3 4 11 0 16-9.101 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1a36.13 36.13 0 0 0 1.2-1.899v-.2c3-5.2 9.7-17.1 19.7-36.8 12.899-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.199 7.601 6.999 15.9 10.699 24-3 4.2-4.8 6.601-4.8 6.601l.1.1c-2.399 3.2-5.1 6.601-7.899 10-10.2 12.2-22.4 26.101-24 30.101-1.9 4.699-1.5 8.199 2.2 11 2.7 2 7.5 2.399 12.6 2 9.2-.601 15.6-2.9 18.8-4.301 5-1.8 10.7-4.5 16.2-8.5 10-7.399 16.1-17.899 15.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.801-2.601 2.7-4 15.8-23.101 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.899 6.5 5.7 13.601 9.1 20.601-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.899.8 9.5-1 13.699-2.8 5.2-1.7 11.5-4.601 17.301-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.899-8.2 49.6-5.7 44.5 5.2 53.3 33 51.601 44.6-1.7 11.601-11 18-14.101 20-3.1 1.9-4.1 2.601-3.8 4 .4 2.101 1.8 2 4.5 1.601 3.7-.601 23.4-9.5 24.2-30.899 1.2-27.504-24.9-57.504-71.2-57.205zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.801-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.199 9.1-5.5.6-.399 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.601-1.5-9-25.8-1.101-49.8 4-12.101 12.5-26.5 17.5-32.101 8.101-9 16.9-12 19.101-8.3 2.6 4.801-9.9 39.601-13.1 47.401zm88.7 42.4c-2.2 1.101-4.2 1.9-5.1 1.301-.7-.4.899-1.9.899-1.9s11.1-11.9 15.5-17.4c2.5-3.199 5.5-6.899 8.7-11.1v1.2C313.6 292.1 299.8 301.7 293.6 305.6zm68.399-15.6c-1.6-1.2-1.399-4.9 4-16.5 2.101-4.6 6.9-12.3 15.2-19.6 1 3 1.601 5.899 1.5 8.6-.099 18-12.899 24.7-20.7 27.5z"/>
+              </svg>
+              </span>
+               <div class="card-body">
                 <h5 class="card-title">Tech Degree Project 7</h5>
-                <p class="card-text">This is a Web App Dashboard incorporating Charts.js, for dynamically presented information as well as using local Storage to save user's settings.</p>
-                <a class="project-link text-center" aria-describedby="project-page-7-description" href="pp7.html">Go to Project 7</a>
-                <p class="sr-only" id="project-page-7-description">Goes to Project 7 Case Study(opens in a new tab)</p>
+                  <p class="card-text">This is a Web App Dashboard incorporating Charts.js, for dynamically presented information as well as using local storage to save users’ settings.</p>
+                  <div class="projectbtns">
+                    <a class="btn btn-primary btn-lg cta" href="https://tdenis29.github.io/TechDegree7" role="button">Live Demo</a>
+                    <a class="btn btn-primary btn-lg cta" aria-describedby="project-page-7-description" href="pp7.html">Go to Case Study</a>
+                     <p class="sr-only" id="project-page-7-description">Goes to Project 7 Case Study(opens in a new tab)</p>
+                  </div>
               </div>
             </div>
           </div>
+
           <div class="col fade-in">
             <div class="card">
               <div class="card-img-top">
-              <img src="images/searchcrop.jpg " class="img-fluid" alt="decorative close-up shot of a magnifying glass metaphorical for search">
-            </div>
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/search.jpg">
+                  <source media="(max-width: 1067px)" srcset="images/searchtablet.jpg">
+                  <!-- <source media="(max-width: 1067px)" srcset="images/searchtablet.jpg"> -->
+                  <source media="(min-width: 1068px)" srcset="images/search.jpg">
+                  <img src="images.search.jpg" alt="Chris standing up holding his daughter Elva">
+                </picture>
+                <!-- <img class="img-fluid" srcset="images/search.jpg 640w,
+                                              images/searchtablet.jpg 360w"
+                                              sizes="(min-width: 768px) 360px"
+                                              src="images/search.jpg"
+                                              alt="Decorative close-up shot of a magnifying glass metaphorical for search"> -->
+              </div>
+            <span class="project-icon-con">
+              <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+              <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+              <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
+               <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 384"><path fill="#CF649A" d="M440.6 220.6c-17.9.101-33.4 4.4-46.4 10.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384 178.6 389 166.4 389 165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2 2-20.2 4.7-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199 1.1-8.601 6.1-20.8 6.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3C281.9 201.4 256.9 257 250.4 271.5c-3.3 7.4-6.199 13.3-8.3 17.3-2.1 4-.1.3-.3.7-1.8 3.4-2.8 5.3-2.8 5.3v.101c-1.4 2.5-2.9 4.899-3.601 4.899-.5 0-1.5-6.7.2-15.899 3.7-19.301 12.7-49.4 12.601-50.5 0-.5 1.699-5.801-5.801-8.5-7.3-2.7-9.899 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.899-15.5-33.899c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.899-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1L117.9 251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.601-101.8 78.3-39 141-28.3 151.899-4.5 15.5 34-33.5 97.2-114.899 106.3-31 3.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.899 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4 27.4 75.8 50.8 43 81.5 4 117.9-2.2 149.7.4 162.9c9.101 47.1 74 77.8 100 100.5-1.3.699-2.5 1.399-3.6 2-13 6.399-62.5 32.3-74.9 59.699-14 31 2.2 53.301 13 56.301 33.4 9.3 67.6-7.4 86.1-34.9 18.399-27.5 16.2-63.2 7.7-79.5l-.301-.6 10.2-6c6.601-3.9 13.101-7.5 18.8-10.601-3.199 8.7-5.5 19-6.699 34-1.4 17.601 5.8 40.4 15.3 49.4 4.2 3.899 9.2 4 12.3 4 11 0 16-9.101 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1a36.13 36.13 0 0 0 1.2-1.899v-.2c3-5.2 9.7-17.1 19.7-36.8 12.899-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.199 7.601 6.999 15.9 10.699 24-3 4.2-4.8 6.601-4.8 6.601l.1.1c-2.399 3.2-5.1 6.601-7.899 10-10.2 12.2-22.4 26.101-24 30.101-1.9 4.699-1.5 8.199 2.2 11 2.7 2 7.5 2.399 12.6 2 9.2-.601 15.6-2.9 18.8-4.301 5-1.8 10.7-4.5 16.2-8.5 10-7.399 16.1-17.899 15.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.801-2.601 2.7-4 15.8-23.101 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.899 6.5 5.7 13.601 9.1 20.601-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.899.8 9.5-1 13.699-2.8 5.2-1.7 11.5-4.601 17.301-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.899-8.2 49.6-5.7 44.5 5.2 53.3 33 51.601 44.6-1.7 11.601-11 18-14.101 20-3.1 1.9-4.1 2.601-3.8 4 .4 2.101 1.8 2 4.5 1.601 3.7-.601 23.4-9.5 24.2-30.899 1.2-27.504-24.9-57.504-71.2-57.205zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.801-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.199 9.1-5.5.6-.399 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.601-1.5-9-25.8-1.101-49.8 4-12.101 12.5-26.5 17.5-32.101 8.101-9 16.9-12 19.101-8.3 2.6 4.801-9.9 39.601-13.1 47.401zm88.7 42.4c-2.2 1.101-4.2 1.9-5.1 1.301-.7-.4.899-1.9.899-1.9s11.1-11.9 15.5-17.4c2.5-3.199 5.5-6.899 8.7-11.1v1.2C313.6 292.1 299.8 301.7 293.6 305.6zm68.399-15.6c-1.6-1.2-1.399-4.9 4-16.5 2.101-4.6 6.9-12.3 15.2-19.6 1 3 1.601 5.899 1.5 8.6-.099 18-12.899 24.7-20.7 27.5z"/>
+              </svg>
+            </span>
+
               <div class="card-body">
-                <span>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
-                </span>
                 <h5 class="card-title">Tech Degree Project 8</h5>
-                <p class="card-text">This one involved using Promises to make an AJAX call to a public API to dynamically load a list of employees using JavaScript</p>
-                <a class="project-link text-center" aria-describedby="project-page-8-description" href="pp8.html">Go to Project 8</a>
-                <p class="sr-only" id="project-page-8-description">Goes to Project 8 Case Study(opens in a new tab)</p>
+                 <p class="card-text">This challenge involved using Promises to make an AJAX call to a public API to dynamically load a list of employees using JavaScript</p>
+                 <div class="projectbtns">
+                  <a class="btn btn-primary btn-lg cta" href="https://tdenis29.github.io/TechDegreeProject8" role="button">Live Demo</a>
+                  <a class="btn btn-primary btn-lg cta" aria-describedby="project-page-8-description" href="pp8.html">Go to Case Study</a>
+                    <p class="sr-only" id="project-page-8-description">Goes to Project 8 Case Study(opens in a new tab)</p>
+                  </div>
               </div>
             </div>
           </div>
 
           <div class="col fade-in">
-            <div class="card">
-              <div class="card-img-top img-fluid" >
-              <img src="images/computercrop.jpg" alt="image of a macbook displaying the text 'I design things that make peoples lives easier'. ">
-            </div>
-              <div class="card-body">
-                <span>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
-                </span>
+            <div class="card card-right">
+              <div class="card-img-top" >
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/computerphone.jpg">
+                  <source media="(max-width: 1067px)" srcset="images/computertablet.jpg">
+                  <source media="(min-width: 1068px)" srcset="images/computer.jpg">
+                  <img src="images/computer.jpg" class="img-fluid" alt="Decorative photo of a macbook displaying code in a text editor">
+                </picture>
+             </div>
+            
+            <span class="project-icon-con">
+              <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+              <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+              <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
+               <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 384"><path fill="#CF649A" d="M440.6 220.6c-17.9.101-33.4 4.4-46.4 10.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384 178.6 389 166.4 389 165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2 2-20.2 4.7-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199 1.1-8.601 6.1-20.8 6.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3C281.9 201.4 256.9 257 250.4 271.5c-3.3 7.4-6.199 13.3-8.3 17.3-2.1 4-.1.3-.3.7-1.8 3.4-2.8 5.3-2.8 5.3v.101c-1.4 2.5-2.9 4.899-3.601 4.899-.5 0-1.5-6.7.2-15.899 3.7-19.301 12.7-49.4 12.601-50.5 0-.5 1.699-5.801-5.801-8.5-7.3-2.7-9.899 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.899-15.5-33.899c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.899-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1L117.9 251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.601-101.8 78.3-39 141-28.3 151.899-4.5 15.5 34-33.5 97.2-114.899 106.3-31 3.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.899 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4 27.4 75.8 50.8 43 81.5 4 117.9-2.2 149.7.4 162.9c9.101 47.1 74 77.8 100 100.5-1.3.699-2.5 1.399-3.6 2-13 6.399-62.5 32.3-74.9 59.699-14 31 2.2 53.301 13 56.301 33.4 9.3 67.6-7.4 86.1-34.9 18.399-27.5 16.2-63.2 7.7-79.5l-.301-.6 10.2-6c6.601-3.9 13.101-7.5 18.8-10.601-3.199 8.7-5.5 19-6.699 34-1.4 17.601 5.8 40.4 15.3 49.4 4.2 3.899 9.2 4 12.3 4 11 0 16-9.101 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1a36.13 36.13 0 0 0 1.2-1.899v-.2c3-5.2 9.7-17.1 19.7-36.8 12.899-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.199 7.601 6.999 15.9 10.699 24-3 4.2-4.8 6.601-4.8 6.601l.1.1c-2.399 3.2-5.1 6.601-7.899 10-10.2 12.2-22.4 26.101-24 30.101-1.9 4.699-1.5 8.199 2.2 11 2.7 2 7.5 2.399 12.6 2 9.2-.601 15.6-2.9 18.8-4.301 5-1.8 10.7-4.5 16.2-8.5 10-7.399 16.1-17.899 15.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.801-2.601 2.7-4 15.8-23.101 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.899 6.5 5.7 13.601 9.1 20.601-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.899.8 9.5-1 13.699-2.8 5.2-1.7 11.5-4.601 17.301-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.899-8.2 49.6-5.7 44.5 5.2 53.3 33 51.601 44.6-1.7 11.601-11 18-14.101 20-3.1 1.9-4.1 2.601-3.8 4 .4 2.101 1.8 2 4.5 1.601 3.7-.601 23.4-9.5 24.2-30.899 1.2-27.504-24.9-57.504-71.2-57.205zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.801-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.199 9.1-5.5.6-.399 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.601-1.5-9-25.8-1.101-49.8 4-12.101 12.5-26.5 17.5-32.101 8.101-9 16.9-12 19.101-8.3 2.6 4.801-9.9 39.601-13.1 47.401zm88.7 42.4c-2.2 1.101-4.2 1.9-5.1 1.301-.7-.4.899-1.9.899-1.9s11.1-11.9 15.5-17.4c2.5-3.199 5.5-6.899 8.7-11.1v1.2C313.6 292.1 299.8 301.7 293.6 305.6zm68.399-15.6c-1.6-1.2-1.399-4.9 4-16.5 2.101-4.6 6.9-12.3 15.2-19.6 1 3 1.601 5.899 1.5 8.6-.099 18-12.899 24.7-20.7 27.5z"/>
+              </svg>
+            </span>
+               <div class="card-body">
                 <h5 class="card-title">Tech Degree Project 9</h5>
-                <p class="card-text">My very first portfolio and Capstone project for Treehouse.</p>
-                <a class="project-link text-center" aria-describedby="project-page-9-description" href="pp9.html">Go to Project 9</a>
-                <p class="sr-only" id="project-page-9-description">Goes to Project 9 Case Study(opens in a new tab)</p>
+                  <p class="card-text">My very first portfolio and Capstone project for Treehouse.</p>
+                  <div class="projectbtns">
+                    <a class="btn btn-primary btn-lg cta" href="https://tdenis29.github.io/Myportfolio" role="button">Live Demo</a>
+                    <a class="btn btn-primary btn-lg cta" aria-describedby="project-page-9-description" href="pp9.html">Go to Case Study</a>
+                      <p class="sr-only" id="project-page-9-description">Goes to Project 9 Case Study(opens in a new tab)</p>
+                    </div>
               </div>
             </div>
           </div>
 
           <div class="col fade-in">
             <div class="card">
-              <div class="card-img-top">              
-                <img src="images/gallerycrop.jpg" alt="an art gallery mataphorical for the picture gallery style of this project">
+              <div class="card-img-top"> 
+                <picture>             
+                <img src="images/gallery.jpg"  class="img-fluid" alt="an art gallery mataphorical for the picture gallery style of this project">
+              </picture>
               </div>
+              <span class="project-icon-con">
+                <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+                <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
+                 <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 384"><path fill="#CF649A" d="M440.6 220.6c-17.9.101-33.4 4.4-46.4 10.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384 178.6 389 166.4 389 165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2 2-20.2 4.7-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199 1.1-8.601 6.1-20.8 6.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3C281.9 201.4 256.9 257 250.4 271.5c-3.3 7.4-6.199 13.3-8.3 17.3-2.1 4-.1.3-.3.7-1.8 3.4-2.8 5.3-2.8 5.3v.101c-1.4 2.5-2.9 4.899-3.601 4.899-.5 0-1.5-6.7.2-15.899 3.7-19.301 12.7-49.4 12.601-50.5 0-.5 1.699-5.801-5.801-8.5-7.3-2.7-9.899 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.899-15.5-33.899c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.899-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1L117.9 251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.601-101.8 78.3-39 141-28.3 151.899-4.5 15.5 34-33.5 97.2-114.899 106.3-31 3.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.899 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4 27.4 75.8 50.8 43 81.5 4 117.9-2.2 149.7.4 162.9c9.101 47.1 74 77.8 100 100.5-1.3.699-2.5 1.399-3.6 2-13 6.399-62.5 32.3-74.9 59.699-14 31 2.2 53.301 13 56.301 33.4 9.3 67.6-7.4 86.1-34.9 18.399-27.5 16.2-63.2 7.7-79.5l-.301-.6 10.2-6c6.601-3.9 13.101-7.5 18.8-10.601-3.199 8.7-5.5 19-6.699 34-1.4 17.601 5.8 40.4 15.3 49.4 4.2 3.899 9.2 4 12.3 4 11 0 16-9.101 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1a36.13 36.13 0 0 0 1.2-1.899v-.2c3-5.2 9.7-17.1 19.7-36.8 12.899-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.199 7.601 6.999 15.9 10.699 24-3 4.2-4.8 6.601-4.8 6.601l.1.1c-2.399 3.2-5.1 6.601-7.899 10-10.2 12.2-22.4 26.101-24 30.101-1.9 4.699-1.5 8.199 2.2 11 2.7 2 7.5 2.399 12.6 2 9.2-.601 15.6-2.9 18.8-4.301 5-1.8 10.7-4.5 16.2-8.5 10-7.399 16.1-17.899 15.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.801-2.601 2.7-4 15.8-23.101 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.899 6.5 5.7 13.601 9.1 20.601-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.899.8 9.5-1 13.699-2.8 5.2-1.7 11.5-4.601 17.301-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.899-8.2 49.6-5.7 44.5 5.2 53.3 33 51.601 44.6-1.7 11.601-11 18-14.101 20-3.1 1.9-4.1 2.601-3.8 4 .4 2.101 1.8 2 4.5 1.601 3.7-.601 23.4-9.5 24.2-30.899 1.2-27.504-24.9-57.504-71.2-57.205zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.801-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.199 9.1-5.5.6-.399 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.601-1.5-9-25.8-1.101-49.8 4-12.101 12.5-26.5 17.5-32.101 8.101-9 16.9-12 19.101-8.3 2.6 4.801-9.9 39.601-13.1 47.401zm88.7 42.4c-2.2 1.101-4.2 1.9-5.1 1.301-.7-.4.899-1.9.899-1.9s11.1-11.9 15.5-17.4c2.5-3.199 5.5-6.899 8.7-11.1v1.2C313.6 292.1 299.8 301.7 293.6 305.6zm68.399-15.6c-1.6-1.2-1.399-4.9 4-16.5 2.101-4.6 6.9-12.3 15.2-19.6 1 3 1.601 5.899 1.5 8.6-.099 18-12.899 24.7-20.7 27.5z"/>
+              </svg>
+              </span>
               <div class="card-body">
-                <span>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
-                </span>
                 <h5 class="card-title">Tech-Degree Project 5</h5>
                 <p class="card-text">This project involved using CSS Grid to set up a small image gallery, and introduced JavaScript asking us implement BaguetteBox and a Search Filter to filter images by data-caption</p>
-                <a class="project-link text-center" aria-describedby="project-page-5-description" href="pp5.html">Go To Project 5</a>
-                <p class="sr-only" id="project-page-5-description">Goes to Project 5 Case Study(opens in a new tab)</p>
+                <div class="projectbtns">
+                  <a class="btn btn-primary btn-lg cta" href="https://tdenis29.github.io/galleryproject5" role="button">Live Demo</a>
+                  <a class="btn btn-primary btn-lg cta" aria-describedby="project-page-5-description" href="pp5.html">Go To Case Study</a>
+                  <p class="sr-only" id="project-page-5-description">Goes to Project 5 Case Study(opens in a new tab)</p>
+              </div>
               </div>
         </div>
       </div>
 
           <div class="col fade-in">
-            <div class="card">
-            <div class="card-img-top">
-             <img src="images/calccrop.jpg" class="img-fluid" alt="close-up of a man filling out a form with a fancy pen.">
-            </div>
-              <div class="card-body">
-                <span>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
-                  <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
-                </span>
-                <h5 class="card-title">The Odin Project Basic Calculator</h5>
-                <p class="card-text">Last project in the The Odin Project's Foundations curriculum</p>
-                <a class="project-link text-center" aria-describedby="project-page-calc-description" href="projectpagecalc.html">Go to Calc</a>
-                <p class="sr-only" id="project-page-calc-description" >Goes to Project Calculator Case Study(opens in a new tab)</p>
+            <div class="card card-right">
+              <div class="card-img-top">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/calcphone.jpg">
+                  <source media="(max-width: 1067px)" srcset="images/calctablet.jpg">
+                  <source media="(min-width: 1068px)" srcset="images/calc.jpg">
+                  <img src="images/calc.jpg" class="img-fluid" alt="Decorative photo of a basic arithmetic Calculator">
+                </picture>
               </div>
+        
+            <span class="project-icon-con">
+              <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5 icon</title><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+              <svg class="projecticons" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3 icon</title><path fill="#0000FF" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+              <svg class="projecticons" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>JSS icon</title><path fill="#f0db4f" d="M0 2.5v19h19.2v-1.95c.506.263 1.124.42 1.857.42 1.687 0 2.943-.877 2.943-2.475 0-1.483-.852-2.143-2.36-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.142.76l1.383-.887c-.585-1.029-1.396-1.422-2.525-1.422-.715 0-1.312.207-1.754.555V2.5zm.36.359h18.48v9.182a2.266 2.266 0 00-.487 1.432c0 .654.176 1.152.486 1.552v2.537l-1.018.592c.232.456.57.864 1.018 1.177v1.81H.361zm14.188 8.268c-1.586 0-2.6 1.014-2.6 2.346 0 1.445.85 2.13 2.132 2.675l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.205.875-.876 0-1.371-.457-1.752-1.078l-1.443.839c.521 1.03 1.587 1.816 3.236 1.816 1.687 0 2.943-.876 2.943-2.475 0-1.483-.852-2.143-2.361-2.79l-.444-.19c-.762-.33-1.092-.546-1.092-1.078 0-.431.33-.761.85-.761.51 0 .838.215 1.143.76l1.382-.887c-.584-1.029-1.396-1.422-2.525-1.422zm-5.868.101v6.038c0 .888-.368 1.116-.951 1.116-.61 0-.864-.418-1.143-.913l-1.446.875c.419.886 1.242 1.622 2.664 1.622 1.574 0 2.652-.837 2.652-2.676v-6.062zm10.52 4.173c.345.295.781.532 1.286.747l.443.19c.81.355 1.293.57 1.293 1.18 0 .508-.47.875-1.206.875-.876 0-1.37-.457-1.752-1.078l-.064.037z"/></svg>
+            </span>
+
+            <div class="card-body">
+              <h5 class="card-title text-center" >The Odin Project Basic Calculator</h5>
+                <p class="card-text">Last project in the The Odin Project's Foundations curriculum</p>
+                <div class="projectbtns">
+                  <a class="btn btn-primary btn-lg cta" aria-describedby="live-demo-calc" href="https://tdenis29.github.io/myJSCalc" target="_blank" role="button">Live Demo</a>
+                  <p class="sr-only" id="live-demo-calc">Opens a live demonstration of Porject Calc</p>
+                  <a class="btn btn-primary btn-lg cta" aria-describedby="project-page-calc-description" href="projectpagecalc.html">Go to Case Study</a>
+                    <p class="sr-only" id="project-page-calc-description" >Goes to Project Calculator Case Study(opens in a new tab)</p>
+              </div>
+            
             </div>
         </div>
-    
-    </div>
-      </section>
-      <div class="spacer-div">
-
       </div>
-        <section class="about-section fade-in rellax" data-rellax-speed="-1">
+    </div>
+
+  </section>
+      
+      <svg id="wave2" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path style="transform:translate(0, 0px); opacity:1; margin-top: -.25rem;" fill="#243d55" d="M0,20L240,28.3C480,37,960,53,1440,53.3C1920,53,2400,37,2880,35C3360,33,3840,47,4320,48.3C4800,50,5280,40,5760,36.7C6240,33,6720,37,7200,36.7C7680,37,8160,33,8640,33.3C9120,33,9600,37,10080,31.7C10560,27,11040,13,11520,13.3C12000,13,12480,27,12960,28.3C13440,30,13920,20,14400,13.3C14880,7,15360,3,15840,15C16320,27,16800,53,17280,58.3C17760,63,18240,47,18720,40C19200,33,19680,37,20160,40C20640,43,21120,47,21600,40C22080,33,22560,17,23040,23.3C23520,30,24000,60,24480,75C24960,90,25440,90,25920,88.3C26400,87,26880,83,27360,75C27840,67,28320,53,28800,40C29280,27,29760,13,30240,13.3C30720,13,31200,27,31680,28.3C32160,30,32640,20,33120,21.7C33600,23,34080,37,34320,43.3L34560,50L34560,100L34320,100C34080,100,33600,100,33120,100C32640,100,32160,100,31680,100C31200,100,30720,100,30240,100C29760,100,29280,100,28800,100C28320,100,27840,100,27360,100C26880,100,26400,100,25920,100C25440,100,24960,100,24480,100C24000,100,23520,100,23040,100C22560,100,22080,100,21600,100C21120,100,20640,100,20160,100C19680,100,19200,100,18720,100C18240,100,17760,100,17280,100C16800,100,16320,100,15840,100C15360,100,14880,100,14400,100C13920,100,13440,100,12960,100C12480,100,12000,100,11520,100C11040,100,10560,100,10080,100C9600,100,9120,100,8640,100C8160,100,7680,100,7200,100C6720,100,6240,100,5760,100C5280,100,4800,100,4320,100C3840,100,3360,100,2880,100C2400,100,1920,100,1440,100C960,100,480,100,240,100L0,100Z"></path></svg>
+        
+      <section class="about-section fade-in" id="about">
+
+
           <div class="aboutme fade-in">
-            <h6 class="text-center my-4 wash2" id="about">About Me</h6>
+            <h6 class="about-me-title text-center wash2">About</h6>
            <div class="decon-image-box">
-                <!-- <span class="decon-image pr-3"></span> -->
-                <img alt="silhouette photo of site author Tyson Denis" class="decon-image" src="images/headshotcrop.jpg">
+                <img alt="photo author Tyson Denis" class="decon-image" src="images/imcropped.jpg">
               </div>
               <div class="decon-card-text text-center">
-                  <p class="aboutmep">Hello again, I just recently finished the front-end Web Develeper program at Treehouse! I am a former Chef from Western Canada looking to bring the same quiet professionalism and attention to detail that I learned in the kitchen to the Web! Feel free to email me and I'll try to get back you soon!</p>
-                  <a class="email-me" href="mailtto:tdenis29@outlook.com" rel="noopener noreferrer">Email Me!</a>
+                  <p class="aboutmep">Hello again, I just recently finished the front-end Web Develeper program at Treehouse! I am a former Chef from Western Canada looking to bring the same quiet professionalism and attention to detail that I learned in the kitchen to the Web! I am currently working on The Odin Project's Full-Stack JavScript Curriculum!</p>
               </div>
+          </div>
+
+          <div class="about-me-progress fade-in">
+           
+              <canvas id="myChart">
+                          
+             </canvas>
+            <!-- <div class="about-me-progress-title">
+              <h6 class="wash2">My Skills</h6>
+            </div>
+              <ul class="chart-legend">
+                <li class="label">
+                  <span>
+                    Rockstar?
+                  </span>
+                </li>
+                <li class="label">
+                  <span>
+                    Advanced?
+                  </span>
+                </li>
+                <li class="label">
+                  <span>
+                    Intermediate
+                  </span>
+                </li>
+                <li class="label">
+                  <span>
+                    Beginner
+                  </span>
+                </li>
+                <li class="label">
+                  <span>
+                    Greenhorn
+                  </span>
+                </li>
+              </ul>
+              <ul class="chart-data">
+
+              </ul> -->
           </div>
         </section>
         <!-- /About  -->
+        <svg id="wave3" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path style="transform:translate(0, 0px); opacity:1; margin-top: -.25rem;" fill="#243d55" d="M0,20L240,28.3C480,37,960,53,1440,53.3C1920,53,2400,37,2880,35C3360,33,3840,47,4320,48.3C4800,50,5280,40,5760,36.7C6240,33,6720,37,7200,36.7C7680,37,8160,33,8640,33.3C9120,33,9600,37,10080,31.7C10560,27,11040,13,11520,13.3C12000,13,12480,27,12960,28.3C13440,30,13920,20,14400,13.3C14880,7,15360,3,15840,15C16320,27,16800,53,17280,58.3C17760,63,18240,47,18720,40C19200,33,19680,37,20160,40C20640,43,21120,47,21600,40C22080,33,22560,17,23040,23.3C23520,30,24000,60,24480,75C24960,90,25440,90,25920,88.3C26400,87,26880,83,27360,75C27840,67,28320,53,28800,40C29280,27,29760,13,30240,13.3C30720,13,31200,27,31680,28.3C32160,30,32640,20,33120,21.7C33600,23,34080,37,34320,43.3L34560,50L34560,100L34320,100C34080,100,33600,100,33120,100C32640,100,32160,100,31680,100C31200,100,30720,100,30240,100C29760,100,29280,100,28800,100C28320,100,27840,100,27360,100C26880,100,26400,100,25920,100C25440,100,24960,100,24480,100C24000,100,23520,100,23040,100C22560,100,22080,100,21600,100C21120,100,20640,100,20160,100C19680,100,19200,100,18720,100C18240,100,17760,100,17280,100C16800,100,16320,100,15840,100C15360,100,14880,100,14400,100C13920,100,13440,100,12960,100C12480,100,12000,100,11520,100C11040,100,10560,100,10080,100C9600,100,9120,100,8640,100C8160,100,7680,100,7200,100C6720,100,6240,100,5760,100C5280,100,4800,100,4320,100C3840,100,3360,100,2880,100C2400,100,1920,100,1440,100C960,100,480,100,240,100L0,100Z"></path></svg>
+          
+      <div class="techdegree-section">
+        <img alt="picture TysonDenis' Treehouse Tech Degree Certificate" class="techdegree-img" src="images/certificate.jpg">
+      </div>
+   
         
         <!-- Contact -->
-  
-      <div class="spacer-div">
+   
+          
+      
 
-      </div>
 
-      <footer class="rellax" data-rellax-speed="-2">
+    
+        <div class="spacer-div">
+
+        </div>
+
+   <!-- /Contact  -->
+     </main>
+      <footer>
+
         <div class="text-center align-self-center footer-div">
             <div class="foot-component">
               <address class="text-center">
                 Written by Tyson Denis<br>
-                Port Alberni, British Columbia<br>
-                Canada<br>
               </address>
             </div>
             <div class="foot-component">
                 <p class="footer-former-h5">Social Media</p>
-                <a href="https://github.com/tdenis29" aria-describedby="footer-link-description" rel="noreferrer" target="_blank">       
-                 <svg class="social-icon" role="link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                 <p class="sr-only" id="footer-link-description">Goes to Tyson Denis' Github Profile (opens in a new tab)</p>
+                 <a style="text-decoration: none;" href="https://github.com/tdenis29" aria-describedby="footer-link-description" rel="noreferrer" target="_blank">
+                  <svg class="social-icon" role="link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 </a>
-                  <a>
+                <p class="sr-only" id="footer-link-description">Goes to Tyson Denis' Github Profile (opens in a new tab)</p>
+                  <a style="text-decoration: none;" href="https://www.linkedin.com/in/tyson-denis-42598721a/" aria-describedby="footer-linkin-description" rel="noreferrer" target="_blank">
                     <svg class="social-icon" role="link"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   </a>
-                  <a>
-                    <svg class="social-icon" role="link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Indeed icon</title><path d="M14.8224 10.3074a3.0179 3.0179 0 111.32-4.0379 3.0059 3.0059 0 01-1.32 4.0439zM11.6005.5718c2.47-.901 5.2938-.852 7.4077.982a3.5869 3.5869 0 011.023 1.3699c.213.69-.749-.07-.88-.168a9.4066 9.4066 0 00-2.1499-1.095C12.8375.3857 8.8976 2.7067 6.4637 6.3155a19.5042 19.5042 0 00-2.2479 5.1258 2.9179 2.9179 0 01-.213.642c-.107.204-.049-.547-.049-.572a15.8203 15.8203 0 01.43-2.2389c1.128-3.9328 3.6269-7.2077 7.2167-8.7076zm.037 20.992v-8.7625c.249.025.486.037.736.037a6.1667 6.1667 0 003.2189-.895v9.6196c0 .822-.15 1.43-.52 1.826a1.874 1.874 0 01-1.452.6099 1.825 1.825 0 01-1.4269-.609c-.368-.404-.56-1.013-.56-1.825z"/></svg>
-                  </a>
+                  <p class="sr-only" id="footer-linkin-description">Goes to Tyson Denis' LinkedIn Profile (opens in a new tab)</p>
             </div>
           <div class="foot-component">
               <a class="btn btn-primary btn-lg cta mb-4" href="#home" role="button">Back To Top</a>
           </div>
         </div>
-        <div class="spacer-div">
+       
+    <div class="spacer-div">
 
-        </div>
+    </div>
       </footer>
         <!-- /Contact -->
-     </main>
-        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <script src="js/rellax.js"></script>
+        <script src="js/charts.js"></script>
         <script src="js/faders.js"></script>
         <script src="js/app.js"></script>
     </body>

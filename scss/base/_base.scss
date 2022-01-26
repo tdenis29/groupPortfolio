@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box!important;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: $white;
+   
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: $black;
+    font-size: $base__font_size;
+    line-height: ($base__line/$base__font_size);
+    }
+
+    main{
+      height: 100%;
+  }
+
+    h3{
+      font-size: 1.9rem;
+      color: $color-secondary;
+      font-family: $font-family--secondary;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+  }
+ //push off side
+
+
+h4{
+    padding-bottom: .5rem;
+}

@@ -1,0 +1,81 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+}
+.about-me-progress{
+   display: none;
+
+}
+.about-me-progress-title{
+    text-align: center;;
+}
+.aboutme{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $nightblue;
+h4{
+    margin: 1rem 0;
+}}
+.crossout{
+    text-decoration: line-through;
+}
+.decon-image-box{
+  
+    border: solid 2px $lightblue;
+       
+}
+
+.decon-image{
+    width: 100%;
+    display: block;
+    height: inherit;
+    margin-top: -1.5rem;
+    background-color: $white;
+    background-size: cover;
+    background-position-x: center;
+    margin-left: -.5rem;
+ 
+}
+.aboutmep{
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: $font-family--primary;
+}
+.decon-card-text{
+    width: 75%;
+    font-family: $font-family--primary;
+}
+.aboutme{
+    width: 100%;
+    background-color: $nightblue;
+}
+.label{
+    height: em(60px);
+    border-bottom: solid 1px $grey;
+    position:relative;
+span{
+   position: absolute;
+   bottom: 0; 
+}}
+.spacer-div{
+  height: 2rem;
+  width: 100%;
+  background: $transparent;
+}
+///Tech Degree
+
+.techdegree-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.techdegree-img{
+    width: 90%;
+    height: auto;
+}

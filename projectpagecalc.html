@@ -4,17 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="Tyson Denis" content="Tyson Denis Web Development Portfolio">
-        <meta name="description" content="A portfolio showcasing Tyson Denis'Front-End web developer skils, go there to see Web Dev projects!">
+        <meta name="description" content="A portfolio showcasing Tyson Denis' Front-End web developer skills, go there to see Web Dev projects!">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="css/input.css"/>
+        <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/video-matrix.css"/>
         <title>Tyson Denis's Group Portfolio Project Calculator</title>
     </head>
     <body class="rellax" data-rellax-speed="-1" id="body">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container nav-con">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" aria-describedby="brand-link" href="index.html">
+                  <p class="sr-only" id="brand-link">Links back to Home-page</p>
                   <?xml version="1.0" standalone="no"?>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="40pt" height="24.000000pt" viewBox="0 0 190.000000 130.000000"
@@ -23,7 +26,7 @@
                     Created by potrace 1.16, written by Peter Selinger 2001-2019
                     </metadata>
                     <g transform="translate(0.000000,130.000000) scale(0.100000,-0.100000)"
-                    fill="#D81E5B" stroke="none">
+                    fill="#34d6ff" stroke="none">
                     <path d="M1100 1281 c-109 -24 -169 -45 -251 -87 -52 -27 -77 -34 -125 -34
                     -269 -1 -473 -68 -605 -200 -81 -80 -112 -142 -117 -232 -5 -85 9 -128 58
                     -172 44 -40 92 -56 168 -56 28 0 52 -2 52 -4 0 -2 -14 -33 -30 -68 -36 -77
@@ -83,13 +86,16 @@
         <div class="pp-con rellax">
               <div class="case-study-top-text">
                 <h2>The Project</h2>
-                  <p>This project is the last project in the Odin Projects Foundations curriculum. The goal was to make a basic calculator. It had to include rounded decimal places, the ability to do math with floating point numbers, add a backspace and allow the user to string together operands and operators. For example 12 + 7 - 5 * 3 = 42. We were told specifically NOT to use eval(). My first attempt anded up making an expression string like a graphing calculator which caused a huge increase in difficulty. And an introduction the famous Shunting Yard Algorithm when I tried to make my own eval() function.
+                  <p>This project is the last project in the Odin Projects Foundations curriculum. The goal was to make a basic calculator. It had to include rounded decimal places, have the ability to do math with floating point numbers, add a backspace and allow the user to string together operands and operators. For example, 12 + 7 - 5 * 3 = 42. We were told specifically NOT to use eval(). My first attempt ended up making an expression string like a graphing calculator, which caused a huge increase in difficulty. I also got an introduction to the "famous" Shunting Yard Algorithm when I tried to make my own eval() function.
                   </p>
                 </div>
                
                 <div class="video-con">
-                  <video controls autoplay="true">
-                    <source src="mp4/calc.mp4">
+                  <video 
+                  id="my-video"
+                  class="vjs-matrix video-js vjs-fluid"
+                  data-setup='{"controls": true, "autoplay": false, "preload": "auto"}'>
+                    <source src="mp4/calcgoodcompress.mp4">
                   </video>
             </div>
         </div>
@@ -113,7 +119,7 @@
     </div>
 
     <div class="project-content-block">
-      <p>Getting the numbers to show up was pretty simple using text-content. The difficult part was going through the logic and deciding when to set variables. Basically I ended up counting clicks. For example we can assume the first click on a calculator is a number and will be the first operand in an expression. After an operator(eg. +, *) is clicked we can ssume the user had the first term they want evaluate so we can set that to a varablie for use later </p>
+      <p>Getting the numbers to show up was pretty simple using text-content. The difficult part was going through the logic and deciding when to set variables. Basically, I ended up counting clicks. For example, we can assume the first click on a calculator is a number and will be the first operand in an expression. After an operator (e.g., +, *) is clicked, we can assume the user has the first term they want to evaluate so we can set that to a variable for use later.</p>
        <code> // first click <br>
         if(key.classList.contains('number') && operand1 === null){ <br>
           handleNumber(keyContent) <br>
@@ -124,7 +130,7 @@
 </div>
       
       <div class="project-content-block">
-        <p>The Above code passes the keyContent(textContent) of the clicked number key to handleNumber() function which controls what gets wrtitten to the screen by setting displayValue with (keyContent)</p>
+        <p>The above code passes the keyContent(textContent) of the clicked number key to handleNumber() function, which controls what gets written to the screen by setting displayValue with (keyContent).</p>
         <code>
             function handleNumber(keyContent){ <br>
                 if (display.textContent === "0") { <br>
@@ -154,7 +160,7 @@
     </code>
   </div>
   <div class="project-content-block">
-    <p>I had trouble with chaining operators and evaluating an expression with more than two terms. My first attempt had me making an expression string and then going to implement my own Shunting Yard Algorithm. Which is pretty difficult. After re-reading the intstructions, I realized when another operator is clicked, for exampe(2 + 2 +) we can evaluate what is on the screen and use the result as the 1st operand in the next expression. So (2 + 2 +) interperted as (4 + ) </p>
+    <p>I had trouble with chaining operators and evaluating an expression with more than two terms. My first attempt had me making an expression string and then going to implement my own Shunting Yard Algorithm, which is pretty difficult. After re-reading the intstructions, I realized that when another operator is clicked (for example, (2 + 2 +)) we can evaluate what is on the screen and use the result as the 1st operand in the next expression. So (2 + 2 +) interpreted as (4 + ).</p>
     <code> 
         if(operand1 !== null && operand2 !== null && result === null && key.classList.contains('operator')){ <br>
             result = operate(operand1,operand2,operator); <br>
@@ -170,7 +176,7 @@
 </div>
     <p>   <div class="pp-sum">
       <h4 class="text-center">The Summary</h4>
-      <p>This was a challenge. As I mentioned above I went down the eval() rabbit-hole. I learned about how CPU's do math, reverse Polish notation and most importantly rely on functional programming techniques rather than synchronous. My first version didn't outsource updating the display which led a alot of problems the longer the expression got and ended up with a really long and ugly Event Listener.
+      <p>This was a challenge. As I mentioned above, I went down the eval() rabbit-hole. I learned a little about how CPUs do math, reverse Polish notation, and most importantly rely on functional programming techniques rather than iterative. My first version didn't outsource updating the display which led to a lot of problems as the expression got longer, and ended up with a really long and ugly Event Listener.
       </p>
     </div>
     </p>
@@ -190,14 +196,11 @@
 
             <div class="foot-component">
                 <h5>Social Media</h5>
-                <a href="https://github.com/tdenis29">       
+                <a style="text-decoration: none;" href="https://github.com/tdenis29">       
                   <svg class="social-icon" role="link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 </a>
-                  <a>
+                  <a style="text-decoration: none;" href="https://www.linkedin.com/in/tyson-denis-42598721a/">
                     <svg class="social-icon" role="link"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                  </a>
-                  <a>
-                    <svg class="social-icon" role="link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Indeed icon</title><path d="M14.8224 10.3074a3.0179 3.0179 0 111.32-4.0379 3.0059 3.0059 0 01-1.32 4.0439zM11.6005.5718c2.47-.901 5.2938-.852 7.4077.982a3.5869 3.5869 0 011.023 1.3699c.213.69-.749-.07-.88-.168a9.4066 9.4066 0 00-2.1499-1.095C12.8375.3857 8.8976 2.7067 6.4637 6.3155a19.5042 19.5042 0 00-2.2479 5.1258 2.9179 2.9179 0 01-.213.642c-.107.204-.049-.547-.049-.572a15.8203 15.8203 0 01.43-2.2389c1.128-3.9328 3.6269-7.2077 7.2167-8.7076zm.037 20.992v-8.7625c.249.025.486.037.736.037a6.1667 6.1667 0 003.2189-.895v9.6196c0 .822-.15 1.43-.52 1.826a1.874 1.874 0 01-1.452.6099 1.825 1.825 0 01-1.4269-.609c-.368-.404-.56-1.013-.56-1.825z"/></svg>
                   </a>
             </div>
 
@@ -213,6 +216,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="js/rellax.js"></script>
         <script src="js/faders.js"></script>
-        <script src="js/gifcontrol.js"></script>
+        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
     </body>
 </html>

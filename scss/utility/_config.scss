@@ -1,0 +1,114 @@
+// Base Styles and Typo\
+
+//FONT STACKS
+$font-url--google       : "https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One";
+
+$font-family--primary   :"Fauna One", "Helvitica Neue", "Helvetica", "Arial", sans-serif;
+$font-family--secondary : "Cinzel", Cursive; 
+
+///variables
+$white   : #F4FAFF;
+$black   : #0E0B16;
+$grey    : #797e83;
+
+$nightblue : #08095f;
+$lightblue : #34d6ff;
+$rubyred   : #FF01FB;
+$codegreen : #44ff7c;
+$warningred: #cc0055;
+$transparent: transparent;
+
+//Color Usage 
+
+$color-primary: $lightblue;
+$color-secondary: $rubyred;
+$color-accent : $codegreen;
+
+
+//Color Map
+
+$ui-colors: (
+    default: $black,
+    transparent: $transparent,
+    ctahover: $rubyred,  
+    success: $codegreen,
+    error  : $warningred,
+    warning: $warningred,
+);
+
+//TEXT//
+
+$base__font_size  : 18px;
+$base__line       : 24px;
+
+///PATH TO ASSESTS
+$path-rel         :"../images";
+
+//Import Google Fonts if it exists
+
+@if variable-exists($font-url--google){
+    @import url($font_url--google);
+}
+
+//Em directive 
+@function em($target, $context: $base__font_size) {
+    @return ($target/$context) * 1em;
+}
+
+///MIXINS
+@mixin bg-colors($map) {
+    @each $theme, $color in $map{
+        &--#{$theme} {
+            background-color: $color;
+        }
+    }
+}
+@mixin imgreplace($img, $w,$h,$disp: block) {
+    background-image:url('#{path-rel}/#{img}');
+    background-repeat: no-repeat;
+    width: $w;
+    height: $h;
+    display: $disp;
+}
+//pseudo element mixin extends %pseuodos
+@mixin p-el ($el, $el-w: null, $el-h: null) {
+    @if $el == "before" or $el == "after"{
+    &:#{$el} {
+        @extend %pseudos;
+        width: $el-w;
+        height: $el-h;
+        @content;
+    }
+} @else {
+    @warn "`#{$el}` is not a valid pseudo element";
+}
+}
+///Pseudo element placeholder
+%pseudos {
+    display: block;
+    content: "";
+    position: absolute;
+}
+
+.sr-only{
+clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+clip: rect(1px, 1px, 1px, 1px);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+}
+
+//BEM SELECTORS
+@mixin e ($element) {
+    &__#{$element}{
+        @content;
+    }
+}
+
+@mixin m ($modifier) {
+    &--#{$modifier}{
+        @content;
+    }
+}

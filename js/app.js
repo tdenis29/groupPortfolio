@@ -1,6 +1,7 @@
 
 ///touchscreen
-if(window.matchMedia("(any-pointer: coarse)").matches) {
+
+    if(window.matchMedia("(any-pointer: coarse)").matches) {
     $(window).on('touchmove', function(event) {
         var width = $(window).width();
         var mouseX = event.pageX - (width * 1);
